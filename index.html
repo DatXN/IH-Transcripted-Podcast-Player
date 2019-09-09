@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
@@ -15,21 +15,97 @@
     <link rel="stylesheet" href="css/main.css">
 
     <meta name="theme-color" content="#fafafa">
+
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="css/material.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body>
+<body class="h-100">
+    <header class="navbar navbar-dark navbar-full bg-primary doc-navbar-default">
+        <div class="col-sm-6" style="padding-left: 0">
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="mt-0">Episode #003</h5>
+                        <small style="color: lightgrey;">- Bootstrapping a SaaS Business to
+                            $30,000,000/year
+                            with David Hauser of Grasshopper</small>
+                </div>
+            </div>
+        </div>
+        <!-- <i class="material-icons">skip_previous</i> -->
+        <i class="material-icons">replay_10</i>
+        <i class="material-icons">play_arrow</i>
+        <i class="material-icons">forward_10</i>
+        <!-- <i class="material-icons">skip_next</i> -->
+        <p class="mb-0">00:10:20</p>
+        <span class="mb-0">/</span>
+        <p class="mb-0" style="color: lightgrey;">00:45:24</p>
+        <button aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Toggle Navdrawer"
+            class="navbar-toggler" data-target="#navdrawerDefault" data-toggle="navdrawer"><span
+                class="navbar-toggler-icon"></span></button>
+
+        <audio crossorigin>
+            <source src="/data/3-indiehackers-david-hauser-of-grasshopper.mp3" type="audio/mpeg">
+        </audio>
+    </header>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+    <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="70" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
     <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div aria-hidden="true" class="navdrawer navdrawer-right" id="navdrawerDefault" tabindex="-1">
+        <div class="navdrawer-content">
+            <div class="navdrawer-header">
+                <a class="navbar-brand px-0" href="#">Podcast Playlist</a>
+            </div>
+            <nav class="navdrawer-nav">
+                <a class="nav-item nav-link active" href="#">Active</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                <a class="nav-item nav-link" href="#">Link</a>
+            </nav>
+            <div class="navdrawer-divider"></div>
+            <p class="navdrawer-subheader">Navdrawer subheader</p>
+            <ul class="navdrawer-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="material-icons mr-3">alarm_on</i> Active with icon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"><i class="material-icons mr-3">alarm_off</i> Disabled with
+                        icon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="material-icons mr-3">link</i> Link with icon</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Application Code -->
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="js/material.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/site.js"></script>
+
+    <!-- Optional JavaScript -->
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>
