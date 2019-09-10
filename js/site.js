@@ -9,11 +9,130 @@
         TranscriptFile: "003.html"
       },
       {
+        Id: "004",
+        Description:
+          "Succeeding in a Crowded Market by Building a Niche Business with Garrett Dimon of Sifter",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "004.html"
+      },
+      {
+        Id: "012",
+        Description:
+          "Traveling, Learning to Code, and Bootstrapping to $25k/mo with Tyler Tringas of Storemapper",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "012.html"
+      },
+      {
+        Id: "020",
+        Description:
+          "Building a Million Dollar Mailing List with Scott of Scott's Cheap Flights",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "020.html"
+      },
+      {
+        Id: "028",
+        Description:
+          "How Wes Bos Teaches 100,000 Programmers as a One-Man Operation",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "028.html"
+      },
+      {
+        Id: "033",
+        Description:
+          "Finding Your Next Idea with Philippe Lehoux of MissiveApp.com",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "033.html"
+      },
+      {
+        Id: "037",
+        Description:
+          "The Story of WorkFlowy: From $0 to $800,000 a Year with Jesse Patel",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "037.html"
+      },
+      {
+        Id: "041",
+        Description:
+          "An Optimistic Nihilist's Take on Building a $2M Business with Vincent Woo",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "041.html"
+      },
+      {
         Id: "043",
         Description:
           "Confronting Your Fears and Taking a Leap with Pieter Levels of Nomad List",
         AudioFile: "043-pieter-levels-of-nomad-list.mp3",
         TranscriptFile: "043.html"
+      },
+      {
+        Id: "049",
+        Description:
+          "Everything You Need to Know About Business with Josh Kaufman of The Personal MBA",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "049.html"
+      },
+      {
+        Id: "051",
+        Description:
+          "Finding Your Way as a Founder with Rand Fishkin of Moz and SparkToro",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "051.html"
+      },
+      {
+        Id: "059",
+        Description:
+          "From Laid Off to Generating $25,000 in Monthly Revenue with John Doherty of Credo",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "059.html"
+      },
+      {
+        Id: "061",
+        Description:
+          "How to Bootstrap Your Way to $250,000,000/year with JT Marino of Tuft & Needle",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "061.html"
+      },
+      {
+        Id: "062",
+        Description:
+          "Getting a Brand New SaaS Business Off the Ground with Mike Taber of Bluetick",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "062.html"
+      },
+      {
+        Id: "063",
+        Description:
+          "Turning Small Ideas into a $35,000 a Month Business with Katie Keith of Barn2 Media",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "063.html"
+      },
+      {
+        Id: "078",
+        Description:
+          "Taking on Google and Facebook as a Solo Open-Source Founder with Evan You of Vue.js",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "078.html"
+      },
+      {
+        Id: "079",
+        Description:
+          "Things Every Founder Should Know About Growth with Julian Shapiro of Bell Curve",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "079.html"
+      },
+      {
+        Id: "086",
+        Description:
+          "How to Build a Life You Love by Quitting Everything Else with Lynne Tye of Key Values",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "086.html"
+      },
+      {
+        Id: "087",
+        Description:
+          "Examining the Repeated Successes of a Product-Focused Solo Founder with AJ of Carrd",
+        AudioFile: "4-indiehackers-garrett-dimon-of-sifter.mp3",
+        TranscriptFile: "087.html"
       }
     ];
     function get() {
@@ -136,7 +255,7 @@
   function playPodcast(podcastData) {
     $audio
       .find("source")
-      .attr("src", podcastAudioDataFilePath + podcastData.AudioFile);
+      .attr("src", podcastAudioDataFilePath + podcastData.Id + ".mp3");
     noSleep.enable();
     $(playPause).html("pause");
     $curEpisodeTitle.html("Episode #" + podcastData.Id);
@@ -150,7 +269,7 @@
       $audio[0].play();
     }
     $transcriptsPanel.load(
-      podcastTranscriptDataFilePath + podcastData.TranscriptFile,
+      podcastTranscriptDataFilePath + podcastData.Id + ".html",
       function() {
         initTranscriptDisplay();
         $transcriptsPanel.css("display", "");
