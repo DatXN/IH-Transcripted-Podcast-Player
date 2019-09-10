@@ -32,8 +32,8 @@
         <div class="col-sm-6" style="padding-left: 0">
             <div class="media">
                 <div class="media-body">
-                    <h4 class="mt-0">Episode #003</h5>
-                        <small style="color: lightgrey;">- Bootstrapping a SaaS Business to
+                    <h4 class="mt-0" id="curEpisodeTitle">Episode #003</h5>
+                        <small style="color: lightgrey;" id="curEpisodeDescription">- Bootstrapping a SaaS Business to
                             $30,000,000/year
                             with David Hauser of Grasshopper</small>
                 </div>
@@ -49,7 +49,7 @@
         <p class="mb-0 total-time" style="color: lightgrey;">00:45:24</p>
 
         <audio id="audioPodcast" crossorigin>
-            <source src="/data/3-indiehackers-david-hauser-of-grasshopper.mp3" type="audio/mpeg">
+            <source id="audioSource" src="" type="audio/mpeg">
         </audio>
         <button aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Toggle Navdrawer"
             class="navbar-toggler" data-target="#navdrawerDefault" data-toggle="navdrawer"><span
@@ -81,26 +81,14 @@
             <div class="navdrawer-header">
                 <a class="navbar-brand px-0" href="#">Podcast Playlist</a>
             </div>
-            <nav class="navdrawer-nav">
-                <a class="nav-item nav-link active" href="#">Episode #003</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
-                <a class="nav-item nav-link" href="#">Link</a>
+            <nav class="navdrawer-nav" id="ndPodCastPlaylist">
+                <a class="nav-item nav-link active" href="#">Episode #003
+                    <p><small>hello</small></p>
+                </a>
+                <a class="nav-item nav-link" href="#">Episode #043
+                    <p><small>hello</small></p>
+                </a>
             </nav>
-            <div class="navdrawer-divider"></div>
-            <p class="navdrawer-subheader">Navdrawer subheader</p>
-            <ul class="navdrawer-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="material-icons mr-3">alarm_on</i> Active with
-                        icon</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#"><i class="material-icons mr-3">alarm_off</i> Disabled with
-                        icon</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="material-icons mr-3">link</i> Link with icon</a>
-                </li>
-            </ul>
         </div>
     </div>
     <!-- Application Code -->

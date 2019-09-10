@@ -209,3 +209,8 @@ mark.animate {
   background-position: left bottom;
   color: white;
 }
+
+.navdrawer-nav a p small {
+  white-space: normal;
+  color: gray;
+}
