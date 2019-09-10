@@ -28,7 +28,7 @@
 </head>
 
 <body class="h-100">
-    <header class="navbar navbar-dark navbar-full bg-primary doc-navbar-default">
+    <header class="navbar navbar-dark navbar-full bg-primary doc-navbar-default green-audio-player">
         <div class="col-sm-6" style="padding-left: 0">
             <div class="media">
                 <div class="media-body">
@@ -40,28 +40,40 @@
             </div>
         </div>
         <!-- <i class="material-icons">skip_previous</i> -->
-        <i class="material-icons">replay_10</i>
-        <i class="material-icons">play_arrow</i>
-        <i class="material-icons">forward_10</i>
+        <i class="material-icons btnReplay">replay_10</i>
+        <i id="playPause" class="material-icons play-pause-btn">play_arrow</i>
+        <i class="material-icons btnForward">forward_10</i>
         <!-- <i class="material-icons">skip_next</i> -->
-        <p class="mb-0">00:10:20</p>
+        <p class="mb-0 current-time">00:10:20</p>
         <span class="mb-0">/</span>
-        <p class="mb-0" style="color: lightgrey;">00:45:24</p>
+        <p class="mb-0 total-time" style="color: lightgrey;">00:45:24</p>
+
+        <audio id="audioPodcast" crossorigin>
+            <source src="/data/3-indiehackers-david-hauser-of-grasshopper.mp3" type="audio/mpeg">
+        </audio>
         <button aria-controls="navdrawerDefault" aria-expanded="false" aria-label="Toggle Navdrawer"
             class="navbar-toggler" data-target="#navdrawerDefault" data-toggle="navdrawer"><span
                 class="navbar-toggler-icon"></span></button>
 
-        <audio crossorigin>
-            <source src="/data/3-indiehackers-david-hauser-of-grasshopper.mp3" type="audio/mpeg">
-        </audio>
     </header>
+
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-    <div class="progress">
-        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="70" aria-valuemin="0"
-            aria-valuemax="100"></div>
+    <div class="container-fluid">
+        <div class="row progressZone">
+            <div class="col" style="padding-left: 0; padding-right:0">
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar bg-info" role="progressbar" style="width: 25%"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="transcriptsPanel" class="podcast-episode"></div>
+            </div>
+        </div>
     </div>
     <!-- Add your site or application content here -->
     <div aria-hidden="true" class="navdrawer navdrawer-right" id="navdrawerDefault" tabindex="-1">
@@ -70,7 +82,7 @@
                 <a class="navbar-brand px-0" href="#">Podcast Playlist</a>
             </div>
             <nav class="navdrawer-nav">
-                <a class="nav-item nav-link active" href="#">Active</a>
+                <a class="nav-item nav-link active" href="#">Episode #003</a>
                 <a class="nav-item nav-link disabled" href="#">Disabled</a>
                 <a class="nav-item nav-link" href="#">Link</a>
             </nav>
@@ -78,7 +90,8 @@
             <p class="navdrawer-subheader">Navdrawer subheader</p>
             <ul class="navdrawer-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="material-icons mr-3">alarm_on</i> Active with icon</a>
+                    <a class="nav-link active" href="#"><i class="material-icons mr-3">alarm_on</i> Active with
+                        icon</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#"><i class="material-icons mr-3">alarm_off</i> Disabled with
@@ -100,8 +113,11 @@
 
     <script src="js/material.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/vendor/NoSleep.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/audio.js"></script>
     <script src="js/site.js"></script>
 
     <!-- Optional JavaScript -->
