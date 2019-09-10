@@ -1,0 +1,1823 @@
+<div id="ember48" class="episode-transcript ember-view">
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="8.225">
+                <a href="#8.225" id="8.225">
+                    0h 0m 8s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Garrett Dimon built a business in a crowded market place. One where his
+            app was far from the only one of its kind, and yet he was able to cut through the noise, find hundreds of
+            paying customers, and eventually go on to sell his app for hundreds of thousands of dollars. I'm Courtland
+            Allen from <a href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a>, and in
+            this interview I'll be talking with Garrett Dimon, the creator of Sifter, a simple application for teams to
+            track their bugs and issues. There are hundreds of other bug trackers, but the reason that Garrett was able
+            to to well was that he picked a very specific and targeted pain point. And he built his target entirely
+            around that. This let him appeal to a certain group of customers in a way that his competitors couldn't.
+            There's a lot to learn from this interview about how to build a product that stands out among the
+            competition, how to communicate with customers and get them to buy your product, and about how to experiment
+            and find the best ways to grow your company. Hopefully you guys will enjoy this conversation I had with
+            Garrett as much as I did. This episode is brought to you by SparkPost, the world's fastest growing email
+            delivery service. Trusted to send over 25% of the world's non-spam email. Built on AWS, SparkPost's robust
+            cloud API lets apps and websites send and receive email, and is designed for the way developers work today.
+            Sign up now and send 100,000 emails a month for free, forever, with all the same features that come with
+            paid accounts. Go to <a href="http://pages.sparkpost.com/indiehackers" class="linkified"
+                target="_blank">pages.sparkpost.com/indiehackers</a> to learn more. SparkPost, start fast, deliver more,
+            guaranteed. Alright, this is Courtland here from Indie Hackers, and I am sitting down today with Garrett
+            Dimon, founder of Sifter, a business which he started years ago and has since sold. Garrett, how you doing?
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="114.193">
+                <a href="#114.193" id="114.193">
+                    0h 1m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I'm good, how are you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="116.038">
+                <a href="#116.038" id="116.038">
+                    0h 1m 56s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I'm doing excellent. I wanna start off by talking about Sifter. I know
+            you've done a great many other things besides Sifter and since Sifter, but I would really like to start with
+            talking about Sifter. So can you tell us what it is and how you got started?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="130.963">
+                <a href="#130.963" id="130.963">
+                    0h 2m 10s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, so Sifter is a bug tracker. It was a really, really creative,
+            unique idea that I had. I founded it in 2008, and was more or less a solo founder. I had a little bit of
+            help with some of the insulary tasks. But as far as design and product support and marketing and all that
+            kind of stuff, that was pretty much all on me. I've just always been fascinated with bug and issue tracking,
+            just 'cause my first job out of college I was exposed to it in a really well-oiled machine. And my second
+            job was the complete opposite. So just the contrast between those two jobs kind of showed me that not
+            everybody has the process down to a science. And it just sparked an interest. And then, later on when I was
+            doing a lot of consulting work, almost agency stuff, one of our biggest struggles was getting our
+            non-technical clients to participate with the issue tracking. Not so much find the bugs, but find the things
+            that you don't like about how we've implemented this, and help us fix it and that kind of thing. And we
+            tried half a dozen different bug trackers, and they'd log in once and kind of, uh, I don't know about this.
+            And then they'd never log in again and they'd just email us the issues. And invariably, one or two issues
+            slips through the cracks because they wouldn't use the bug tracker. No matter how religious we were about
+            putting it in. And so the fact that they wouldn't use a bug tracker, and this is for smallish teams. For
+            big, huge teams it's not too much of an issue because you can kind of force people to do it. But for a team
+            of five and a couple clients, it's just big enough that it's helpful, but it's just small enough that if
+            they don't wanna use it, there's not a whole lot of arm twisting you can do. So it kind of got to a point
+            where it's like, well, if they won't use the bug tracker, we can't use a bug tracker because it's two
+            different worlds. So my philosophy kind of got to the point where it's like, it doesn't matter what a bug
+            tracker is capable of. If the team won't use it, it's useless. So big teams where they're all developers,
+            and everybody's pretty technical, it's not too hard to get everybody to adopt something like Jira, something
+            really powerful and flexible. But that's just overkill for smaller teams. And so I was like, I just wanna
+            create something that will be much, much, much simpler for those smaller teams. A lot of bigger teams would
+            view it as crippling almost, because it was too simple. But for the smaller teams, it was kind of just
+            right. So kind of the goldilocks version of bug tracking, the just right version for small teams. The way it
+            started, too, was, I think probably one of the more interesting things, was that I didn't really plan on
+            building it. I just started designing it and mocking it up, and kind of thinking, well maybe I'll create
+            something open sourced. Because I didn't want to deal with support. And I didn't want to have to take money
+            online because this was pre-Stripe, and Braintree had just barely come around. The idea of taking money
+            online just scared me. I was like, <a href="http://authorize.net" class="linkified"
+                target="_blank">Authorize.net</a> I heard too many horror stories. So I did not wanna start a business.
+            But by virtue of sharing these ideas, and the mock-ups and things, a lot of people started expressing
+            interest and encouraging me to do something more with it. And eventually I got worn down, and said, okay,
+            I'll just start a business. One of the common questions everybody asks is how did you get your first
+            customers. For me, it was like, my first customers kind of got me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="345.976">
+                <a href="#345.976" id="345.976">
+                    0h 5m 45s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">You flipped it around.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="346.874">
+                <a href="#346.874" id="346.874">
+                    0h 5m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, and so to this day I feel like that's still one of the best way
+            to do things, is just work on things in the open and do things, and if there's interest there, you'll find
+            out.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="360.589">
+                <a href="#360.589" id="360.589">
+                    0h 6m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's really cool, because you sort of took this combination of
+            expertise based on your own experience and school and at these companies combined with your public writings,
+            and the validation from other people to get this huge head start in terms of validating what you're gonna
+            work on and finding your first customers, which is pretty much the exact opposite of what most people I talk
+            to did. They're scrambling to make sure that idea is something the people need, months after they've already
+            started building it, which is, of course, the hard way to do things, and the wrong way to do things, if you
+            can avoid it. So that's a great way to get started. This was in 2008 when you started Sifter, right?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="399.441">
+                <a href="#399.441" id="399.441">
+                    0h 6m 39s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Mmm hmmm.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="400.583">
+                <a href="#400.583" id="400.583">
+                    0h 6m 40s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And back then, was the bug tracking market crowded? Because I know
+            today there's like a ton of bug trackers. But back then, were you worried at all that, wow, there's so much
+            competition. I'm not gonna be able to target a good niche or I'm not gonna be able to rise above the level
+            of noise that all of my competitors are creating to get customers.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="419.513">
+                <a href="#419.513" id="419.513">
+                    0h 6m 59s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think it was a combination of not being scared, but also being
+            ignorant. The biggest thing was, it's always been a crowded market, and it always will be. Because there's
+            always gonna be a need for it. And there's, honestly, still probably plenty of room in the market for more.
+            The thing is, most bug trackers are designed by developers for developers. And I was more of a designer than
+            a developer. Not really even a designer, an information architect. So a lot more interested in user
+            experience. So for me, the biggest problem to solve wasn't can I build a bug tracker. It was can I build a
+            bug tracker that non-technical people won't run away from screaming. I felt confident that there weren't
+            gonna be many other people that cared about doing that. There's just not a lot of people in design and user
+            experience who were really passionate about bug tracking. The only people who were really passionate about
+            bug tracking are developers. And developers are gonna build the tool that they want for themselves, and
+            they're not necessarily thinking about their clients and that kind of thing as much. And so I just felt
+            comfortable that I was going to take it in a direction that nobody really cared about, or would pursue. And
+            that I'd have a unique enough take on bug tracking that there was enough space for me to carve out a little
+            niche and make a good living.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="505.594">
+                <a href="#505.594" id="505.594">
+                    0h 8m 25s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's so telling that focusing on good user experience ends up being a
+            unique take. No one else cares about the user experience.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="515.888">
+                <a href="#515.888" id="515.888">
+                    0h 8m 35s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">But it wasn't necessarily a good or bad user experience. It was a good
+            or bad user experience for a specific audience. Because plenty of developers hated Sifter's user experience.
+            Our audience was the developers who may have felt this doesn't serve my needs enough, but it gets my
+            customers actually using it, so I can forego the fact that it's not perfect for me because they're actually
+            gonna use it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="540.586">
+                <a href="#540.586" id="540.586">
+                    0h 9m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">How much do think of Sifter's success, and the development of any
+            product in general relies on, or is helped by, I should say, targeting a really specific niche and making
+            trade-offs. Because I know I talk to a lot of people and they say, I don't really wanna target a small group
+            of customers, because what about all these other people who might be my customers and who might like the
+            product. And it's kind like this situation where it's easy to be afraid of losing out on potential business,
+            so you make a product for everybody. Do you think if you had catered to developers needs a little bit more
+            that Sifter would have been harder to succeed with?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="574.536">
+                <a href="#574.536" id="574.536">
+                    0h 9m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I mean, it's a double-edged sword. If you go too narrow, you limit your
+            audience, and if you go too wide, you blur your message. It's almost an art to find the right degree of
+            both. And I feel like with Sifter, one thing I could have done more was done a better job of incorporating
+            things that the developers would have appreciated in ways that it wouldn't have necessarily affected the
+            user experience negatively. But I think it definitely would have helped, so the other thing, too, was, I was
+            building a tool. And this was in hindsight. Probably one of the things that made it the most difficult was
+            my target audience was never going to be the people who were paying for the tool. Because my target audience
+            was my customer's customers. Sifter's only real appeal was for customers who were struggling with the fact
+            that their customers wouldn't use their bug tracker. And, again, in a way it was a good niche because there
+            wasn't anybody else out there doing that, but it was a bad one because it is limited. And so it's just one
+            of those things, it's a blessing and curse, and you just kind of have to make the most of it. It made
+            marketing difficult because I wasn't directly removing my customer's pain. I was removing my customer's
+            customer's pain. And so it was an indirect pain for our customers. And that made it difficult to have a
+            compelling message for them unless they had that problem and really understood it well. Because for more
+            developers, it's not necessarily a problem. It's just, oh well, that's fine, they can email them to me and
+            I'll deal with it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="673.739">
+                <a href="#673.739" id="673.739">
+                    0h 11m 13s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, it seems like a difficult thing, like you said, they already have
+            to be keenly aware of what the problem is, or you kind of have to educate them. Like, hey, the reason your
+            clients aren't using your bug tracker is because the bug tracker you're using sucks for non-technical
+            people. You should switch to a totally different one. Your first customers were people who were supporting
+            what you were doing and working on, and interested in your take on bug tracking before you even launched.
+            What was involved in building the initial product? How long did it take you, and what kind of tech did you
+            use? How did you get your first users after your first users, so to speak?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="708.653">
+                <a href="#708.653" id="708.653">
+                    0h 11m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So, rails, basic rails MySQL set up, nothing super fancy. When we
+            launched, it didn't even have file uploading or search. It was very, very, very simple, almost too simple.
+            Uncomfortably simple. I quit my job and switched to juggling freelancing and Sifter in January of 08, and I
+            launched in December of 08. Publicly launched. The beta started maybe a month or two before that. I'd say
+            that total time was 11 months, probably half of that was on Sifter, so six months. And, again, back then the
+            billing stuff wasn't really there, so I wasted a month building a billing system. Which these days, you
+            wouldn't have to do. You could just plug in Stripe, or even Braintree is better now. There's so many
+            options. I love that knowledge that I have and that experience and understanding of the billing system, but
+            I would have loved to not have to build that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="763.946">
+                <a href="#763.946" id="763.946">
+                    0h 12m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And it's interesting how every few years there's always something you
+            can look back and say, wow, we've got it so easy today. Because I remember developing web apps back then,
+            and I wasn't implementing any billing systems. But still, the only thing anybody was talking about in 2008,
+            2009 was how one developer can do what it took a team of 10 or 20 to do back in the 90s.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="785.626">
+                <a href="#785.626" id="785.626">
+                    0h 13m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It definitely gets better. I think, for me, that's the biggest, now
+            that I've got a regular nine to five job, the biggest haunting temptation for me of like, oh my gosh, just
+            imagine what you can do now with all the experience and the better tools. Then I've just gotta kind of slap
+            myself and be like, no, no, no, don't worry about it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="805.201">
+                <a href="#805.201" id="805.201">
+                    0h 13m 25s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">At least with Indie Hackers, my thesis is that we're gonna see more and
+            more independent developers and non-developers, too, starting businesses. Because the amount of leverage
+            that they have, with all the tools, is such that, it's an easier path now than it ever has been to just
+            completely eschew reliance on a team.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="825.104">
+                <a href="#825.104" id="825.104">
+                    0h 13m 45s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">But for better or worse, just because its easier for you, it's easier
+            for everybody else too. I'm not a big competition person. I feel like focusing on competition's almost a
+            distraction. But it's important that you have your own story. And I feel like too often too many people are
+            like, oh, my competitors are doing this and that, and what should I do. And it's like, it's not about what
+            you should do, so much as you just shouldn't do what they're doing. Figure out your own thing and carve out
+            your own world. But there's gonna be more and more and more competitors now because it's easier for
+            everybody to do everything. So it's even more important to really stake out your area and who you are, and
+            what you're building, and what you're offering, I think.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="875.641">
+                <a href="#875.641" id="875.641">
+                    0h 14m 35s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I agree completely. I just interviewed this guy Diago from this
+            company Proposeful for Indie Hackers, and he's got online business proposal software. And one of the things
+            he talked about in his interview was how much he willfully ignored all of the competition. He refused to
+            even look at their products. And he wanted to talk to customers and figure out, understand the problem he
+            was solving and come up with his own unique solution, without being biased in terms of how the product
+            should look. And I think that's one of the things that's gonna help him, and will help others in the future
+            too. With there being ever more competitors, the importance of finding a niche is only going to increase.
+            You're gonna have to probably be in a market that's not winner take all. And definitely attack a niche where
+            it's small enough that you can carve out your own territory, but big enough where you can actually make
+            money doing it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="925.756">
+                <a href="#925.756" id="925.756">
+                    0h 15m 25s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, the other thing about competitors, is everybody assumes that if
+            you imitate or worry about what your competitor's doing, you're assuming they know what they're doing. And
+            chances are much more likely that they're in the same boat as you, and they don't know what they're doing.
+            They're kind of figuring it out as they go. So imitating them isn't going to help you, it's just gonna mean
+            you're learning a step slower than they are. So you really have to make your own path because you're gonna
+            shoot yourself in the foot by trying to follow them around and worry about what they're doing. Because,
+            yeah, I was the same way with Sifter. I was familiar with lots of bug trackers from years of earlier
+            experience, but once I started building Sifter, I couldn't have cared less about any of the other tools out
+            there. I was interested from a user of tools. I totally avoided looking at other bug trackers. I was like,
+            oh, another one launched, okay, cool. And then probably half the ones that flew across the radar were out of
+            business within a year of launching. I think everybody just thinks, oh, it's gonna be real easy. I'll just
+            launch and I'll be a millionaire. And it definitely doesn't work that way. It does for some people, but not
+            everybody.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="991.934">
+                <a href="#991.934" id="991.934">
+                    0h 16m 31s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's pretty rare.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="992.767">
+                <a href="#992.767" id="992.767">
+                    0h 16m 32s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Few and far between, yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="994.039">
+                <a href="#994.039" id="994.039">
+                    0h 16m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And I think that's one of the things that is really cool about doing
+            podcasts with people like you, because people can listen and hear about the actual nitty gritty, and what's
+            going on behind the scenes, and the superficial information that I got from the Facebook movie, or
+            TechCrunch article is the tip of the iceberg. Sifter, you started with a small set of users. You launched
+            it, you had a beta. Over the course of, I think, the eight years that you were running it, were there any
+            really big things that you'd change that drastically increased your revenue, or any big lessons you learned
+            that really changed the course of the business?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1028.348">
+                <a href="#1028.348" id="1028.348">
+                    0h 17m 8s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">No, there wasn't anything big that drastically changed the course.
+            There were lots of little things that kind of adjusted the course. And I think the biggest thing I learned
+            is that there's rarely anything that will change the course. At least in terms of features. There's
+            certainly a lot of good and targeted marketing that can really change the course of a business, if it's done
+            well. But even marketing, you really have to stick with it. There's not, go spend $10,000 on AdWords, and
+            all of a sudden you're gonna have more customers than you know what to do with. And still, marketing is hard
+            work, too. There's not a silver bullet with marketing.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1064.482">
+                <a href="#1064.482" id="1064.482">
+                    0h 17m 44s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">What were your marketing strategies like?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1066.22">
+                <a href="#1066.22" id="1066.22">
+                    0h 17m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Just keep blogging and sharing. We spent a fair amount on ads over the
+            lifetime of Sifter. Probably something like $20,000 over eight years on everything from Daring Fireball,
+            which was a lot cheaper back then. And that was a really effective one for us. The Deck, definitely I spent
+            some time experimenting with AdWords, but it was just not fun. I wasn't excited about it, so it was hard for
+            me to keep at it. And then lots of display ads here and there, and sponsoring some sites that we liked, and
+            sponsoring podcasts that we liked. Stuff like that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1102.916">
+                <a href="#1102.916" id="1102.916">
+                    0h 18m 22s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think a lot of people's hope when it comes to advertising is that
+            they're gonna measure the lifetime value of their customers and then hit on some sort of repeatable winning
+            formula where they can buy a customer for a dollar and make two dollars.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1118.029">
+                <a href="#1118.029" id="1118.029">
+                    0h 18m 38s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's the holy grail.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1119.905">
+                <a href="#1119.905" id="1119.905">
+                    0h 18m 39s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So there was never a point where you were like, okay, well, this one
+            form of advertising is it, and we can just do this to infinity and it will work every time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1127.545">
+                <a href="#1127.545" id="1127.545">
+                    0h 18m 47s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">For us, I don't think there was any one kind of thing that really was
+            powerful. Like I said, the Daring Fireball ad, I think we spent $2500 on it, and that was probably early
+            2009. So we spent $2500 and it got us probably 30, 35 customers. But that was the only thing I think that
+            really moved the needle. And that was only moving the needle because we had probably 100 customers at that
+            point, maybe. And so 30 customers, 30, 35 customers, that's a big deal with you've got a hundred customers.
+            But down the road, 30 customers, I mean, it would have been nice, but it wouldn't have been life changing.
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1167.056">
+                <a href="#1167.056" id="1167.056">
+                    0h 19m 27s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It just gets harder and harder for any individual effort to move the
+            needle once you start growing.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1173.425">
+                <a href="#1173.425" id="1173.425">
+                    0h 19m 33s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">In some ways, too, that's all the more justification for experimenting
+            and trying different things to find the thing that could do that. I think the problem is, it's a healthy
+            balance. You want to be improving your product, but you still need to do marketing. And especially as a
+            small team, or even a solo founder, somebody who's doing everything, it's really, really, difficult to
+            juggle the two and balance the two in a meaningful way. Because so much of the marketing stuff, you do it
+            and it does nothing. So it can be really, really defeating. And you're like, nothing's gonna work. I've
+            tried five things and nothing's worked. Well, you just haven't found the one that will work. A lot of them,
+            too, it's not just whether or not they will or won't work. It takes time to get them to work. To build a
+            following and do things that are of interest to people. Probably one of the biggest mistakes people make is
+            just the buy and sell. Developers are so, or product people, I should say, because developers and designers,
+            we wanna believe if we build a great product, people will just talk about it. Even Apple markets. They spend
+            a lot on marketing. And they've got some of the highest quality products in the world, whether you like them
+            or not. They make good products. And they still invest a lot in marketing. You have to juggle both. You have
+            to spend time on both. And it can be really hard to do if you're not constantly seeing wins and reassurance
+            that your time is being well-spent.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1262.329">
+                <a href="#1262.329" id="1262.329">
+                    0h 21m 2s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Later last year, November, I decided that I was gonna make November my
+            month of growth. I'm gonna start trying all these different marketing efforts, and I kind of burned myself
+            out, posting on every single forum that I could find. And doing guest blog posts, and getting newsletters.
+            And it turned out that only one or two of my efforts really moved the needle at all, and the rest, it was
+            either never going to work, or it was going to be a super long slog that was probably going to completely
+            burn me out. And so I kind of decided to focus on the big wins. Posting on Hacker News for Indie Hackers
+            worked really well. And other than that, going on Reddit, or small subreddit, and getting two or 300 page
+            views for a site that's already getting 300,000 a month, just didn't move the needle at all.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1306.99">
+                <a href="#1306.99" id="1306.99">
+                    0h 21m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The other thing, too, as product people, as developers who aren't
+            marketers fail to think about is they go out and start screaming from the mountaintops about their product,
+            or whatever it is they're working on. Marketing isn't about shouting about your product. It's about
+            communicating to people how you can solve their problems. I made this mistake. It took me forever to figure
+            it out. And it's not rocket science. People have known this for years, professional marketers. You're not
+            selling your product, you're selling something to help improve their lives. If you just go out and say, hey,
+            look, I built this, come use it, that's not gonna be effective. But if you're, hey, if you're dealing with
+            this, I have something that can help you, here it is, try it out. It's more focused on your customers
+            problems. Then you're starting to get more into marketing. Whereas a lot of time people, if you go out and
+            just post everywhere and try different things, and you're talking about your product but you're not talking
+            about your customers and their problems, then they're like, oh, well, it didn't work. It's not that it
+            doesn't work, it's that you took the wrong approach. And I think it's too easy for people to think, oh,
+            well, I tried it and didn't work, and not think about oh, I did it wrong, and maybe I should have tried
+            this, put more emphasis on my customers instead of the product.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1390.591">
+                <a href="#1390.591" id="1390.591">
+                    0h 23m 10s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I remember doing Y Combinator, and hearing people talk about AirBnB a
+            lot. And AirBnB, I don't know if you know, but there whole story is how many years they spent totally
+            believing in their product, and they were changing it and tweaking it and iterating, but they were also
+            iterating on their marketing. It got to the point where, I think, 99% of people would have quit. Alright,
+            this is not working, it's never gonna work. And for some reason they didn't, and it ended up being the
+            company that it is today. But finding that balance between, am I doing it wrong or have I not been doing it,
+            or am I doing it right, I just haven't been doing it for long enough. It's really tricky.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1426.363">
+                <a href="#1426.363" id="1426.363">
+                    0h 23m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I think it just boils down to you have to have the tenacity to
+            know that a lot of things aren't gonna work, and you've just gotta keep going until you find out what does
+            work. And it's too easy to give up early on and say, none of this works. Am I focusing on the wrong thing,
+            and then give up. So much of it boils down to tenacity. I think that's kind of the toughest thing to explain
+            to people. It's like, well, just keep going. And they're like, oh, I've been going. Like, well, keep going
+            in a different direction. Try something different. Try to kind of get outside of your comfort zone. It's
+            hard. It's definitely not easy, otherwise everybody would be figuring it out. But there's certainly
+            opportunities out there.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1468.286">
+                <a href="#1468.286" id="1468.286">
+                    0h 24m 28s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Was there ever a point in developing Sifter that you came up against
+            some sort of challenge that felt insurmountable at the time? Or any particularly difficult point in Sifter's
+            history?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1479.252">
+                <a href="#1479.252" id="1479.252">
+                    0h 24m 39s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There's always difficult points. Everything from dealing with fraud,
+            consumed a couple weeks of attention. Which, in hindsight, it cost us a couple hundred bucks of credit card
+            fees, but that was it. But it consumed for two weeks, so emotionally it took a toll far beyond what it
+            should have. In hindsight, I would have just probably been, whatever. Just dealt with it and moved on.
+            Probably the biggest thing was, at one point, without going too much into the back story, I screwed up and
+            lost eight hours of customer data when I was trying to resize some servers and do some things. And this is
+            when the architecture was still pretty immature, and the database and everything was on one virtual server.
+            And I just made a stupid mistake being in a hurry, and lost eight hours of customer data. We recovered about
+            three hours of it. And it was, thankfully, at a time when there was less traffic, so it wasn't as much. I
+            think we did something like $700 worth of refunds. Giving customers that were affected a free month. But
+            ultimately, everybody was really understanding. When it happened, and I realized it happened, I was like,
+            crap, this is it, we're out of business. Done. And I was like, I just gotta do what I can and hopefully
+            we'll pull through. And sure enough, we pulled through. And everybody was surprisingly understanding about
+            it. I was doing everything I could to help everybody recover. There were notifications for everything, so
+            theoretically everybody kind of had a back-up in their email because of the notifications. Or a back-up of
+            most of the data. And it worked out. Just some refunds, it was tedious. Issuing the refunds was the hardest
+            part, just because it took time. But ultimately, I forget all about it all the time. Like, oh, yeah, that's
+            right. We had to go through that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1583.724">
+                <a href="#1583.724" id="1583.724">
+                    0h 26m 23s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Oh yeah, that happened.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1585.277">
+                <a href="#1585.277" id="1585.277">
+                    0h 26m 25s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I guess the biggest lesson out of that, or not really a lesson because
+            I knew it, the biggest validation out of that was that even when you screw up and make a really big mistake,
+            because losing data, it doesn't get a whole worse than that with cloud services. And being honest and
+            transparent, and just really working to help your customers and make life as easy as possible on them when
+            you screw up, people are human. They are forgiving. And as long as they know that you care and that you're
+            taking steps to make sure it doesn't happen again, sure a couple customers might leave and not trust you. By
+            and large, your customers are gonna stand by you. As long as you're taking care of them and being honest,
+            it's nowhere near as bad as what you probably imagine it will unfold like. Now, if you're dishonest and
+            misleading, and then the truth comes out, that can be a problem. But as long as you're straight forward and
+            transparent, it's a lot less painful than we all probably imagine.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1644.876">
+                <a href="#1644.876" id="1644.876">
+                    0h 27m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's basically be human and don't be an asshole.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1649.566">
+                <a href="#1649.566" id="1649.566">
+                    0h 27m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Seems to simple, doesn't it? But so many companies do not do it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1653.747">
+                <a href="#1653.747" id="1653.747">
+                    0h 27m 33s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, they don't. And I understand the psychology behind it because
+            when anything like that happens, it's like the pit drops out of your stomach.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1659.674">
+                <a href="#1659.674" id="1659.674">
+                    0h 27m 39s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's scary.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1661.803">
+                <a href="#1661.803" id="1661.803">
+                    0h 27m 41s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I feel terrible if my own website goes down. It doesn't hurt anybody.
+            Literally no one's affected. So Sifter went on, and it sounds like aside from a few minor bumps on the road,
+            it was growing steadily. And you ended up selling the business. Can you tell us about the process of selling
+            the business, and I know that since you sold it there's a little bit of an aura of secrecy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1685.287">
+                <a href="#1685.287" id="1685.287">
+                    0h 28m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I wouldn't say aura. That's up to JD now. I think he's approved me
+            sharing that it was kind of low six figures, but healthy enough so people can use their imaginations. Yeah,
+            so it was doing well. I was making a comfortable living from it. Business-wise, everything was great. I
+            spent the last three years dealing with leg issues and foot issues, as you know. At the time I decided to
+            sell, I didn't know for sure I was going to end up amputating, but it was still a very feasible thing. And
+            between all of those medical issues, and the ups and downs, the occurring revenue was fantastic, and made it
+            very, very easy to focus on health issues because Sifter still maintained and went on, and did just fine. I
+            could keep up with support, but it was harder to stay on top of new development, and things like that. Just
+            between all the surgeries and down time and recovery and physical therapy and doctors appointments, and all
+            of that stuff. The business was great in that respect. But by the time it was all starting to wind down, and
+            I felt like I had it under control, I was just exhausted from trying to juggle it all. And I didn't want to
+            be running a business anymore. I loved aspects of it, but the foot stuff took so much out of me. And I
+            wanted to kind of just step back and just reset, and all of that. And so, decided to sell it. And I'd been
+            thinking about it for awhile, through the medical issues. But at that point it was just good timing. Patrick
+            McKenzie had just sold Bingo Card Creator, and so I asked him about that, and he said great things about FE
+            International. I was like, wait a minute. So I can actually sell the business, it's realistic? Let's give it
+            a shot. And so I did, and I think that was probably one of the key things. And then joined Wildbit, and have
+            been working on that stuff, and it's been great.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1822.55">
+                <a href="#1822.55" id="1822.55">
+                    0h 30m 22s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Tell me about Wildbit. Because I wasn't familiar with Wildbit until I
+            started reading more about you and Sifter a couple months ago. We talked a little bit about it before the
+            show. You mentioned how much you like their culture. What is Wildbit, what is it like working there?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1836.623">
+                <a href="#1836.623" id="1836.623">
+                    0h 30m 36s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, so Wildbit, Beanstalk was the first product which launched, I
+            wanna say 2007 ish. Does that sound right? No it was before that. Back then. Then they launched Postmark,
+            and then DeployBot. And I say they because when they launched I wasn't there. But Sifter used Postmark, and
+            it was literally, out of every product we paid for, Postmark was the one. I just loved giving them money
+            because they just did such a great job with the product. And so I, over the years, had talked to them a lot
+            and interacted with them. Sifter integrated with Beanstalk, so I'd worked with them from a development
+            standpoint to get the integration and all the kinks worked out. And it was just one of those things where
+            over time, working with them, interacting with them, I just really admired how they did things. And got to
+            know them better, and when it came around that I was thinking about selling Sifter, I mentioned it to them
+            in passing and we just started a conversation. And it was like, well, why don't you come here. And I was
+            like, well, I don't know if I'm really gonna sell it yet. And so we decided it made sense, and went and
+            joined them. A lot of the reasons I wanted to sell Sifter and not run a business after all this stuff was
+            that I wanted to take a step back, be able to spend more time with the family, go on vacations without
+            worrying about or being on call. That kind of stuff. And Wildbit's culture is very family-focused. Not just
+            family-friendly or family-accommodating, but family-focused. And it's not just writing on the website. It's
+            really kind of the way we do things. Half the team's remote. We've got 26 people. Or more than half the
+            team's remote now, I think. And it's just a really welcoming environment. When the team members are in
+            Philly traveling to the main office, everybody gets together, not just for a team happy hour, but
+            everybody's spouses and children come. And the kids all play together. It's just more of a small
+            family-friendly set-up that just works. It meshes with where I'm at.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1969.785">
+                <a href="#1969.785" id="1969.785">
+                    0h 32m 49s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Sounds like the exact opposite of Silicon Valley, typical programmer
+            mentality.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1975.219">
+                <a href="#1975.219" id="1975.219">
+                    0h 32m 55s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It is, almost by design. I would say that there's probably a lot more
+            in common with the Basecamp crew and mentality than with Silicon Valley, for sure. Kind of have some of our
+            own opinions on things, too. But for the most part, yeah. We don't believe in working crazy hours. If it's a
+            long day, and you're exhausted, and your brain's just not firing anymore, don't sit at your desk, go home.
+            If you're working on something and you feel like you need to finish it, and it's not critical, quit working
+            on it and go home. Spend time with your family, that kind of thing. I was literally in slack with Natalie,
+            our CEO the other day, and she just randomly sent me a picture of her daughter asleep in the crib. It was
+            their daughter's birthday. And our two youngest are about the same age as well. And she's like, hey, I'm
+            just gonna take the rest of the day off and go spend it with my daughter on her birthday. I'm like, awesome,
+            cool, have fun. We don't just talk about it. Everybody kind of does it, and it's embraced and encouraged. As
+            long as you're not holding anybody up, and nobody's depending on you, we really work to make sure that
+            that's really the case. You can go do that. Take a half a day and go spend it with your family.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2049.089">
+                <a href="#2049.089" id="2049.089">
+                    0h 34m 9s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Without people thinking, oh, that guy's lazy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2051.45">
+                <a href="#2051.45" id="2051.45">
+                    0h 34m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So that's the other thing, too, right? A lot of companies, they'll say
+            that, but then if you do it, especially, well, there's the remote policy. A lot of companies are quote,
+            unquote remote friendly. But then the people who are in headquarters look down on the people who are remote,
+            like they're probably not working, they're just home goofing off. Or in that case, if somebody's like, I've
+            gotta go take care of my kid, it's like, oh, whatever, they're not committed. They're not working hard. But
+            the reality is, when you let people feel comfortable doing that kind of stuff, and taking care of the things
+            they need to take care of, then when they're working, they're more focused on work. They're not distracted
+            or stressed out by things that are going on in their personal lives. And it just makes for a healthier
+            environment. It's something that Wildbit gets intrinsically. And Natalie and Chris, they've talked about, in
+            a large part they feel like it kind of happened. They always felt that way, but having kids kind of helped
+            them see that and realize that. And so by virtue of that, it's kind of just extended, and the whole company
+            embraces it. It's just it's cool that way. It's one of those things that, in hindsight, why is this so rare?
+            This is a much healthier way to run a business. Why do more companies not embrace this?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2124.838">
+                <a href="#2124.838" id="2124.838">
+                    0h 35m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">My girlfriend tells me all the time that, she's like, all you tech
+            people, you guys are all just, she calls us producers. We're obsessed with productivity. We're the types of
+            people who might tend to push ourselves to work 16 hours a day. And so we tend to create cultures that
+            glorify that. Going back to one of the things you were saying about selling Sifter, you were talking about
+            it being a SaaS business with monthly recurring revenue, and how that helped you through the period where
+            you were dealing with your leg. And that really reminds me of the topic of passive income in general, which
+            I think is such an attractive idea. It might be the main reason why a lot of people decide to become, as I
+            call them, Indie Hackers. And start web applications that charge monthly recurring revenue. And for those of
+            you who don't know what passive income is, which is probably nobody, but it's the idea that you build a
+            product, it's a money-making machine. It makes money when you're asleep, it makes money when you're shopping
+            for groceries, and so you're not trading hours for work, or trading hours of your life for dollars, but
+            instead you build something that brings in dollars on its own. Having talked to, I think, 92 founders now at
+            this point, passive income seems almost illusory to me. There's very few businesses that I've talked to
+            where the founders aren't either A, working to grow their companies, or B, running a company where if they
+            were to leave, the income would just completely drop. Have you ever seen a truly passive business?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2214.386">
+                <a href="#2214.386" id="2214.386">
+                    0h 36m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I'm sure they're out there. For me, personally, I feel like a truly
+            passive business, it would be boring. We wanna create things. You want a challenge. And this isn't just
+            people, it's just human nature. If you're not challenged in some way, we don't grow. That's how we grow. And
+            so a purely passive business to me, it's kind of like a perpetual motion machine, right? There's probably
+            things that are really, really close, but technically it's not possible. It's a nice thing to have. It
+            certainly helped with all my recovery and my leg, and all of that. But I think the other thing is, people
+            think that it's it's maybe too glorified now, or too magical. And it's hard to lose passive income, but it's
+            hard to grow passive income, too. You've gotta justify that business giving you money month after month
+            after month. And SaaS is a nice model for that. But at the same time, you have to justify to them every
+            month. You have to keep up your end of the bargain. And so with SaaS, sure it's gonna kick in. It's gonna
+            fade away. If you aren't maintaining it, you aren't taking care of your customers, that kind of thing. I
+            think the biggest thing is just people think, oh, it's this holy grail, and it's glorified. And think, if I
+            made X thousand a month, I'd be all set. But the thing is, you don't just jump to it. Some businesses I'm
+            sure do. But you don't just jump to $20,000 a month, or whatever it is, overnight. You get there slowly. And
+            I think the biggest problem, at least listening to people who are frustrated and haven't gotten there, is
+            that it happens overnight and it doesn't. Gail Goodman of Constant Contact had a great, great, great talk at
+            Business of Software. And it's out there, if you just Google Gail Goodman, Business of Software, and it
+            talks about Constant Contact and their slow, I forget the exact title. But it's like the Long, Slow SaaS
+            Ramp of Death. And it's because when you're talking about recurring revenue, it grows slowly and steadily,
+            and it's a slog. You've gotta keep working. And that's not attractive to people, to know that it's gonna
+            take years and years to achieve success. And then there's people like Nathan, who grow ConvertKit to $5
+            million like he did so quickly. But nobody's been talking about the two years he spent working on it before
+            that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2370.11">
+                <a href="#2370.11" id="2370.11">
+                    0h 39m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Exactly. He's got a really awesome story that I hope to get him on the
+            podcast or for an interview for Indie Hackers. I think his goal was to get $5000 in five months, and he only
+            got to two and a 1/2 thousand.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2382.098">
+                <a href="#2382.098" id="2382.098">
+                    0h 39m 42s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">He should have quit, right?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2383.728">
+                <a href="#2383.728" id="2383.728">
+                    0h 39m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2385.013">
+                <a href="#2385.013" id="2385.013">
+                    0h 39m 45s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Can you imagine? ConvertKit's bringing in $5 million a year, I think.
+            That's the run rate, maybe. He could have given up. And that's the thing, it's mind blowing to me that
+            something can be going so slow and it's so tempting to give up, and that you could have missed out on that
+            opportunity because you didn't necessarily want to stick with it, or maybe there was another thing you
+            thought might be a better bet. Almost every business story that I've read, from Virgin. Right now I'm
+            reading Nike's book, the Nike, what's the title? It's about the founding of Nike. Every major company, that
+            got to be major, they went through some shit. Sorry, language. It wasn't just an easy thing. The things they
+            went through, and you're not talking $10,000 share there, you're talking millions or hundreds of millions of
+            dollars. You don't get to be that big without having a handful of those bet at all moments. You read those
+            stories, and you see the kind of scary decisions they have to make, and I know the more I've read it, the
+            more I'm like, I don't ever want a big company like that. I don't want that kind of decision. That's
+            stressful. How is that enjoyable or fun? And you really have to have that type of personality that's like, I
+            don't care. I'm just gonna deal with it and push through it and fight through it. It's not as easy as we all
+            want to believe. The more stories you read like that, the more you find out just how hard it was for all
+            these big companies to achieve what they've achieved.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2476.36">
+                <a href="#2476.36" id="2476.36">
+                    0h 41m 16s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">One of the things that I've thought a lot about since starting Indie
+            Hackers and talking to all these people is in the future, assume that we launch other ideas, is trying to
+            avoid putting myself in a situation where I think that I might fail. So that means doing things like having
+            a really quick MVP where I can validate my idea. And two to three days, a week or two tops, rather than
+            having something that takes months to get out the door. Doing it the way that you did it, I think is really
+            smart and really awesome. And I've got, at this point, a checklist of all the different things that I would
+            run my ideas through before I decided to work on anything, just to minimize that chance. Even if it means
+            giving up on maybe a potentially riskier but better idea that could make more money.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2519.51">
+                <a href="#2519.51" id="2519.51">
+                    0h 41m 59s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, and the catch there is you run the chance of over-analyzing your
+            idea to death, and then giving up on it before you even try it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2527.84">
+                <a href="#2527.84" id="2527.84">
+                    0h 42m 7s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's very true.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2528.818">
+                <a href="#2528.818" id="2528.818">
+                    0h 42m 8s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So it works both ways. It all does. You're constantly towing the line.
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2533.751">
+                <a href="#2533.751" id="2533.751">
+                    0h 42m 13s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I've got this list of a hundred ideas now. I probably add one or two
+            ideas to it every week, and it's more, for me, a process of, I'm sure that there's a lot of ideas on there
+            that could work if I put the effort into it. And it's me just filtering down to one or two that I have time
+            for. Speaking of this, you are now running a website called Starting and Sustaining, where you talk all
+            about starting, building and launching online businesses and bootstrap SaaS applications. And you do
+            interviews with founders. Can you tell us a little bit about what got you into that, when you started it,
+            and what your goals are?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2568.217">
+                <a href="#2568.217" id="2568.217">
+                    0h 42m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, so I wrote a book about it about five years into Sifter. And a
+            lot of that was driven by, there's a lot of talk about starting a business, but it's really easy to launch
+            something. It doesn't become difficult until you're hanging on for five years, and really kind of trudging
+            along, if the business isn't growing, and things you're trying aren't working, and nothing's improving it,
+            that's when it gets hard. Anybody can announce something, launch it, build it. Far fewer people stick with
+            it. And so I really wanted to talk about that, talk a little bit about launching and stuff. But I really
+            wanted to get past that and talk about how do you stick with it. What happens when you have to deal with
+            fraud and charge-backs, and you got into this to build software, but you're spending most of your time
+            running your business, or dealing with support. And in a way helping people see into the future, and see
+            what things are gonna look like. I guess in some ways, help them understand if that's really what they wanna
+            do. And in other ways, if it is what they wanna do, help them know what's coming and how to avoid it. And
+            how to not make mistakes. Some of the common, easy mistakes. And so I wrote that, and then after going
+            through all of my medical stuff, and then selling Sifter, selling, in particular. When you go through due
+            diligence, and you're looking at your business through someone else's eyes, you start to see a lot of
+            things. And you go through a lot of the am I gonna regret this, is this the right thing? What would I have
+            done differently? What should I have done differently? The more I did that and went through the process of
+            selling the business, I obviously learned how to sell a small SaaS business, but I also saw a lot more of
+            the mistakes that I made and what I should have done differently. And I felt like I need to write this up.
+            This needs to be out there for other people so they can save themselves from all the mistakes I made. I know
+            if I were to go back and do it all over again right now, Sifter would probably turn out a lot better, or
+            whatever I built would have turned out better. I just would have made better decisions. It would have been
+            less painful. I would have enjoyed it more.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2710.475">
+                <a href="#2710.475" id="2710.475">
+                    0h 45m 10s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Are there any decisions in particular that you thank you would do
+            differently?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2714.42">
+                <a href="#2714.42" id="2714.42">
+                    0h 45m 14s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, there's countless. The two biggest ones are, well, there's so
+            many. One of the biggest mistakes was one that I knew but I felt like I was doing a good enough job. And
+            that's talking to customers. There was no shortage of feature requests for Sifter. People did a lot. And
+            really helpful, useful feature requests. I implemented a lot of them. But there were a lot more that I just
+            philosophically didn't totally buy into. And I spent so much time talking to people via email that I thought
+            that was a good enough proxy for understanding our customers and our target customers. But in hindsight,
+            getting on the phone and talking to people was a totally different story. You find out different things.
+            Things that are small enough that somebody's not gonna take the time to email you about. If you're having a
+            phone call with them, they'll take the time to dive into it and explain. And you're like, I can fix that in
+            five seconds, and do a release. There's just a lot more understanding and insight. So I didn't do a good
+            enough job talking to customers because I felt that email was a good enough proxy for that. And in
+            hindsight, that was definitely, that was wrong. Completely wrong.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2790.605">
+                <a href="#2790.605" id="2790.605">
+                    0h 46m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I talked to Josh Pigford of Baremetrics recently, and he said, almost
+            verbatim, the exact same thing about how he would talk to people through email and it would give him a
+            limited amount of feedback, and he felt pretty good about it, and then he started, as part of his sales
+            process, just talking to people on the phone, and just something about being able to talk, and being
+            unflitered, and maybe something about over email you can think about exactly what you're gonna say. But in a
+            conversation it's kind of like there's pressure when there's a silence to say whatever's on your mind.
+            People just reveal a lot more about their actual thoughts and opinions and their needs over the phone. That
+            sounds like really good advice that's pretty consistent for anyone who's got customers.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2830.438">
+                <a href="#2830.438" id="2830.438">
+                    0h 47m 10s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And the thing is, too, getting on the phone and talking to people is
+            simultaneously sales and research. Especially for those first customers, and you're trying to validate and
+            figure out and kind of shift what you focus on. It's priceless, in every way, in relation to the business.
+            It's just so, so valuable. An email or any kind of text-based chat, it's not enough. Get on the phone with
+            people. If you can, meet with people in person. To me, that's kind of the key. That's the heart of it all,
+            really. Which, once you've gone through it, you hear people say it. Yeah, yeah, yeah, whatever. But once you
+            go through it, you look back, and it's like golly.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2875.428">
+                <a href="#2875.428" id="2875.428">
+                    0h 47m 55s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There's like a whole categories of advice that on their surface, they
+            just get repeated so often and they seem to so basic. Talk to customers, make something people want. And
+            people are just, like, ah, yeah, yeah. Of course I'm gonna do that. And then they don't understand how
+            amazing that advice is if you actually take it really seriously and deep dive into it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2894.693">
+                <a href="#2894.693" id="2894.693">
+                    0h 48m 14s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">People probably, they're like, that's so simple. It's too simple.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2898.75">
+                <a href="#2898.75" id="2898.75">
+                    0h 48m 18s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Deceptively simple.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2899.806">
+                <a href="#2899.806" id="2899.806">
+                    0h 48m 19s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, deceptively simple, exactly.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2903.089">
+                <a href="#2903.089" id="2903.089">
+                    0h 48m 23s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Even with just product design stuff. Just the basic user interface
+            stuff. You're always relying on assumptions, and you go into a coffee shop and you ask someone to use stuff.
+            I've never, ever built something and then shown it to people, and not been surprised by the way that they
+            use it, or their feedback. There's always going to be things that people do that break your assumptions.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2921.326">
+                <a href="#2921.326" id="2921.326">
+                    0h 48m 41s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, as a designer, or building any software, there's very little
+            substitute for watching someone struggle through your brilliantly crafted interface. And then realizing just
+            how not brilliant we all are. So there's one other thing, too, that I think in hindsight I missed the boat
+            on. And it's tough one to get right. And that's automation. You don't want to automate something too early,
+            but if you wait too long to automate something, you're wasting your time. And this is something that I've
+            spent a whole lot more time thinking about. In the heat of everything, I looked at automation as, does it
+            save me time? And if so, is the amount of time that it would take me to automate it less than the time, I
+            just kept it very simple. Can I save myself time by spending a day working on this now? In hindsight, that
+            was a really, really naive perspective. Because when you automate something, and with software there's
+            plenty that you can automate. Endless, endless options. You're not just saving yourself time. You're not
+            just saving yourself the 30 seconds it takes to perform the task. One of the examples I use for this is
+            trial extensions. People had to email in to ask for a trial extension. If they signed up over the holidays
+            and didn't get a chance to try it out. If that was the case, and they hadn't created any issues in their
+            account, they don't need to email me for a trial extension. In Sifter, I could have written logic that would
+            have been smart enough to say, oh, they haven't created any issues. Sure, give them some more time. Let them
+            extend their own trial. On the surface, I was like, oh well, it's easy. I just click a button. But I wasn't
+            factoring in the inconvenience for customers. For them to write an email versus for them to click a button
+            for themselves, that's a huge win for customers. It's not just about me and saving me time. Yes, I get to
+            save time, but that's almost a bonus at that point. And there's a lot of tasks like that that there's almost
+            a progression for automation that I see now. At first you just do it totally manually until it hurts. And
+            then you automate it a little bit to make it a little less painful for you. To the point where you slide all
+            the way down the spectrum to where customers can do it themselves without asking you for anything. So
+            imports and exports is another thing. At first you might do things manually like that for customers, and
+            then you might open those tools up to customers, let them do it themselves. And then, in some cases, you can
+            even completely automate it. Just have the system be smart enough to recognize situations and handle it
+            proactively. The other huge bonus to all of that, and this is part of the reason that it really got me
+            thinking about automation, was when you go to sell a business, or when you go to train somebody else to do a
+            certain role, the more automation you have in place, the less painful that is. Because when you sell a
+            business, you have to teach another team how to run the business the way you do. And the more things are
+            automated, the less you have to teach, and the simpler that process is. The more attractive the business is,
+            the higher valuation you're gonna get because they're not gonna be like, this is really painful for us to
+            do. Even if you don't ever sell the business, eventually you're probably gonna hire somebody to help you.
+            And by having that stuff automated, it's trivial to train them. Because now they've got all the stuff they
+            need already there in place, and you can focus on the things you need to focus on. So it's one of those
+            things, it's just an all around win. You don't want to just arbitrarily automate everything. But if you're
+            mindful and looking for those opportunities, it can really, really, really make a difference in how you run
+            the business and how much you enjoy running the business. The other thing, too, depending on the type of
+            task, there are a lot of things for me that would be 30 second tasks. But anything that's 30 seconds, once
+            you're at 30 seconds or a minute, you've got some context switching costs in there, too, right?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3156.181">
+                <a href="#3156.181" id="3156.181">
+                    0h 52m 36s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's basically 10 minutes.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3157.107">
+                <a href="#3157.107" id="3157.107">
+                    0h 52m 37s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, it's basically 10 minutes, or even longer. If you get distracted
+            because you're switching apps and you get sidetracked by Twitter or whatever, email, then who knows, it
+            could be 30 minutes. So the cost isn't ever simply let me time myself performing this task. There's a lot of
+            risk in losing time by distraction.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3180.755">
+                <a href="#3180.755" id="3180.755">
+                    0h 53m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's the worst for me, by the way, Twitter. Because one of the tasks
+            on my weekly to do list is in a tweet, I need to be sending out tweets every day. And inevitably, I go to
+            send out a tweet, and I just send retweets for an hour. One of the things that I've noticed about, and I
+            think it's interesting about your Starting and Sustaining book and your blog is really that you're giving
+            all sorts of advice that's based on your experience and based on things that you've learned. I have a
+            question for you: is there any books or movements or philosophies that you find particularly true or
+            compelling?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3220.751">
+                <a href="#3220.751" id="3220.751">
+                    0h 53m 40s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">About development and business?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3224.561">
+                <a href="#3224.561" id="3224.561">
+                    0h 53m 44s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">About entrepreneurship, specifically.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3228.247">
+                <a href="#3228.247" id="3228.247">
+                    0h 53m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">For me, it's kind of two things. One, it's that drawing a lot of
+            inspiration from what other people are doing. Just like I'm trying to share things so that other people
+            don't make the dumb mistakes I made. Trying to learn from everybody else mistakes and what they've figured
+            out over time. But at the same time, trying to pull it all together and synthesize it into something that
+            feels right for me, and that I'm comfortable and happy with. So there's countless influences. There's tons
+            and tons of people, and the more people I interact with, the more I learn and figure out. There's just so
+            many people that have a lot of great insight and wisdom that it's kind of hard to point to one place and say
+            this person, they're the wind beneath my wings. But there's not just different sources, but opposing
+            sources. Most of the people I know have bootstrapped their apps. I've talked to a lot of people about
+            bootstrapping extensively, but I've also made a point to try and talk to people who've raised money. And the
+            pros and cons. And to read about the opinions of people who've raised money. What they regret, whether they
+            were happy with it. So that I have some context and kind of understand, and can form a stronger opinion
+            about why I feel the way I do about different topics.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3313.267">
+                <a href="#3313.267" id="3313.267">
+                    0h 55m 13s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, that makes a lot of sense. I think the worst thing that anyone
+            can do is to make decisions without being aware that they're making them. Or without being aware of why
+            they're making them. And on that note, I'd like to ask, is there any advice that you have in particular for
+            aspiring entrepreneurs, people who are starting their businesses, or mistakes that you see people making
+            often?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3334.362">
+                <a href="#3334.362" id="3334.362">
+                    0h 55m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Beyond the stuff that we've already covered, I'm not sure. I would say
+            two things. And these are more my personal things. They may not be super relevant for others, but I feel
+            like they probably are. One is to, before doing it, make sure you know that you want to start a business. I
+            feel like too many people, and now I know better and understand, but I feel like I wanted to start a
+            business because I wanted to start a business. And Sifter kind of happened, but I knew someday I wanted to
+            start a business. I just didn't want to do it then. So really make sure you want to start a business.
+            Understand what it means to start a business. Don't just start a business because that's what everybody's
+            doing, and that's what you feel you have to do. And then the other thing is kind of an extension of that,
+            which is to, what's the best way? And this kind of goes back to the philosophies of merging and start a
+            business your way. There's too many stories out there where people are sharing what worked for them. And I
+            feel like people will see that and they're like, I'm gonna do that. But it doesn't always work. And I think
+            it just would help for people to go, I wanna blaze my own trail. So focus more on do what works for you.
+            Don't try to copy what other people have done. Learn from other people, see what they've done, but then
+            factor that into your decision-making. Don't just let that be the decision.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3417.51">
+                <a href="#3417.51" id="3417.51">
+                    0h 56m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Cool, and that is excellent advice. And on that note, I think it's a
+            pretty good place for us to stop. Can you tell everybody where they can go to read more about yourself and
+            what you're working on now?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3428.731">
+                <a href="#3428.731" id="3428.731">
+                    0h 57m 8s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yes, so <a href="http://garrettdimon.com" class="linkified"
+                target="_blank">garrettdimon.com</a>, with two Rs, two Ts, dimon dot com. And <a
+                href="http://startingandsustaining.com" class="linkified" target="_blank">StartingAndSustaining.com</a>,
+            which right now it's a Medium site. But it's going to be a little more ambitious here in the near future
+            with the podcast and the second edition of the book as I start working on that in the open. Hopefully in the
+            next couple weeks.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3453.548">
+                <a href="#3453.548" id="3453.548">
+                    0h 57m 33s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Awesome, thanks for coming on the show. And hopefully I can talk to you
+            again in the future at some point.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/004-garrett-dimon-of-sifter.jpg">
+            <span class="episode-transcript__speaker-name">
+                Garrett Dimon
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3457.632">
+                <a href="#3457.632" id="3457.632">
+                    0h 57m 37s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, of course, thanks for having me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3466.26">
+                <a href="#3466.26" id="3466.26">
+                    0h 57m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">If you enjoyed this episode of the Indie Hackers Podcast, you should
+            join Garrett and me on the <a href="https://www.indiehackers.com/forum" target="_blank">Indie Hackers
+                forum</a>, where we'll be discussing this episode, our conversation, and answering your questions, too.
+            Just visit <a href="http://www.indiehackers.com/forum" class="linkified"
+                target="_blank">www.indiehackers.com/forum</a>. Thanks, and see you guys next time.</p>
+    </div>
+</div>

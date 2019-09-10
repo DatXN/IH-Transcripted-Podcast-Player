@@ -1,0 +1,1331 @@
+<div id="ember48" class="episode-transcript ember-view">    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="7">
+          <a href="#7" id="7">
+            0h 0m 7s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What’s up, everyone? This is Courtland from <a href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a> and you’re listening to the Indie Hackers Podcast. On this show I talk to the founders of profitable internet businesses and I try to get a sense of it’s like to be in their shoes. How did they get to where they are today, how did they make decisions at their companies and in their personal lives, and what exactly makes their businesses tick? And the goal here as always, so that the rest of us can learn from their examples and go on to build our own profitable internet businesses.<br><br> Today I am lucky to be talking to Evan You. Evan is the creator of a JavaScript framework called Vue.js, or sometimes just Vue. Vue is used by hundreds of thousands of programmers all over the world to help them build their apps and websites. It’s even in use at companies like Netflix and Facebook. So it’s tremendously popular and influential. I think my favorite thing about it is that it’s essentially the brainchild of just one person, Evan You. So Evan, welcome and thanks for joining me on the podcast.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="56">
+          <a href="#56" id="56">
+            0h 0m 56s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Thanks.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="57">
+          <a href="#57" id="57">
+            0h 0m 57s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">We’ve got a mix of people who listen to this podcast. A lot of them are programmers who know exactly what Vue is, and I’m sure some who don’t. But there are also a lot of people listening who have no idea what Vue is. They don’t know what a JavaScript framework is or even what JavaScript is or what open source is. Can you take a stab at maybe explaining what you’re doing in a way that everybody can understand?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="78">
+          <a href="#78" id="78">
+            0h 1m 18s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">JavaScript is a programming language almost everyone uses to build applications on the web. If you’re using Gmail, Gmail is built with JavaScript. Gmail is an application inside the browser. It’s pretty complex. It has a lot of special logic. It has to manage all these interfaces that you’re seeing, buttons you’re clicking on. Naturally it becomes very complex when you try to build something like that instead of a simple website.<br><br> This is where frameworks come in. Frameworks are essentially abstractions and a set of libraries that help developers to build this kind of complex applications, make it easier for them to build such applications. Vue.js is one of those frameworks.<br><br> It is open source, in the sense that we publish our source code completely free. Anybody can just use it whenever they want to, which means we don’t charge any money for people using it. That makes it kind of unique in the sense that as someone who works on it full time, I still need to find ways to monetize it, but just not directly sell it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="145">
+          <a href="#145" id="145">
+            0h 2m 25s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think most people listening in to this would think that you’re sort of the stereotypical programming whiz, that you’re this professionally trained programmer who has a degree in computer science. You’ve been making apps since you were six. But actually none of that (inaudible). What’s the story behind how you learned to code?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="56">
+          <a href="#56" id="56">
+            0h 0m 56s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">My first contact with something close to programming is probably through Flash. I was playing with Flash in middle school when a cousin of mine showed it. I was like, “Wow, this is cool!” So I started playing with Flash a lot, but at that time the most common thing I did was just copy-pasting all these little scripts that I found on the internet into the things I was building.<br><br> I didn’t really understand any sort of serious programming patterns until later. In college I took one computer science class, which was Introduction to Programming with Java. I actually didn’t like it that much. I felt Java was pretty verbose. It kind of made it very difficult for me to just directly jump from start to getting something on the screen.<br><br> So I kept playing with Flash. I actually bought a book on ActionScript 3 to teach myself how to make more use of programming concepts inside of Flash. Later on I went to a master’s program called Design Technology. It’s a Master of Fine Arts program. It taught me both a bit of programming and a lot more design stuff. That was the time I actually started to seriously learn JavaScript because I noticed that you can do a lot of interesting things directly in the browser. It made it very easy to share with people. That’s how I started to say, “I want to learn programming properly so that I can build more complex and advanced stuff.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="253">
+          <a href="#253" id="253">
+            0h 4m 13s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What was driving you to learn all this stuff? I think most people, when they encounter that first sort of hurdle, when they take that programming class in college and it’s not fun, they just quit there. Why did you keep programming? Was it something you loved doing, or was there something else that you wanted to achieve through programming?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="269">
+          <a href="#269" id="269">
+            0h 4m 29s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think mostly I wanted to build things. I have this urge to create all the time, although the things I wanted to create kind of changed over time. Initially I thought I was going to become a designer, so I was designing some websites with friends. Then I started trying to build these websites myself, because I couldn’t find anyone to build it for me.<br><br> In that process I kind of had to force myself to learn all the necessary little things, to learn how to deploy a website, learn how to properly use JavaScript and actually how to manage the (inaudible) application, which gets into more complex territories over time. Mostly I’m self-taught, just because I was trying to learn the necessary things that allow me to build the things I want to build.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="313">
+          <a href="#313" id="313">
+            0h 5m 13s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So you got an MFA, a Master of Fine Arts degree. I’m curious why you went that route instead of getting a traditional CS degree, when you knew that you wanted to be a builder of things, you knew that there was this golden path out there that would teach you what you needed to know.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="328">
+          <a href="#328" id="328">
+            0h 5m 28s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">The kind of things I wanted to build was always leaning more towards the creative side. The things that I (inaudible) like most was websites like FWA. I don’t know if anyone knows about it, but it’s Favorite Website Awards. It was mostly super-flashy, super fancy, heavy animation sites, Flash sites back in the days. That’s what got me to say, “I want to build things on the Web.” Although that kind of website is – most of those websites are just marketing, one-off marketing sites. But a lot of them consisted of these really interesting interactive bits, things you don’t typically do in serious applications. I was actually interested more in that area of stuff, which led me to study design technology programs (ph), which in fact very closely connected to this creative marketing side of things.<br><br> Later on it deviated a little bit because when I was building some of those experiments, I was trying to abstract all the reusable parts, which eventually turned into my little set of libraries. That was, I guess, leading into what I did with Vue is essentially taking all those learnings and abstracting it into something called framework.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="411">
+          <a href="#411" id="411">
+            0h 6m 51s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Let’s talk about Vue. Say you’re working on Vue and the way you make money is primarily through donations on Patreon. So I can look up your Patreon Page right now. I see that you have 232 people who are donating a total of $16,547 to you every month so you’ll keep working on Vue. That’s a lot of money to make on your own, on your own project. When you first set out to work on Vue, was it your goal to achieve something like this?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="436">
+          <a href="#436" id="436">
+            0h 7m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Definitely not. When I started working on Vue, it was completely an experiment. There were already other frameworks out there, like Angler 1. I think React came out earlier than Vue as well. But very few people knew about it back then.<br><br> When I started working on Vue it was mostly an experiment, saying, “Hey, there are these frameworks out there. Can I make my own?” Because it looked fun. There was some lower-level technical stuff I wanted to try out in my own framework. That was the primary motivation when I started the project.<br><br> But it grew organically later on when more users started actually using it in their applications. They told me they liked it. I heard this over and over. I was like, “There must be something to it. There must be something in this little thing that I created. I should probably spend some more time on it, try to make it better and see where the full potential is.” Eventually it got big enough that I realized I could probably try to monetize it in some way.<br><br> Patreon seemed like the way that requires the least maintenance, on having to think about it. I set it up, people donate money and they’re charged automatically so I don’t need to worry too much about it. So that I can keep focusing on creating instead of just trying to think about monetizing it all the time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="523">
+          <a href="#523" id="523">
+            0h 8m 43s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">It’s fascinating that you started this as a hobby with no real goal of making any money from it whatsoever, and yet it’s resulted in this massive business win for yourself. I know a lot of people who start out on day one, trying to make money, and never get to that amount of revenue every month.<br><br> Do you think that, if it had been your goal for Vue to be a business from day one, if you had set out to make 10 or 20,000 dollars a month, that you would have done things differently from the start?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="547">
+          <a href="#547" id="547">
+            0h 9m 7s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I would have probably done it very differently. I think one of the biggest advantages of starting out without thinking about monetization is that I only focused on making it good. Because I had a day job when I started working on it. So I wasn’t really pressured to say, “I need to monetize as fast as possible.” So I had a long time to just slowly think about what was the best way forward, and polish all the little technical details, write very lengthy documentations.<br><br> All of these little things add up. When I eventually wanted to work on it full time, it was already solid enough that people are willing to say, “This is something worthy of paying money for.” Although they’re not paying for it directly, these companies are saying, “This is something with momentum so we’re willing to sponsor it.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="597">
+          <a href="#597" id="597">
+            0h 9m 57s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Let’s walk through the beginning of your journey here, when you’re working your day job. You’ve got, I suppose, free time on the side or maybe time at your day job to work on this. How did you decide that Vue was a thing that you wanted to build? Did you have ideas for other projects that were competing for your attention?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="612">
+          <a href="#612" id="612">
+            0h 10m 12s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. Vue was just one of many little experiments I had back then. When I started Vue I was working at Google as a creative technologist. My job at Google involved very fast iterations on these interactives, experiments, prototypes. I worked at a place called Google Creative Lab, where it’s a very versatile team. We had programmers, creative technologists, designers, copy writers, purely creative strategists. We keep cranking out these crazy little ideas all the time and we had to have very fast turnaround time. Whenever we got some interesting idea coming in, I needed to just start on it, build something really quick.<br><br> In that process I was also – whenever I had interesting little technical ideas, I would just build a little library, publish it on NPM or just try to make a little open source project. It was kind of like a mini portfolio for a creative technologist.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="669">
+          <a href="#669" id="669">
+            0h 11m 9s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">How quick is quick? When you say you’re iterating (inaudible) projects, you’re taking weeks? Or months? Days? How long does it take you to get out one of these things?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="677">
+          <a href="#677" id="677">
+            0h 11m 17s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think average is two to three weeks per project.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="680">
+          <a href="#680" id="680">
+            0h 11m 20s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">OK. So you’re going super quick.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="682">
+          <a href="#682" id="682">
+            0h 11m 22s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">From start to finish.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="684">
+          <a href="#684" id="684">
+            0h 11m 24s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Wow.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="684">
+          <a href="#684" id="684">
+            0h 11m 24s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. Because those projects are not – we’re not trying to ship a complete product to the users. It’s more like we start from an idea, then we finish at something that’s deliverable to a real product team where they can evaluate this and maybe iterate on top of it to make it a real product.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="701">
+          <a href="#701" id="701">
+            0h 11m 41s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s cool. You’re at this big business, Google, but you’re kind of getting almost startup practice. They’re like, you need to iterate and build these things quickly. So you’re getting in the habit of launching things without wasting tons of time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="712">
+          <a href="#712" id="712">
+            0h 11m 52s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Exactly. It was a really good experience, definitely.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="709">
+          <a href="#709" id="709">
+            0h 11m 49s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Was Vue one of these projects that you worked on for Google, or was it a project that you decided to work on for yourself while you were a creative technologist?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="723">
+          <a href="#723" id="723">
+            0h 12m 3s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That was completely for myself. We were doing a bunch of things. A few of those projects actually required something more like a proper UI framework. A few of those projects used Angular 1. But the decision was made by some of my coworkers who introduced Angular 1 into those projects, which I happened to collaborate on. I was using Angular and there are bits of it that I liked, bits of it that I didn’t.<br><br> I felt like, “This feels really useful and I could completely have something like this for myself that I could use in my personal projects.” Because creating it myself allows for me to just throw away the things I didn’t like about Angular. Also it was good practice. I was curious as a technologist. I was curious how it was done. I wanted to find out whether I could do it. It started as a really, really simple experiment, proof of concept almost. It sat in my drawer for a good six months before I decided to open source it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="784">
+          <a href="#784" id="784">
+            0h 13m 4s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">You mentioned that you guys were using Angular, which is another one of these front-end JavaScript frameworks just like Vue. It was created at Google, so I can only imagine that every team at Google was also using Angular. Also around the same time, there was React, which you talked about earlier, another front-end JavaScript framework created by Facebook.<br><br> Both of these companies, Google and Facebook, are known for having some of the best programming talent in the world. I think that would be enough to stop most people in their tracks and discourage them from ever going on build their own JavaScript framework. Why didn’t that stop you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="814">
+          <a href="#814" id="814">
+            0h 13m 34s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">When it began, I didn’t really think about competing with them. That was a blessing, because I didn’t have to pressure myself about, “Oh, these bigger libraries can do these things but mine can’t. These bigger libraries have these backing but I don’t.” I didn’t have to think about it, because I wasn’t trying to compete with them. I just focused on making the libraries (inaudible) good enough that I would feel like technically it would be on the same level. Then naturally some people discovered that, “Hey, there’s this independent thing but it’s as good, in some way.”<br><br> On the other hand, when we were trying to say, “We build a library.” It’s interesting because React, Angular and Vue have some different sort of, I would say flavors in terms of the API design. Programmers naturally have different tastes in the programming tools that they want to use. For example, some people like dynamic languages like JavaScript, Ruby, Python. Some people like a lower level language like C or Rust. Some people like strongly typed languages, very complex type system, right? People have different tastes. So do front-end developers when they are picking a library or framework.<br><br> Vue started off from my personal tastes of what I would like as a framework. I think that happened to coincide with a lot of other developers’ tastes, which allowed it to naturally attract developers that had a similar mindset with me. There are a lot of front-end developers, especially in these creative agencies, little companies, small business, small teams, compared to those with, say, a huge enterprise, huge corporation. They actually have very different development models and mindsets, team setup and also their own technical backgrounds, right? It’s very diverse.<br><br> Vue captured the group of developers that there is this, I would say, a market fit that’s unique to Vue. Which I didn’t realize when I started. Looking back, I think that’s what’s made Vue succeed naturally over time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="943">
+          <a href="#943" id="943">
+            0h 15m 43s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s really fascinating. You built this perfect, I want to say niche, product that appealed to a very small subset of programmers. Maybe not that small after all. But at the time you didn’t know that you were doing that. You said that you were focused on making Vue good. What did good mean to you in the absence of a target audience?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="960">
+          <a href="#960" id="960">
+            0h 16m 0s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Good means it provides a good development experience, right? Because I am a developer myself. So before I built Vue I was a consumer of such libraries and frameworks. When I’m building apps, I would come up with a list of things that I like and don’t like about these tools that I was using. When I built Vue I tried to hit all the boxes that I like about those previous tools. When I use a library, I’m like, “Oh, wow, this is a cool idea. If I were to build a framework myself I would definitely do this.” Sometimes when I’m doing something else, “I wish there could be a tool that allows me to do this, and if I were to build it myself, I would definitely do it.”<br><br> All of these little things that accumulate over time as a consumer of other tools, sort of culminated into this – when I finally get the chance to create something for my own, I just pour all of these little things into the thing I am creating. I think that resonates with a lot of other developers as well.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1020">
+          <a href="#1020" id="1020">
+            0h 17m 0s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I wonder how much Vue changed as a result of you eventually opening it up for other people to use? Because it sounds like in the beginning, you had your own personal checklist of what you wanted to see in the tool. On one hand, it’s true that other people might be just like you. But when you first started showing it to people, was it the case that they were all just like you? Or did you have to go back to the drawing board and re-evaluate some of your assumptions to make changes to Vue in order to make it better for other people to use as well?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1046">
+          <a href="#1046" id="1046">
+            0h 17m 26s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">The good thing is, when I first open sourced Vue, it was more like, “Hey, I made something cool. If you like it, just use it. If you don’t, I don’t really care.” That was really my attitude when I first open sourced it.<br><br> Later on, we actually had a proper community. We had a decent amount of users. When we were trying to do the 1.0 release  - and 1.0 is something special when you’re releasing software, because there is this convention called semantic versioning which means once you release a major version, you’re not supposed to make any breaking changes until the next major version.<br><br> So 1.0 really meant something and we wanted to really get it right. That was the first time we actually had to say, “I am proposing that we make these changes,” and let people voice their opinions on whether this looks like a good idea or not. We had really lengthy debates and discussions on what should and should not be done before we finally released 1.0.<br><br> That marked the point where it transitioned from a completely personal project to something that’s more or less a community product where users had a voice in the decisions being made.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1128">
+          <a href="#1128" id="1128">
+            0h 18m 48s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There’s so much there that I want to talk to you about, especially this 1.0 launch. This process of taking what was previously this private, personal project and making it something public is really interesting. But first, let’s go back to the days before that. A lot of people that I talk to are in the situation that you’re in, where they have a passion project of sorts, but they also have a full-time job. It’s difficult to navigate doing both of those at the same time. How did you find the motivation and the time and the energy to complete such an ambitious side project while working a full time job?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1160">
+          <a href="#1160" id="1160">
+            0h 19m 20s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I guess I was lucky because I started the project when I was young and didn’t have kids (laughter). So I had a ton of free time outside of my day job. I remember working on Vue late at night on weekends. I really did spend a lot of time outside of my regular job.<br><br> The motivation part, I think was because I just wanted to create something cool and good. It was kind of like proving myself as a competent developer or a competent technologist. Initially it was an experiment, but at some point when people started using it, I started to look at it more as a product. I wanted to build something that makes myself proud. I wanted to build something that, when people mention it they’re like, “Oh, that is a cool project.” That was the thing I was aiming for when I was spending those weekends working on it.<br><br> It was almost a hobby to some extent. I remember there was a period of time when if I just didn’t know what to do I would crack open the editor and start working on Vue. Obviously it’s getting more difficult to do that today, but in the early stages this mode is kind of what made it tick.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1239">
+          <a href="#1239" id="1239">
+            0h 20m 39s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">How long did it take you to get Vue from the point where it was just an idea, to a real thing that other people could start using?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1248">
+          <a href="#1248" id="1248">
+            0h 20m 48s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think the first commit (ph) was in June or July 2013. And the first public release was in February 2014. So that’s six to eight months, I think.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1264">
+          <a href="#1264" id="1264">
+            0h 21m 4s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Was it just you working on it by yourself that entire time? Or were you showing it to people and collaborating?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1270">
+          <a href="#1270" id="1270">
+            0h 21m 10s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think it was mostly just me. It was this completely random folder in my laptop. I kept working on it over time. That early eight months it wasn’t as intensive as it was later. It was mostly whenever I had spare time, I felt I wanted to play with something I would work on it a little bit. The more intensive part was before the 1.0 release. I was working really hard on it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1297">
+          <a href="#1297" id="1297">
+            0h 21m 37s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Let’s talk about that process of getting ready for this 1.0 release. You mentioned that you open sourced Vue. A lot of people listening don’t even know what open source is and aren’t sure what that process is like. How did you open source Vue and how did you get your very first Vue users?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1312">
+          <a href="#1312" id="1312">
+            0h 21m 52s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think a typical way for developers to open source something is first you put it on GitHub. GitHub is the place where you can share the source code of your project so everyone can look at every line of code you wrote and understand what you’re doing. The first thing you do is, I put the source code of Vue onto GitHub. You want to make sure that is the repository is actually public so everyone can see it.<br><br> Then I posted a link to HackerNews, which is the place where a lot of developers show off the new cool stuff they’ve built. It’s kind of like Product Hunt but only for hackers. I also submitted to some of the blogs, back then there were a few blogs that showcased new JavaScript projects every week.<br><br> The one that got the most attention was the HackerNews post, where I got two hundred-ish up-votes. It got uploaded to the front page, which is quite difficult for something that’s completely new. Hacker News has some really weird algorithm in determining whether your post can stay on the front page. You had to, say, get really anonymous up-vote, decentralized up-votes. Basically if they detect anything, you’re trying to, say, ask a bunch of friends to up-vote your post, they will de-prioritize it. Somehow the post got up-voted and stayed on the front page for quite a few hours. That (inaudible) the first batch of traffic. That was how I got the first group of users. They discovered it on HackerNews.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1415">
+          <a href="#1415" id="1415">
+            0h 23m 35s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I didn’t know that you launched on HackerNews. I also launched Indie Hackers on HackerNews, a couple years after you launched Vue. I’m reading the HackerNews thread right now and it’s funny looking at the comments. One person said, “I do very little front-end development. But I really like this. It seems much more light weight than Angular or Ember but similarly powerful.”<br><br> How much were you learning from finally revealing what you were working on to the world and seeing feedback like this?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1438">
+          <a href="#1438" id="1438">
+            0h 23m 58s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I wrote a blog post about it. It’s on my blog called First Week of Launch of Vue.js. I did a little postmortem, where I summarized the things I did. I submitted to HackerNews, Reddit, EchoJS, DailyJS. These are just these sub-communities that focus on JavaScript. Took a look at the business stats and all that.<br><br> I think the take-away was that you have to think about it as a product more than just a technical library, because when people try to evaluate a technical solution, they not only look at the code and what it achieves. They also look at your overall presentation. Did you have a good readme that explains what problems you’re trying to solve, and how you compare with other similar solutions. They also read your code to evaluate whether it’s solid enough. A lot of these little details would add together when you’re launching something that is open source.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1495">
+          <a href="#1495" id="1495">
+            0h 24m 55s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Let’s talk about this process of growing an open source JavaScript framework. Open source is fascinating in that I can’t readily think of an analogous phenomenon in any other industry, where the people will toil and sweat and work and then put all of the results of their work online free for everybody else to use and copy whenever they want. What are some of the strategies you’ve used and the challenges you’ve overcome to succeed in a space like this?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1521">
+          <a href="#1521" id="1521">
+            0h 25m 21s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There are several different types. There are many different types of open source projects, actually. If you think about companies that’s built on top of open source, there are quite a few examples like Red Hat, which was acquired for billions of dollars. It’s built on top of adding services on top of Linux, which is pretty much free, and then the rmongodb or Oracle, which are these huge corporations actuallly started on building on top of open source libraries.<br><br> But here Vue is probably, compared to them, it’s a completely different scale, different scales. Vue is a completely independent open source project that started out as a hobby project. Something I think that would be along the lines of Vue would be things like Laravel. But if you take a look back, Linux started out as a one-man project as well.<br><br> I think there are two parts of this. The first is you need to have someone who is passionate enough about it to invest their own time into it in the beginning. Then when it gets momentum, it gets big enough then there could be potentially some business opportunities. You would build a traditional business around it.<br><br> But in many more cases, most of the time, these individual open source projects would fall in the chasm where it’s big enough that it has a consistent group of users with enough demand, however it’s not big enough to be properly monetized in order to support its maintainers to work on it full time. That’s the most difficult thing for open source projects to get over with. I call it the chasm. You’re big enough that it takes up so much of your time, but it’s not big enough that it would pay you to work on it full time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1636">
+          <a href="#1636" id="1636">
+            0h 27m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">How did you know that you weren’t in that chasm? At what point did you come to that realization that, “Oh, I can make money from this and quit my job?”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1644">
+          <a href="#1644" id="1644">
+            0h 27m 24s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I wasn’t even sure when I quit my job. When I quit, I had the Patreon set up. Before I quit I was pondering the idea. I wasn’t entirely sure whether I would be able to survive out of this. Then there was a company in China, a startup. I’m good friends with its CTO. We knew each other and I was telling him, “I’m thinking of working on this thing full time.”<br><br> He was like, “We have this little fund in our company where we just use it to support open source projects. I can arrange so that we are supporting you for $2,000 a month for six months straight.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1685">
+          <a href="#1685" id="1685">
+            0h 28m 5s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Wow.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1687">
+          <a href="#1687" id="1687">
+            0h 28m 7s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. That really gave me the boost needed. I was like, “OK, I would get some bit of money to work on this now.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1696">
+          <a href="#1696" id="1696">
+            0h 28m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s so helpful.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1697">
+          <a href="#1697" id="1697">
+            0h 28m 17s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. That definitely helped a lot. Then I started my Patreon. So combined with that money I got from the startup plus the other money I got from Patreon, I think shortly after I started working on it full time I reached $4,000 a month. That was the point when I felt less intimidated. I was like, “This is generating income. It’s actually growing over time.”<br><br> That was the point when I was like, “I could actually keep doing this for a bit longer.” Because when I quit, I had some savings. I was really just thinking, “I’ll try this maybe for a few months. If it doesn’t work out, I’ll just look for a new job.” I had a few resumes sent out at the same time I quit.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1743">
+          <a href="#1743" id="1743">
+            0h 29m 3s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Were you thinking about quitting your job for a long time before you quit, or was it suddenly you got this $2,000 a month in your bank account and you just went for it?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1751">
+          <a href="#1751" id="1751">
+            0h 29m 11s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I’d thought about it for quite a bit. Before I quit, I was already feeling the pull between this project versus my day job. To be honest, the feeling I got was, I felt more fulfilled working on Vue versus my day job. That was one of the primary reasons to quit. Working on something that I’m genuinely passionate about is such a big bonus that I’m willing to take a pay cut so that I can work on it. Because it makes me feel more fulfilled and makes me happier about what I do. Turns out, it worked out better than I hoped. I’m working on something that I like and I’m making more money than before. So that’s really good.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1795">
+          <a href="#1795" id="1795">
+            0h 29m 55s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Did you try anything else before quitting your job, to guarantee that you would get revenue? Or was this conversation that you had with your friend and his business your first attempt at trying to secure some funding for Vue?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1808">
+          <a href="#1808" id="1808">
+            0h 30m 8s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">When I was quitting, my first primary goal was so that I could focus on making Vue better. I wasn’t thinking about, say, building a company around it. I wasn’t really aiming at building a business that would generate as much revenue as possible. It was more like a lifestyle decision. In fact, since I started working on it full time, the first thing I did was I dropped everything and started rewriting Vue from the ground up. That was the start of Vue 2.0.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1839">
+          <a href="#1839" id="1839">
+            0h 30m 39s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">How worried were you, after you quit, that you might eventually get to a position where you weren’t making several thousand dollars a month, and that your business wouldn’t eventually work out for you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1848">
+          <a href="#1848" id="1848">
+            0h 30m 48s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I definitely worried about it to some extent. But the reason I went with something like Patreon was, I deliberately set up the whole sponsorship deal so that I don’t have to do anything in return other than work on Vue.<br><br> A lot of the things I saw some other open source projects do is that they set up these sponsored tiers and they try to always – because typically when you set up a Patreon campaign, people expect to get something in return, specifically for the amount of money they pledged. If you pledged, say, $20 a month, you would give some little (inaudible) swag, stickers in return. Or if they spent $500 a month, you would have to, say, give them exclusive updates or something special.<br><br> I didn’t set up anything like that. I was pretty much just saying, “If you pledge enough money, you’ll get a bigger logo on the website.” That’s it. You get some exposure through our website, but I wouldn’t do anything special just because you gave us more money. We take the money so that we can spend our time working on Vue to make it better.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1915">
+          <a href="#1915" id="1915">
+            0h 31m 55s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">And what’s in it for these people and these companies who are sponsoring Vue, especially at the beginning when you didn’t really have that much to offer? How were you convincing them to support your project?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1924">
+          <a href="#1924" id="1924">
+            0h 32m 4s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">In the beginning, the first initial sponsors or donors mostly were supporting Vue because they were using it and they liked it. They didn’t want the project to die. Simple as that. On the Patreon I made it clear that this is my primary income source and I need to make enough money from this so that I can dedicate my time on Vue. So for them it was pretty much like they were building their product on top of Vue, so it’s in their best interest that Vue is continued to be maintained and be made better. For them it’s almost like an investment, just not so direct. The return is not so directly reflected the moment you spend the money. But for them, putting down the money gives them a better chance of Vue being relevant and maintained and stable for the long run. I think that’s a wise decision on their part.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1979">
+          <a href="#1979" id="1979">
+            0h 32m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, it really is. This is not, “Hey, pay for Vue and I’ll provide you some theoretical value in the future.” This is, “Your entire company’s product is built on top of this framework. If it goes away, it’s going to cost you many hundreds of thousands, if not millions of dollars, to re-write your product from scratch.” So it’s worth them contributing a few hundred or thousand dollars a month.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1997">
+          <a href="#1997" id="1997">
+            0h 33m 17s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. Also it’s funny, because I realized a lot of companies say they’ve really built something and they realize in the end, the thing they’re built on top of is dead or gone. They would have to hire someone to completely re-write this thing. The cost of re-writing an existing product is huge. It’s like you’re paying insurance so that you don’t have to re-write your app in two years.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2022">
+          <a href="#2022" id="2022">
+            0h 33m 42s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What’s interesting is that there are lots of open source projects that big companies really depend on, that are crucial to their success, yet that haven’t been able to successfully garner the kinds of donations that you’ve gotten for Vue. Why do you think that is? What’s hindering them, and what is it that’s helping you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2039">
+          <a href="#2039" id="2039">
+            0h 33m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I think there are two aspects of this. The first is the type of projects we were seeing. Vue is, as a front end framework, it interacts very directly with the developers using it. Say if a company is building a product using Vue, their developers interact with Vue almost every single day. Almost for all the code they write, they are interacting with Vue’s API. They’re reading Vue’s documentation on a daily basis. This high exposure made it easier for people to justify their position, say “We are sponsoring this high exposure project and indirectly our brand reputation is probably getting better return given the money we’re donating.”<br><br> That’s part of it. If you were to look at a project like Babel, which is also mostly maintained by volunteers. Actually the only person working on it full time I know is Henry Zhu, who I talk with a lot. He’s having quite a hard time trying to secure enough funding for him to work on it full time. But Babel is huge as well.<br><br> For those of you who are not familiar with Babel, it’s a library that allows you to compile your JavaScript that’s written in a future syntax. A syntax that’s not in the browsers yet. Babel can help you compile those into JavaScript that works in the browsers today. It’s a very important project in the JavaScript ecosystem, used by millions of people.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2130">
+          <a href="#2130" id="2130">
+            0h 35m 30s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I use it for Indie Hackers.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2132">
+          <a href="#2132" id="2132">
+            0h 35m 32s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yet it’s very difficult for it to monetize in the way that Vue does because it’s so invisible in your infrastructure. You set it up once and you’re pretty much done with it. This makes it more difficult for these businesses to say, “This is something we want to get associated with as a sponsor.” Because sponsorship is just naturally, the name entails that these sponsors want exposure through the partnership. This model works best when you have a project that has a very high exposure and interaction ratio with the developers.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2169">
+          <a href="#2169" id="2169">
+            0h 36m 9s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s interesting. You’ve got all this competition, and that almost helps you, in that developers are so vocal about what their favorite front end JavaScript framework is. People like to say that they’re a fan of Vue or a fan of React or Ember or something. They just talk about it a ton, where something like Babel sort of invisibly hums along in the background. It does its job well, but I don’t know very many Babel fans. It’s like, what else is there to be a fan of instead of Babel?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2193">
+          <a href="#2193" id="2193">
+            0h 36m 33s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">It’s funny because the frameworks competition, sometimes it turns into more like a sports fanship kind of thing. People are like, “I like this versus that.” I personally don’t mind a little fun and such when you’re comparing frameworks. But the thing I’m less fond of is some people like to compare it as a war metaphor, where we’re trying to kill each other. I don’t think that’s the case. Most of the time, these different frameworks exist to cater to slightly different tastes and needs for developers in different situations. This kind of friendly competition, I would say, does help in terms of exposure.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2238">
+          <a href="#2238" id="2238">
+            0h 37m 18s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There’s got to be a thousand articles written online about Vue.js versus React versus Ember versus Angular, et cetera. You mentioned earlier that open source businesses are different, and that different businesses have to have different business models. Different projects have to have different ways that they try to grow if they want to succeed and make money.<br><br> I talked to Mike Perham for example, of Sidekiq. Sidekiq is an open source project that does live sort of invisibly in the background. You set it up once and then it kind of works. Yet he’s able to monetize it. I think he’s making something like a million dollars a year, something crazy, off of it. What he’s doing is, I think, charging money for special features and for customer support. My question for you is, how do you look at something like that and reconcile with what you’re doing with Vue? Why did you decide to go the donations route rather than doing something where you’re charging customers directly for extra customer support or extra features?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2288">
+          <a href="#2288" id="2288">
+            0h 38m 8s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There’s a few different ways if you monetize open source. One of the easiest things that people can think about is you charge money for support. Some company is using my project and if they want to get specialized support, they give me money and I help them with it. I thought about this when I was first starting out. But I realized this is nothing different from, say, doing consulting full time. I essentially have to trade my time for money. If I do that, in order to earn more money, I’m cutting my hours to be spent on Vue itself. I realized very early on that this wouldn’t work for me. This is not the thing I want.<br><br> Another type of open source is you would have a freemium version, essentially what Sidekiq is doing. You have this open source community edition that is completely free, but you charge money for some additional features. Which I realized doesn’t really make sense for something like Vue because what Vue excels at is we have this enormous reach. We want to lower the barrier, want to make front end programming accessible to as many developers as possible. Charging for premium features just goes completely against what Vue is made for. So that didn’t really work for us either.<br><br> Plus, donation is probably the most worry-free way of income generation, because it’s almost passive to some extent. Although I definitely need to keep working on Vue, but that’s what I enjoy doing. For me, I don’t need to do too much additional work in making sure everyone pays money on time, for example. That’s handled by Patreon for me. That’s why they take a cut. If they can do that for me, then I can focus my time on working on the things I want to work on.<br><br> Another aspect of this is, because Vue is a front end library, most of the time it’s really hard to charge licensing for libraries that people just use in their front end. Especially when you have competition, like React and Angular, which are completely free. The existence of React and Angular pretty much means that it’s impossible to charge a license fee and compete with them at the same time. We would have to be orders of magnitude better in every way, for people to justify that decision.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2431">
+          <a href="#2431" id="2431">
+            0h 40m 31s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. That’s a really good point. We discussed the advantages of competition, but one of the disadvantages is that they kind of affect the price point. If all your competitors are free, then you have to be free yourself.<br><br> But I also really like what you said earlier, which is that your business model is a reflection of the way that you want to live your life. This is your project that you created from the ground up. Why would you structure it in such a way where you end up having to do support work or consulting when that’s not how you want to live your life?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2459">
+          <a href="#2459" id="2459">
+            0h 40m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. I think that was the point, because Indie Hackers is all about people doing these little ventures where – it has a strong correlation to the lifestyle you want, right?  I read The 4-Hour Workweek by Tim Ferriss, which was a pretty influential book on me because I realized I was doing a day job and working on something that I really wanted to work on in my spare time. I wasn’t really happy, because it’s taking up all my free time.<br><br> I realized if this thing I’m so passionate about, I work on it and I can make money from it, I’m getting such a huge bonus in quality of life. I would get all the time I usually spent on my day job that I can actually spend with family and do the other things in life that I want to enjoy. That was a really, really important revelation for me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2512">
+          <a href="#2512" id="2512">
+            0h 41m 52s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">You’re basically living the dream and maximizing your freedom as a person, to do whatever it is that you want. Let me ask you about Patreon. Patreon allows people to make donations in a recurring fashion. You mentioned you don’t have to reach out to these sponsors every month to make sure they’re going to pay. They just automatically get charged. Patreon takes a cut, and you don’t have to worry about it. So that recurring part is all taken care of. How did you get people to become sponsors in the first place? How much are you doing sales and how much are you just letting people trickle in on their own?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2541">
+          <a href="#2541" id="2541">
+            0h 42m 21s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Believe it or not, it’s completely organic. I do put links to the Patreon page on our website. There is a section on Vue’s website called “Support Vue’s Development.” When they go to the website, they will see first, obviously they will see a list of existing patrons who send in the logos. So they see a wall of logos and they’re like, “Hey, cool. We want to get our logos on there. What can we do?”<br><br> Then they get the link to the Patreon page, where you get an explanation of the benefits of different tiers. The more money you donate, the bigger logo you get. That’s pretty much it. I don’t actually do active reach out to any companies. I think all the patrons currently on our website is entirely organically generated.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2586">
+          <a href="#2586" id="2586">
+            0h 43m 6s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s amazing. That’s really a testament to just how popular and well known Vue is. It’s not something that could happen otherwise. There’s this maxim that often gets repeated in the startup world, that the only thing that matters is your product. As long as you build the best product, then it doesn’t matter if you suck at sales. It doesn’t matter if you neglect marketing. It doesn’t matter if you don’t find any distribution channels. Your product is still going to win.<br><br> I’m pretty skeptical of that. I don’t think that’s true for 99% of businesses. But it seems like for Vue, it kind of has been true. What would you say? How much of Vue’s success is due to the quality of Vue as a framework itself versus you making all the right decisions about how to grow it and get it into more people’s hands?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2624">
+          <a href="#2624" id="2624">
+            0h 43m 44s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I would attribute most of it to just keeping working on Vue itself, making sure it’s good. So far, I try to spend as much time working on Vue itself, compared to the time I need to manage things. In fact, I think I spend very, very little time trying to actively increase the patron base or reach out to sponsors. I don’t actually do that. Most of the time, I feel like, if you make the base big enough, then these people who are interested in sponsoring naturally trickle in.<br><br> I could probably squeeze out more donations if I tried to get more sponsors, but I also need to think about the investment of time required to do that. The same amount of time I invest in trying to secure one more sponsor, versus the time I could just spend on cranking out a new feature, for me the latter is more satisfying. Also, it probably works for the long term better. The feature you add in there is in there. It makes your whole thing better and makes it more relevant, stay there longer and gives you more chance to get new sponsors for the long term.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2699">
+          <a href="#2699" id="2699">
+            0h 44m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s really cool. For many businesses it doesn’t quite work that way. Especially if you’re a fledgling startup and you haven’t quite built the right product yet. You can add feature after feature all day, every day and never get any more users.<br><br> You mentioned this blog post you wrote, the postmortem of your first week after launching Vue. I’m looking at it right now. You kind of talk about how many users you had, how many visits to your website, how many stars you got on GitHub. You’re around the low thousands mark or low hundreds mark, where you had 615 GitHub stars at the end of day seven. Today Vue has something like 119,000 stars on GitHub. What was the path like to go from that small number to where you are now?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2734">
+          <a href="#2734" id="2734">
+            0h 45m 34s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">It’s actually quite a long journey if you think about it. The blog post was published in February 2014. It’s four years, nine months now. Almost five years, considering the time that led to that (inaudible). That’s a very long process.<br><br> There were a few pivot points in between where I realized, “Oh, this is actually the next stage.” For a very long time in the beginning I was completely in the underdog position where I didn’t really think about how big I could become. I was just trying to say, “I want to make this thing better.” I was genuinely excited when we reached 30,000 stars on GitHub. That was the moment where I felt, “We’re actually big!” But just a few months later we crossed 50,000. I was like, “That was fast.” Then I stopped caring about GitHub stars. I don’t even check it anymore.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2797">
+          <a href="#2797" id="2797">
+            0h 46m 37s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What was driving all this growth? Vue was great as a framework, but we mentioned earlier you’re going up against React. You’re going up against Angular. These are two frameworks created by very well-funded companies with endless marketing budgets. Yet today you have more stars on GitHub than both of them. That’s crazy. You’re working with volunteers and you started this thing all by yourself.<br><br> What are some of the strategies you used to achieve this outsized result, besides just working on Vue? You mentioned posting on HackerNews in the beginning and writing blog posts. Is that something that you continue to do?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2829">
+          <a href="#2829" id="2829">
+            0h 47m 9s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I don’t write posts about the operations side of Vue much. Mostly when we release posts on Medium, it’s about the technical stuff that we worked on, like the new features we launch, the new projects we launch. Over time what allowed us to compete with these big company-backed frameworks is just consistency and – we were always, we still are in this underdog mindset, where there’s a higher goal up there we can work towards. That’s good, because there’s always these new ideas.<br><br> Like React today is still coming up with a lot of new ideas. I have a huge amount of respect for the React team, because they are coming up with these leading new ideas that kind of make everything different. Vue learned a lot from these competitions in order to get where it is today.<br><br> In terms of starting as an individual project, it’s really important that you have this consistency. There was a period of time when I felt the pressure was like, “They have all these teams, all this money and resources to work on these things. Why would I keep working on Vue? It’s never going to get as popular as theirs.”<br><br> But then I realized I wasn’t really trying to build this thing to compete with them. I was trying to build this thing to fulfil a need of the developers that are using my library. They are happy using my library. My goal of working on it is not to say, “I want to get all the React users to use Vue.” My goal is to get people who already like Vue to like it better, and get people who are not using any framework yet to potentially use Vue.<br><br> I realized the whole (inaudible) for all this web ecosystem is huge. There are still a lot of developers who have not used a single framework. These are still big opportunities for all these frameworks out there. Our job is to make sure Vue can capture these developers, make their lives easier, allow them to build the stuff they want to build easier. If we can achieve that goal, I don’t really care about whether Vue is bigger than React or is bigger than Angular. That’s not my goal.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2975">
+          <a href="#2975" id="2975">
+            0h 49m 35s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What is your goal? How do you measure the impact that Vue is having on the world? Do you count how many people are using it? Do you count the number of downloads? You said you stopped looking at your stars on GitHub. How do you know if you’re doing a good job?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2987">
+          <a href="#2987" id="2987">
+            0h 49m 47s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There are some metrics that we can look at. (Inaudible) downloads is very inaccurate. GitHub stars is a very inaccurate metric as well, because it doesn’t directly correlate to how many people are actually using your product. It’s more like an expression of interest. People who may not even have used it. They will star it so that one day they will come back and look at it.<br><br> The more relevant metric that I look at personally is the amount of people using our developer tools extension. It’s a Chrome extension that you install in Chrome. When you develop a Vue application you can use that extension to develop your application. This is a tool, if you are using this tool it likely means you’re actually using Vue to build real stuff. So I look at that.<br><br> Conveniently, the Chrome web store actually gives you the number of users, weekly active users using it, which is really nice. Currently we’re around 69,000 users around the globe, which is approximately half of React (inaudible) users.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3059">
+          <a href="#3059" id="3059">
+            0h 50m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s huge.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3060">
+          <a href="#3060" id="3060">
+            0h 51m 0s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. This number is the one that I personally use as a reference when we are gauging overall growth. There’s a project called State of JS, which is an annual project where they do a big survey every year and publish a lot of statistics. That provides a good reference as well, because we’re seeing Vue’s user percentage.<br><br> They do the statistics by counting users who have used it and would continue using it; users who have used it but will not use it anymore; and users who have not used it but want to learn; and users who have not used it but don’t want to learn about it. You have all of these categories and Vue’s stats have grown over time. I think we just hit the highest satisfaction ratio in this year’s edition, which is something really encouraging to us.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3114">
+          <a href="#3114" id="3114">
+            0h 51m 54s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I’m curious how Vue’s success has impacted you on a more personal level. I’m sure your life is way different now than it was when you first released Vue. What are some of the changes that you like the most and what do you like the least?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3124">
+          <a href="#3124" id="3124">
+            0h 52m 4s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">The best part is being able to just work on something you like on a daily basis. I get to also completely determine my own schedule. I can work at the pace that I like. If I feel that I’m less productive this week, I can take it slow. But if I’m in the zone, I can just keep working twelve hours a day, a few days straight. I can adjust to my own pace instead of always having to hit a deadline that’s arbitrarily decided by someone higher up.<br><br> Another aspect is, because I now work from home, I enjoy much better work-life balance. When I get off work, I walk downstairs. I work in my office upstairs. When I’m done for the day I just walk downstairs and with family instantly. Before that, when I worked in New York City, and I lived in Jersey, I had to commute, spend close to three hours every day on a bus.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3180">
+          <a href="#3180" id="3180">
+            0h 53m 0s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Jeez.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3181">
+          <a href="#3181" id="3181">
+            0h 53m 1s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Which is just terrible. These are a lot of little perks. The worst part about it is in the overall constant pressure. Now everything is in your own hands. If you slack off, you’re risking to fail. Whereas in a big company you feel a bit more comfortable. Just like, “This company is too big to fail. I can just work slowly and not really worry too much.” But when you’re working for yourself, it’s just like any indie developer would have to have this constant pressure, just want to make sure you’re doing enough work. You’re constantly making sure your business model is still valid, validating your ideas, thinking about how your product will stand in the next three to four years. You have to constantly be thinking about all these things all the time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3235">
+          <a href="#3235" id="3235">
+            0h 53m 55s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. Exactly. All the weight is on your shoulders and there’s really no excuse if it doesn’t work out. There’s nobody else to blame. It’s just you.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3242">
+          <a href="#3242" id="3242">
+            0h 54m 2s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah. Exactly.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3243">
+          <a href="#3243" id="3243">
+            0h 54m 3s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So a lot of people listening in are, perhaps, developers who are considering getting into open source and building a project that they can somehow monetize, or maybe building a tool for other developers to use. What’s your advice for somebody just starting out in this position? What mistakes should they avoid making?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3258">
+          <a href="#3258" id="3258">
+            0h 54m 18s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">When I built Vue, I didn’t really think about monetization. But if you are building something with the goal of monetization from day one, I’m not saying that it doesn’t work. It definitely could work. It’s just that the monetization model that you have in mind must have a good fit with the product that you’re building, with the software that you’re building.<br><br> As I discussed before, things like Sidekiq naturally fits better with a freemium model because it’s a server side component. It is easy to bill for, when you have something running on your servers. Whereas a front end framework like Vue is a bit harder to do in that mode. But due to Vue’s high exposure, we can go the crowdsourced, sponsorship route, which doesn’t necessarily work for a server side project. So you need to find these – it’s best if you have a close reference project that you can model after. A lot of times it also takes a bit of trial and error, so there’s definitely risk involved when you say you want to start out from day one and do it open source.<br><br> In fact, if your goal is to, say, have a successful business, I would treat it as a product first and consider open source as something that complements your strategy. Instead of, say, “I want to do open source and make money at the same time.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3345">
+          <a href="#3345" id="3345">
+            0h 55m 45s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That’s really great advice. I think it’s advice that could be applied more broadly to pretty much anyone building a business. There is no one single playbook that’s going to tell you exactly how you should monetize for your product. It really depends on what you’re building and all these different pieces of your business are connected. So you really have to think about, “What am I building? Who’s my audience?” when you’re deciding how much you’re going to charge, and what your business model is going to be.<br><br> Anyway, thank you, Evan, so much for coming on the podcast. I wish I could have you for longer. Can you tell people listening where they can go to learn more about you and Vue and the things that you’re up to?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3376">
+          <a href="#3376" id="3376">
+            0h 56m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Sure. I don’t actually update my personal website anymore, but you can follow me on Twitter. My handle is youyuxi, that’s the spelling of my Chinese name. Y-o-u-y-u-x-i. Our website is <a href="http://vuejs.org" class="linkified" target="_blank">vuejs.org</a>. That’s where our documentation, all that information is. If your company is interested in sponsoring us, please do.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3398">
+          <a href="#3398" id="3398">
+            0h 56m 38s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">All right. Thanks again, Evan.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/078-evan-you-of-vue.jpg">
+        <span class="episode-transcript__speaker-name">
+          Evan You
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3400">
+          <a href="#3400" id="3400">
+            0h 56m 40s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Thank you.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3407">
+          <a href="#3407" id="3407">
+            0h 56m 47s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">If you enjoyed listening to this conversation and you want a really easy way to support the podcast, why don’t you head over to iTunes and leave us a quick rating or even a review? If you’re looking for an easy way to get there, just go to <a href="http://indiehackers.com/review" class="linkified" target="_blank">IndieHackers.com/review</a> and that should open up iTunes on your computer. I read pretty much all the reviews that you guys leave over there, and it really helps other people to discover the show, so your support is very much appreciated.<br><br> In addition, if you are running your own internet business or if that’s something you hope to do someday, you should join me and a whole bunch of other founders on the <a href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a> website. It’s a great place to get feedback on pretty much any problem or question that you might have while running your business.<br><br> If you listen to the show, you know that I am a huge proponent of getting help from other founders rather than trying to build your business all by yourself. So you’ll see me on the forum for sure as well as more than a handful of some of the guests that I’ve had on the podcast.<br><br> If you’re looking for inspiration, we’ve also got a huge directory full of hundreds of products built by other Indie Hackers, every one of which includes revenue numbers and some of the behind-the-scenes strategies for how they grew their products from nothing.<br><br> As always, thanks so much for listening and I’ll see you next time.</p>
+    </div>
+</div>

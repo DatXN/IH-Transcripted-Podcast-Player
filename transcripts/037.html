@@ -1,0 +1,2277 @@
+<div id="ember48" class="episode-transcript ember-view">
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="7">
+                <a href="#7" id="7">
+                    0h 0m 7s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">What's up, everyone? This is Courtland from <a
+                href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a>, where I find the
+            founders behind profitable internet businesses and I try to get a sense of how they got started and what's
+            going on behind the scenes, so that the rest of us can learn and build our own successful businesses.</p>
+        <p class="episode-transcript__paragraph">
+            Today, I'm talking to Jesse Patel. He's the founder of a really cool productivity app — one of my favorites
+            — called <a href="https://www.workflowy.com">WorkFlowy</a>. I just logged into WorkFlowy today and it said
+            that my account is 365 weeks old, which means that I joined in November of 2010, right after they launched.
+        </p>
+        <p class="episode-transcript__paragraph">
+            It's not often I get to say that I was one of the first users of a product, and even less often that I get
+            to talk to one of the founders of that product, so I'm super excited to be talking to you, Jesse. Thanks for
+            joining.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="46">
+                <a href="#46" id="46">
+                    0h 0m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, totally happy to be here.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="48">
+                <a href="#48" id="48">
+                    0h 0m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There isn't much written online that I could find about the origin of
+            WorkFlowy. Just a few articles here and there. But from what I could find, it seems like it's intertwined
+            with you teaching yourself how to code.</p>
+        <p class="episode-transcript__paragraph">
+            Maybe a good place to start is: How did you teach yourself to code, and why was that something you even
+            wanted to do?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="65">
+                <a href="#65" id="65">
+                    0h 1m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So, I think… I've kind of been teaching myself to code for a long time.
+            I took some computer science classes, just like one-and-a-half, at Stanford when I was there, and it was
+            like probably the thing I enjoyed the most but I just was… It was the first time I had done it, whereas
+            everyone had been doing it since they were 12. And so I was like, "Okay, I'm not going to do this." From my
+            first exposure, I liked the process of running into confusing things and having to fix them. Some people
+            don't like that.</p>
+        <p class="episode-transcript__paragraph">
+            For me it was like, "This is just a fun puzzle and I really love to build things. I was trained as a product
+            designer and building stuff is super fun. Coding let's you just build stuff yourself that other people can
+            use in a really, really rewarding way. That was my motivation in general, so I'd been fiddling with it for
+            years. Then at some point I had stuff I really wanted to build and I was like, "I'm just going to start
+            building this." Actually, that was WorkFlowy. It was like a teaching-myself-to-code project. Everyone thinks
+            they can make a better note-taking and task.</p>
+        <p class="episode-transcript__paragraph">
+            I'll just waste that idea on learning to code because obviously it's not actually a good idea. Everyone
+            thinks they can do it better, but why would I be any different so I'll use this delusion to learn how to
+            program. Do you want me to talk a little bit about the motivation for the product itself or just the coding?
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="155">
+                <a href="#155" id="155">
+                    0h 2m 35s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think it would be good to hear about the motivation for the product
+            itself because like you said, everyone wants to build a to-do app. Everybody has their own unique styles of
+            working and none of the existing tools match perfectly with what people want, and so there's tons of tools
+            out there.</p>
+        <p class="episode-transcript__paragraph">
+            So what was motivating you? What did you not like about existing tools and what did you want WorkFlowy to do
+            better?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="175">
+                <a href="#175" id="175">
+                    0h 2m 55s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Basically I had this in 2000… It was a long time ago, 2008, I think. I
+            was knee-deep in this job that was really complicated and I was basically the person in part in charge of
+            the business development for a nonprofit tech company that was trying to decentralize video. It's kind of
+            like an activist project and they were trying to figure out like how do we make money? Is there a way for us
+            to make money in a business sense as opposed to raising money from donors which is what they had been doing?
+        </p>
+        <p class="episode-transcript__paragraph">
+            We had 4 million active users and so there was an audience, and we were trying to figure out, "What are the
+            different ways we can monetize?" There were like 30 different legitimate things to explore, each of which
+            would have a department at a real company or whatever. Everything from selling independent — it was a video
+            thing — so selling independent films, to advertising, to customizing and selling the software itself to
+            other people who distributed video. There were many different avenues to explore, and each of them was
+            really complicated.</p>
+        <p class="episode-transcript__paragraph">
+            I was just cycling through product management to-do note-taking apps trying to keep track of all the
+            complexity and getting really overwhelmed. I was going over everything, everything, everything and the thing
+            I started using was Word outline mode.</p>
+        <p class="episode-transcript__paragraph">
+            I was like, "This is kind of the best, but I need it to be able to zoom in." This was like… I need to be
+            able to in Basecamp or any of these other tools, they have a set structure and there always comes a point
+            where you have a to-do that's like "make marketing proposal". Then you're like, okay, I want to write out
+            the ideas for that marketing proposal, but I can't do it inside this to-do. It's *in* this to-do, it needs
+            to be there. Basically, I just had this sense that I needed something fractal and that went in forever.</p>
+        <p class="episode-transcript__paragraph">
+            Then having used the outline mode, I was like, "Oh, outlines are useful." This idea of combining what I knew
+            was like this need for a fractal thing with an outline thing. The first version of WorkFlowy I built
+            actually didn’t look like an outline at all. It was like more of a standard task list type thing that had…
+            It looked like the McFinder with columns mode.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="315">
+                <a href="#315" id="315">
+                    0h 5m 15s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I saw a screenshot of that online. It was just like columns and then
+            you click on each row of a column and it opens up another column to the right. So you can kind of zoom in,
+            but it was just different.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="324">
+                <a href="#324" id="324">
+                    0h 5m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It was different. It was pretty cool. Actually, do you know the company
+            NewsCred?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="329">
+                <a href="#329" id="329">
+                    0h 5m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">No, I don't.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="330">
+                <a href="#330" id="330">
+                    0h 5m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's a big company in New York. They're a media company. They have
+            hundreds of employees. My friend, Shafqat started it right when I was first working in WorkFlowy and he used
+            that version of WorkFlowy. It was like the columns to start NewsCred which is hilarious.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="346">
+                <a href="#346" id="346">
+                    0h 5m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's cool.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="348">
+                <a href="#348" id="348">
+                    0h 5m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">He's the only person who used that. I'm using number one, he's number
+            two and he's the only person who used that version of WorkFlowy ever.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="355">
+                <a href="#355" id="355">
+                    0h 5m 55s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">He must have liked it if he started his company with it or was he just
+            doing that as a favor to you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="360">
+                <a href="#360" id="360">
+                    0h 6m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">No. he was using it legitimately himself. I mean it didn't have
+            collaboration at that point so he was using it as a private project management/task management tool. He
+            liked it a lot.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="371">
+                <a href="#371" id="371">
+                    0h 6m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That must have been pretty inspiring to have somebody who was really
+            using your tool. How seriously were you working on WorkFlowy at the time?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="380">
+                <a href="#380" id="380">
+                    0h 6m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">October of 2009, I quit my job because that kind job was impossible. I
+            loved the people and I'm still super good friends with all of them but it was just this job where I felt
+            like I was feeling because it was like none of these business models are basically working out. None of them
+            seem like the arrival.</p>
+        <p class="episode-transcript__paragraph">
+            Anyway, I quit my job and I was like, "Okay, I'm going to go full-on with WorkFlowy." It was four months or
+            so of just solid working on the product and I had a prototype that I had been using before I quit that job.
+            I quit the job thinking like, "I'll work on WorkFlowy but really I just wanted to start something. This
+            segues into Mike and recruiting my co-founder and stuff. Do you want me to go into that?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="423">
+                <a href="#423" id="423">
+                    0h 7m 3s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Sure! Today, you're working on WorkFlowy with Mike but how long were
+            you working on it before Mike came in to the picture.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="431">
+                <a href="#431" id="431">
+                    0h 7m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Basically since I started playing with it in 2000 before I even moved
+            to Geneva, I started like I'm going to learn to code so I can build this thing. Probably it was 2008 that I
+            started working on it a little bit. I mean it’s really slow when you're learning to code to make something.
+            It was 2008 and in 2009, early 2009 I started doing a lot of work on it. It was June of 2009 that I started
+            really working on it. I was in Berlin at the time working out of the SoundCloud offices.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="466">
+                <a href="#466" id="466">
+                    0h 7m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">How did you end up meeting Mike and deciding to work together?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="469">
+                <a href="#469" id="469">
+                    0h 7m 49s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Beginning of 2010 basically. It was like nine months after I really
+            started working. I had something I really liked, I had a couple people who were using it and they really
+            liked it. I was starting to go insane. I remember reading… I think it was like Naval had just launched
+            Venture Hacks or something, or he hadn't just launched it, I had just discovered it rather. I had just
+            discovered Venture Hacks. It was like end of 2009 and I was reading out voraciously all these articles and
+            Hacker News and all this stuff.</p>
+        <p class="episode-transcript__paragraph">
+            It was like the dawn of the era of entrepreneurs writing honest things on the internet about starting
+            business. Both Venture Hacks and just Paul Graham's stuff was like, "Find a co-founder. You're crazy if you
+            don't find someone to work with."</p>
+        <p class="episode-transcript__paragraph">
+            Plus, I was having the sense of like, oh, I'm a very beginning programmer here. I'm running in circles a
+            lot. I have no idea what I'm doing. I was like, I really need someone who's actually a good programmer to
+            work with me and I'm just to go insane working on my own. So I just emailed two friends in probably December
+            of 2009, and I was like, "Hey, I want to start something. Do you want to start something with me?"</p>
+        <p class="episode-transcript__paragraph">
+            One of them was like, "I just started something with another friend." These are two friends who I knew were
+            technical and who were not working, and had just left their jobs. And the other one was Mike, and he was
+            like, "This is a good time. I was just starting to think about what's next?"</p>
+        <p class="episode-transcript__paragraph">
+            Mike I knew from college. We lived in the same dorm. We'd been friends for a number of years — we met
+            probably in 2002. But we weren't super close friends. We were just friendly and in the same friend groups,
+            so we'd see each other out and see each other at other people's houses, and we'd chat and catch up like,
+            "What's been going on for the last few months or whatever?"</p>
+        <p class="episode-transcript__paragraph">
+            Then he just said, "It sounds good." We got on the phone and I talked to him about WorkFlowy and he said,
+            "Not interested. Let's work on something else."</p>
+        <p class="episode-transcript__paragraph">
+            So we started working on and brainstorming other ideas, and we settled on a general area that was very
+            different than WorkFlowy which was basically helping self-help gurus build ways for other people to follow
+            their advice through an app. So basically, if you write a book saying, "Here's how you start your business
+            or here's how you get a six pack in 100 days," we basically have the actions that you're recommending people
+            do and a way for them to track whether they're doing it, and a way for you to engage with a community of
+            followers, and all this encapsulating people's advice in an app.</p>
+        <p class="episode-transcript__paragraph">
+            If you've published a book, the idea was that it would come with an app and a website that would help people
+            actually do what you're suggesting they do.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="638">
+                <a href="#638" id="638">
+                    0h 10m 38s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Interesting.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="638">
+                <a href="#638" id="638">
+                    0h 10m 38s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That was the idea we were going to work on and we're starting to work
+            on it and then I was like we're going to apply for YC and Mike was like… He wasn't super psyched about that
+            idea and I just… He wasn't against it, but he was just like, "Whatever." I just applied for YC. I also
+            decided at the time, I was living in Geneva, Switzerland because my now-wife, girlfriend at the time, was
+            living there.</p>
+        <p class="episode-transcript__paragraph">
+            I decided if I was going to start something, I needed to move back to San Francisco and be near Mike if we
+            were going to work together. Then once we got into YC, it was like, "Oh." Actually, I think I already had
+            moved back at that point, so I guess YC didn't fit into the picture. I just knew I had to be back and I
+            wasn't super happy in Geneva.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="678">
+                <a href="#678" id="678">
+                    0h 11m 18s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Why weren't you guys working on WorkFlowy? Why wasn't Mike excited
+            about the idea? Because it seemed like it was something that you had poured a lot of time into and had some
+            preliminary users?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="687">
+                <a href="#687" id="687">
+                    0h 11m 27s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I mean I actually only had a couple users. It wasn't like I had a lot
+            of validation at the time. And I think Mike's reasons were the same reasons that I thought it was like a
+            throwaway project. I was rationalizing to myself that I didn't think it was a big deal because everyone
+            thinks that they have the next big idea for how people organize themselves and how you could track your
+            information and stuff. So it's like, I don't know?</p>
+        <p class="episode-transcript__paragraph">
+            And he's a guy who uses simple tools where he's like, "I'm happy with a text editor. I'm not trying to find
+            the next new weird thing." I think that's basically why. He tried it. He was like, "I'm not that excited
+            about this." And the area was also an area that he found very uninteresting.</p>
+        <p class="episode-transcript__paragraph">
+            Honestly, the rationale makes sense to me for why he didn't want to work on it, so I didn't exactly fight
+            it. At the same time, I kept working on it and eventually it is what we ended up working on. I had
+            conviction around it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="751">
+                <a href="#751" id="751">
+                    0h 12m 31s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I mean it sounds like it's a tool that you were making for yourself
+            more than anybody else at least. You wanted to keep working on it, which is cool, because it gives you a lot
+            of insight as to how good the tool is. You're eating your own dog food which is some of the most common
+            startup advice out there.</p>
+        <p class="episode-transcript__paragraph">
+            Anyway, I'm really interested in hearing about your experience at Y Combinator. Were you at all nervous
+            about getting in?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="770">
+                <a href="#770" id="770">
+                    0h 12m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I was nervous but I think I was pretty confident we'd get in.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="774">
+                <a href="#774" id="774">
+                    0h 12m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">How was the experience of actually going through YC for you guys?
+            What'd you think about it at the time?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="779">
+                <a href="#779" id="779">
+                    0h 12m 59s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I have two somewhat… not contradictory, but different angles on what it
+            was like doing YC. One was that it was really unpleasant because they basically hold your feet to the fire
+            and they're like, "You have to accomplish something."</p>
+        <p class="episode-transcript__paragraph">
+            And then Paul Graham is just really frank. I mean he's not in charge anymore, but he was just like, "I think
+            this is a terrible idea."</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="802">
+                <a href="#802" id="802">
+                    0h 13m 22s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">He's really frank.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="803">
+                <a href="#803" id="803">
+                    0h 13m 23s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">He was just like, "I thought you guys were great at the beginning of YC
+            and now I think you're idiots for working on this." He'd be like, "I've seen a million online collaborative
+            whiteboards and this is not going to go anywhere. What makes you think you can do this better? There's no
+            special moment for this or whatever."</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="823">
+                <a href="#823" id="823">
+                    0h 13m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, Paul Graham can be pretty frank. It's really helpful at times and
+            it's also really soul-crushing at times. I remember he told my co-founder and I that one of the ideas we
+            pivoted to was the worst idea ever, and that they always reject companies who apply with that idea, so that
+            was rough. But anyway, what were some of the good parts of YC for you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="840">
+                <a href="#840" id="840">
+                    0h 14m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I don't think WorkFlowy would exist without Y Combinator. That's one
+            part. It wouldn't exist, and no one would know about it without Y Combinator.</p>
+        <p class="episode-transcript__paragraph">
+            The reason it wouldn't exist was because Mike and I entered Y Combinator with this idea and we were halfway
+            through. I think almost immediately we realized that the original idea wasn't… We didn't want to work on it
+            because it was too dependent on basically the publishers and the self-help gurus who were the people who
+            were going to basically be writing the advice and publishing something in building an app with our thing.
+        </p>
+        <p class="episode-transcript__paragraph">
+            We did a talk with Tim Ferriss and we talked to a couple of other people who just did, who were the kind of
+            people we'd want to target and we realized that they just weren't going to care, they were going to be those
+            kind of semi-invested people who you'd have to be fighting to get their attention and then all your
+            promotion would depend on them and all your content would depend on them. You just would have no ability to
+            independently… You basically wouldn't be in control of your own destiny is what I felt like. It's a
+            two-sided marketplace where one party, not us, was in charge of both of my sides.</p>
+        <p class="episode-transcript__paragraph">
+            Again, this doesn't feel like a good idea. Then we were floundering around just experimenting with different
+            things. We played with making a bunch of Facebook apps and we played with a couple of ideas but as soon as
+            we decided that wasn't a good idea, I think I started lobbying Mike to start working on WorkFlowy because a
+            couple people on YC had started using WorkFlowy and they really liked it and they were like, "Here's what
+            needs to change about it. here's what's good and here's what's annoying." I was like, "This is further
+            validation and we had nothing to work on right now." The other thing was Mike started using it and he was
+            like, "Oh, I see how this is cool and how this is different." At this point, I had already rewritten it to
+            look like a piece of paper until it worked like an outliner as opposed to the comms thing. Basically we
+            switched half way through YC and actually didn't even tell. There's this thing at the time called Angel Day
+            I think like Angel Demo Day. I don't think it happens anymore but we actually didn't tell anyone we were
+            working on our WorkFlowy until we gave the presentation at Angel Day where we're presenting WorkFlowy.
+            Everyone in YC was like, "We've never heard that before until you just presented it to everyone." We were
+            like, "Sorry."</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="980">
+                <a href="#980" id="980">
+                    0h 16m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Sorry about that. Were they excited or were they upset?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="983">
+                <a href="#983" id="983">
+                    0h 16m 23s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">No, they weren't upset. It was just, I think, funny. I think they
+            thought it was funny. No one was upset. They were like, "At least you're working on something. You've been
+            doing cats and dogs better apps on Facebook for couple weeks now, it seems. Nothing can be worse than that."
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1001">
+                <a href="#1001" id="1001">
+                    0h 16m 41s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think one of the cool things about WorkFlowy is it's like super
+            innovative and super compelling because you invented something that was completely new. I mean there were
+            other outliner tools but none of them really looked like WorkFlowy or worked like WorkFlowy and I think
+            having that extra step of having to teach people how to use a product kills a lot of companies but it worked
+            out for you.</p>
+        <p class="episode-transcript__paragraph">
+            I mean it took Mike a while but he eventually came around and decided that, "Hey, this is pretty cool."
+            People in your batch also realized that it was pretty cool. I even remember reading a review from years and
+            years ago about WorkFlowy were somebody called it, basically the best note-taking and organizer program that
+            they had ever come across which is pretty high praise and I felt similarly when I first used it too so I'm
+            just curious what makes WorkFlowy so good. Maybe you could describe it for people who never used it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1049">
+                <a href="#1049" id="1049">
+                    0h 17m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Totally. Before I do that, I forgot the second part of the question for
+            the YC thing because we're not people who promote things and I'm not a marketer so I would like to be but if
+            WorkFlowy had never gone through YC, we would have three users. They would have kept using the product and
+            they would have eventually maybe stop. Once we launched YC, it just gets you on TechCrunch and Lifehacker
+            basically. Then on day one, we had 10,000 people using it and they didn't stop using it.</p>
+        <p class="episode-transcript__paragraph">
+            They were like, "Maybe this is real." before we had a couple of hundred people using it but it didn't feel
+            like… It wasn't obvious to us that it was an opportunity but then once we had a much larger number of people
+            using it which we would have never gotten, I never would have even emailed TechCrunch. I would have just
+            been… It's a character flaw of mine. That was huge. Just that alone made an enormous difference. Anyways,
+            pitching WorkFlowy is probably my greatest weakness.</p>
+        <p class="episode-transcript__paragraph">
+            WorkFlowy is an application people use to organize all the information in their life, in their work and it
+            becomes their hub. It's open on average for 11 hours a day which means people just have it open. It's like
+            Gmail. People have been using it on average like our average active users have been using it for almost
+            three years.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1130">
+                <a href="#1130" id="1130">
+                    0h 18m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Wow.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1132">
+                <a href="#1132" id="1132">
+                    0h 18m 52s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Two years. Which is a testament both to how useful it is to people but
+            also to if we were growing super fast that would not be true. What it actually is, it's basically infinitely
+            recursive bulleted list. A bulleted list where you can just dive down into any section and focus on that. It
+            basically means you have a huge pile of information that is manageable at a human scale where you can slice
+            it to see one part of it. You can also do tagging and searching so that you can just slice down your huge
+            pile of information that hopefully has everything from all aspects of your life and then just see the one
+            that you need to see and have it be kind of just easy to mess around it.</p>
+        <p class="episode-transcript__paragraph">
+            I think what's really special about it is it lets you create… That's one part of it is this lets you focus
+            but the other thing is that it lets you create structure in a really low friction way. When you're using
+            WorkFlowy, you just by default create some structure and you don't really have to think about it because
+            it's bullet points but at the same time all other apps do for you like all the apps that are special CRMs or
+            whatever, they're basically letting you create a structure. They define the structure for you like, "Your
+            leads go in here and then when they're moved to this thing, we move them into this other… You click a button
+            and you move into this other list."</p>
+        <p class="episode-transcript__paragraph">
+            Basically most software is list and moving stuff around lists and responding to when things move in to
+            different lists of different categories in some sense. What we do is basically let people define software
+            for themselves that works exactly how they want. It has a structure that's perfect for them and for their
+            unique situation. I think that's what is really special about the product and also partially what makes it
+            hard to really grok is that people have to say, "I have to figure out the right structure for myself." In
+            addition to entering content, I have to be thinking about structure and thinking about how do I organize
+            this? You don't have to and that's also… Structure just happens as well so that's cool.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1259">
+                <a href="#1259" id="1259">
+                    0h 20m 59s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think the first time I used WorkFlowy, I got it instantly after I
+            created a few bullet points and zoomed into one and then it took over the entire document and that bullet
+            point was down to top level. I was like, "Oh, okay. This is an indefinitely deep outline where I can put
+            literally all of my information in this one document and it will never be too much because you can always
+            zoom in and zoom out." Which is really cool because then you can organize things and reorganize them really
+            easily unlike in Google Drive or something where if you mess up your folder hierarchy.</p>
+        <p class="episode-transcript__paragraph">
+            You're never going to go back and fix it because it's too much work but if everything is in one document,
+            you can easily copy and paste it so it's super cool and I understand why it really resonated with some
+            people and fit into their working style in the way that other tools never did. Let's go back to your story
+            at YC. You might not remember this because I barely remember it myself to be honest but I think we actually
+            met briefly way back in 2011 at YC headquarters because you did, I think you were summer 2010, right? I was
+            winter 2011 with another app called Taskforce. I think you and your co-founder, Mike may have come to my
+            classes demo day. Do you remember coming to that or am I just making that up?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1325">
+                <a href="#1325" id="1325">
+                    0h 22m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I remember. I came to the demo days back in the day for sure.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1331">
+                <a href="#1331" id="1331">
+                    0h 22m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I remember talking to you guys and I think one of the cooler
+            things about workflow is that you guys never raised money after YC. Now, it's increasingly common to just
+            start a startup without raising but back then everybody wanted to raise money. I remember meeting you guys
+            at YC because you guys were some of the few people who just didn't seem to care about it. I also met Kevin
+            Hale from Wufoo who came to give a talk at one of our YC dinners and I was blown away by the things he
+            talked about and how successful they were and how they also didn't care about doing the things like the
+            conventional way. Also, the Basecamp guys stood out back then. I'm curious what was driving you and Mike to
+            go alone and be independent and not really care about raising from investors?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1373">
+                <a href="#1373" id="1373">
+                    0h 22m 53s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think there are a couple of things. One was that I don't invest… We
+            did talk to some… We spent a couple of weeks talking to investors after YC just because it's what everyone
+            did and no one was interested because what we were doing was weird and hard to explain. It hadn't launched
+            so we didn't have lots of users. I think if we had started raising like a day after we actually launched, we
+            would had success. We did try is the answer like in the beginning just because okay I guess we should do
+            this, everyone is doing it.</p>
+        <p class="episode-transcript__paragraph">
+            We didn't really want to but we just felt pressured too. Then the further along we got, we were just like I
+            don't like authority and I don’t like the idea of having bosses who aren't me. That's why I didn't want to
+            raise money. Also it's all the stuff that people say about it reduces your outcomes, the scope of your
+            outcomes a lot. If you raised money at whatever valuation, it means you're like the minimum at which if you
+            sell it at that exact evaluation it's a failure.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1442">
+                <a href="#1442" id="1442">
+                    0h 24m 2s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's a failure.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1442">
+                <a href="#1442" id="1442">
+                    0h 24m 2s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">If you suffer 10 million, you raise 10 million, you sell at 10 million.
+            It's like a huge failure. Basically, that's one of the big reasons like basically not having a boss and
+            minimizing the range of your possible outcomes.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1457">
+                <a href="#1457" id="1457">
+                    0h 24m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The downside of not raising money is that you have to make money on
+            your own. You're still living in San Francisco or the Bay Area, you're still paying probably ridiculously
+            high rent. What did your financial situation look like at the time? How were you guys surviving? What were
+            you charging for WorkFlowy?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1474">
+                <a href="#1474" id="1474">
+                    0h 24m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">This is one of our big areas of… One of the biggest issues between Mike
+            and I in the early years was… He was like post-Google and he made tons of money at Google and he had all the
+            stock. I was post working in a nonprofit and basically I spent all my money paying rent, then my girlfriend
+            at the time basically just was paying rent of us, but we had enough users and they kept telling us they
+            wanted to pay us.</p>
+        <p class="episode-transcript__paragraph">
+            After a couple of years people started paying and it was pretty early on like we had significant revenue
+            pretty quickly. People were willing to pay us so it was enough to pay rent and stuff. Basically like we just
+            got really lucky and that we never did marketing and people would just write about the product because they
+            loved it and we got a couple of really big people writing about it and then we’d have a lot more users and
+            then people use it 11 hours a day so other people see it over their shoulders and then they're like, "What's
+            that? That's weird. That's cool. I'm going to try it." Basically, we've just been very lucky and that the
+            business has supported our and lazy approach.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1548">
+                <a href="#1548" id="1548">
+                    0h 25m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's entirely product-oriented.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1551">
+                <a href="#1551" id="1551">
+                    0h 25m 51s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's just entirely product-oriented.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1552">
+                <a href="#1552" id="1552">
+                    0h 25m 52s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's really cool to hear about. I'm curious about the early days of
+            living with really no funding and just having your girlfriend pay for things and trying to charge. What was
+            that process like at first putting a price tag on WorkFlowy and how many people signed up to pay initially?
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1571">
+                <a href="#1571" id="1571">
+                    0h 26m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Let me look at our graphs.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1576">
+                <a href="#1576" id="1576">
+                    0h 26m 16s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">You guys started charging after you launched, right? This influx of
+            10,000…</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1581">
+                <a href="#1581" id="1581">
+                    0h 26m 21s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">We started charging two years after we launched.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1586">
+                <a href="#1586" id="1586">
+                    0h 26m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Okay, so much, much later.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1590">
+                <a href="#1590" id="1590">
+                    0h 26m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">This is after I spent all my money, I was like, "Mike, we need to start
+            charging." It wasn't on his radar and I was like, "Please," and he's like, "Okay, fine." It was just like…
+            What we did was we… We were just wimpy people. What we did was we're going to grandfather every one… We're
+            going to set usage quota which is 500 bullets a month you can add for free and then we're going to email
+            everyone who was above that in the last few months and say, "Hey, we're going to launch a pro thing. You can
+            have it for free but please pay us anyways."</p>
+        <p class="episode-transcript__paragraph">
+            In the first day, almost 30% of the people we sent that email to signed up for pro. We were basically
+            immediately making a decent amount of money. It was just clear that people wanted to pay us. They wanted to
+            support us. They wanted the product to get better and to survive. It was stressful and for me it was…
+            Honestly, for Mike, I don't think it was stressful not making money from the product. For me it was
+            stressful because I spent all my money. Then once that happened, I think it was clear that this was the real
+            thing.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1670">
+                <a href="#1670" id="1670">
+                    0h 27m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Why did you guys for two years without charging? What was your game
+            plan? Do you feel like you were going to get millions of users.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1677">
+                <a href="#1677" id="1677">
+                    0h 27m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Honestly, it was just like whenever I brought up the conversation, it
+            was just not… It didn't feel like it was a priority for… I mean first of all, there was a period where we
+            didn't have enough users. It would have made a huge… It would have been a lot of money so basically once we
+            got to the point where it's like, "Now, we have a lot of users and we can probably… " If we think about how
+            much we can make it probably would be meaningful.</p>
+        <p class="episode-transcript__paragraph">
+            Then it became the question of like, "For Mike, it wasn't a priority. He was just thinking all that matters
+            is getting a lot of users and they're willing to pay us to make money. Then for me it was a priority because
+            I didn't have any money. It was just a matter of talking about it together enough that he understood where I
+            was coming from like… We had this conversation. It was like, "I didn't realize you spent all your money." I
+            had no idea. Having those conversations which is actually… I don't know if you want me to throw in advice
+            but one of the biggest things I would suggest people do if you're starting a new thing with any other humans
+            is have a weekly structured conversation where you bring up any issues that haven't been resolved because
+            issues that fester like something small can become something big.</p>
+        <p class="episode-transcript__paragraph">
+            Any accumulation of loss of small things becomes a terrible relationship so basically have a weekly
+            conversation where you go like, "Is there anything that's bother you? Is there anything that hadn't been
+            addressed?" and just deal with it and if it turns into a big, get some third-party to help you figure it out
+            where it's some person you will trust or a paid coach or whatever it is because that's how we didn't end up
+            charging people… That's how I end up spending all my money with it because he didn't even realize that I was
+            spending all my money. You know what I mean?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1781">
+                <a href="#1781" id="1781">
+                    0h 29m 41s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There was just any communication.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1785">
+                <a href="#1785" id="1785">
+                    0h 29m 45s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I mean there was communication. It was like if you're really focused on
+            building this thing together and then every once in a while, you slip in something that's really bothering
+            you like you try to slip it in and it's not even heard because everyone is distracted and everyone… If we're
+            communicating constantly about the product and about lots of things but there's this one thing that I'm
+            like, "A little ashamed about it because I didn't have that much money to begin with."</p>
+        <p class="episode-transcript__paragraph">
+            My sense is that relationship issues are one of the biggest things and that biggest issues with companies
+            and I mean I know that from talking from tons and tons of people is just that co-founder relationships are
+            really difficult and I would just say like marriages like the ones that work are the ones who you address
+            the issues, small issues before they become big issues. How to process where every week, you're just like,
+            "Is anything wrong? Let's deal with it."</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1842">
+                <a href="#1842" id="1842">
+                    0h 30m 42s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I'm dating a relationship therapist and she's taught me so much about
+            exactly what you're saying. That's crazy to hear. I know that you and Mike, I listen to Mike's Mixergy
+            interview from a couple years back and he talked about some of the challenges that you guys had as
+            co-founders and how you guys ended up going to a relationship therapist.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1861">
+                <a href="#1861" id="1861">
+                    0h 31m 1s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Like a couple's therapist, not even a business therapist, yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1865">
+                <a href="#1865" id="1865">
+                    0h 31m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Which is I think a really smart idea because the problems are the same
+            I mean you have this thing, you have this relationship that's just as close or almost as close as the
+            relationship between a married couple or parents or something where you've got this startup that you're
+            working on and it's your baby. It's the thing that matters to you most in life except like everything else
+            in your life, this other person has a say and what goes on.</p>
+        <p class="episode-transcript__paragraph">
+            I totally agree with you that people don't talk enough about co-founder relationship issues but every
+            startup that I've started with somebody else there have been low screaming fights at least once and now I'm
+            now working with my brother where we've been doing that since we were kids so it's no big deal. It's super
+            easy to recover but anyway on Mixergy interview, we got to hear Mike's side of things where he talked about
+            the differences between you and how you really focused on moving fast and you were a little bit more risky
+            and he was a lot more risk averse.</p>
+        <p class="episode-transcript__paragraph">
+            I think it would be interesting to hear your side of that conflict as well. What separates the two of you?
+            What was hard for you about working with Mike and how did you guys resolve things?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1927">
+                <a href="#1927" id="1927">
+                    0h 32m 7s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">A lot of the things that were difficult are similar things that are
+            difficult with my wife to be honest. It's funny for me to see it's not just them. One is that I am
+            impulsive. I would say I'm impulsive and Mike is the opposite of impulsive. It's extremely deliberate. I'm
+            probably not deliberate enough. Mike is too deliberate, I'm not deliberate enough. I just want to think of
+            things and do them and try them and Mike wants to think about them probably longer than he needs to which
+            we've both talked about this. We both agree that that's overall probably true for both of us.</p>
+        <p class="episode-transcript__paragraph">
+            That's part of it. That's a bigger picture strategy thing but I think almost as big a part of it is just
+            like working styles. I always just wanted to talk about what I was thinking about and then this is the same
+            issue that I have with my wife is that which I'm sure she'll really appreciate me talking a lot on which is
+            that I have an idea and I just want to talk it through whereas being a deliberate person you think like this
+            person is talking about something. That means they want to do it or it means I have to really think harder
+            about this whereas I'm just going to talk about 30 things a day which I don't even think are good ideas. I
+            just want to think it through. Just throwing stuff out there.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="0">
+                <a href="#0" id="0">
+                    0h 0m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Just throwing stuff out.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2012">
+                <a href="#2012" id="2012">
+                    0h 33m 32s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">For Mike, he have this… A, he like… He's like an intense programmer. He
+            wants to be, here's what we're doing and I'm going to do it and I'm going to focus on it super intensely and
+            also he's working on technical, hard technical problems so he needs to have his… Being in the zone, not be
+            interrupted and there's this dude interrupting him every half an hour to talk about some stupid idea. I
+            think that was honestly a huge part of it where I would be like, "Hey, should we this, should we that? Hey,
+            what do you think about this? What do you think about that?" and him just being like, thinking, thinking,
+            thinking, thinking. A person talking to me again. Let me work.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2048">
+                <a href="#2048" id="2048">
+                    0h 34m 8s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Stop interrupting me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2049">
+                <a href="#2049" id="2049">
+                    0h 34m 9s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, exactly. I think that was a big part of it. There was also just
+            working style. It's like I really want to work together in a sense of I like pair programming is a good
+            example. I love looking at the same screen as people and doing things together and he doesn't. He just likes
+            to be in his own world and think really hard about things. He's brilliant. He makes great decisions and so
+            it's like I can't for that but he doesn't like to be working in real-time together basically.</p>
+        <p class="episode-transcript__paragraph">
+            He likes to talk about things ahead of time and then go apart, and do the things you talked about
+            individually. It's just like working style things both being interrupted all the time and that difference
+            around how you wanted to work day to day. It just led to us feeling… I think both of us feeling very
+            neglected and leading to conflict because it's just like our needs weren't being met. I would bring up stuff
+            over and over again in the way.</p>
+        <p class="episode-transcript__paragraph">
+            I would just be pushing at him a little bit because I just wanted that interaction. I'm extremely
+            extroverted person. I just wanted interaction and he would be frustrated because I could be taking amount of
+            his flow slash giving him ideas that he's not even sure if he has to really think about it or not. I mean
+            does that make sense?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2129">
+                <a href="#2129" id="2129">
+                    0h 35m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. It makes perfect sense. I mean you're describing anyone who has
+            any close relationship with somebody has some ways in which they're different and they're going to wrap up
+            against each other and they're not going to be able to talk about… They might neglect to talk about exactly
+            how they're feeling underneath. It's so easy to misinterpret what the other person is doing and sometimes
+            just listening to how the other person feels without getting defensive or fighting back is going to help to
+            make them feel a whole lot better.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2156">
+                <a href="#2156" id="2156">
+                    0h 35m 56s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's super hard to do that especially when you're implicated in making
+            them feel bad. It's just really hard to hear I've done something that makes someone else feel bad. I think
+            these are really like… Those are the dynamics and then the fact that we never really dealt with them was the
+            problem. I think all those dynamics were fine and then they just built up to this point where we went on
+            this walk. I remember the walk really vividly. We were working out of my friend's company and we walked to
+            Dolores Park. We sat on this bench.</p>
+        <p class="episode-transcript__paragraph">
+            I just remember Mike saying like, "I don't think I can do this anymore." Both of us being miserable. I was
+            not thinking about stopping but Mike was just like, "Look, dude. This is really unpleasant. We're just
+            fighting. Every time we talked, we're fighting basically." I was like, "This is really broken." Then we went
+            to therapy and it was helpful. We stopped therapy way too early because I was feeling very heavy pinching
+            and it's not cheap. We should have just never stopped going to therapy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2222">
+                <a href="#2222" id="2222">
+                    0h 37m 2s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Do you think that the tools that you learned in therapy have been
+            helpful like up until today because you were mentioning earlier about how to check in with each other and
+            have conversations on a weekly basis?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2231">
+                <a href="#2231" id="2231">
+                    0h 37m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It helps a lot, yes. We went back as well later.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2240">
+                <a href="#2240" id="2240">
+                    0h 37m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I don't want to spend the entire episode talking about co-founder
+            issues but I think it's really good to bring it up because like you said earlier there's a tremendous amount
+            of advice out there that says you need to find a co-founder and that'll be more likely to succeed as a
+            co-founder but it's important to look at the other side of the equation as well which is that a tremendous
+            percentage of companies fail because of co-founders issues and co-founders not getting along so it's a
+            double-edge sword and I know personally I've been in a situation a couple of times where businesses I might
+            have otherwise done well failed because of my relationship with co-founders.</p>
+        <p class="episode-transcript__paragraph">
+            One of the cooler things that I think you brought up earlier as well is the metrics behind WorkFlowy, how
+            long people use the app like 11 hours a day how long they stay an average of three years. Were things like
+            that right out of the gate right when you guys launched on TechCrunch and Lifehacker early on, did you guys
+            have a really high retention rate or did it take a lot of work to get to the point where people loved the
+            product and were loyal to you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2297">
+                <a href="#2297" id="2297">
+                    0h 38m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">We improved the number of but basically for a long-time it's been a
+            business for a small percentage of people who actually get it but then those who do get it basically has
+            never stop using it. It's been like that from the beginning and that basic dynamic is what… The number has
+            gone up as we've entered the product. The numbers have all gotten better. The basic dynamic has been there.
+            That's why we were like, "This is the real opportunity," because on day one, we had 10,000 people using it
+            and then they were telling other people about it and as people dropped off we were replacing them with new
+            people just through word of mouth and it grew… It was just growing on its own. It's been a really high
+            retention product from the beginning.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2340">
+                <a href="#2340" id="2340">
+                    0h 39m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's pretty inspiriting to hear because I build a couple productivity
+            tools in the past to you and retention is so hard with productivity because you're essentially building a
+            tool to help people do work, do things that are effortful. If you're browsing Facebook, it's fun. You're
+            addicted to it but if you're putting tasks into Asana or you're making an outline in WorkFlowy about things
+            you have to get done or other forms of work then that stuff that people might just fail to do all on their
+            own even if people have a great product because they lack the motivation and that's effortful.</p>
+        <p class="episode-transcript__paragraph">
+            It's always going to be harder to sell health food than tasty, delicious fast food. It's pretty impressive
+            that you guys have such a high retention rate and that you've been able to grow your user base like you
+            have. What does your stats look like today? I know you guys aren't perfectly transparent about everything
+            but just ballpark how much revenue you guys are generating and how many people are using WorkFlowy?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2389">
+                <a href="#2389" id="2389">
+                    0h 39m 49s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">We are at about 800K in run rate right now. We have over 100,000 active
+            users which just goes up slowly.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2405">
+                <a href="#2405" id="2405">
+                    0h 40m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Who all is working on WorkFlowy? Just you and Mike?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2409">
+                <a href="#2409" id="2409">
+                    0h 40m 9s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. Basically, that's the area that's in the biggest flux right now
+            so about a year ago… For a while… Many users noticed this. For a while not much was happening except for us
+            maintaining things and doing infrastructure stuff as the user base group but about a year ago I had
+            basically twins like three-and-a-half years ago and I was like I'm going to take it easy for a while and
+            hangout with my kids and just do what's needed. Then about a year ago, I was like I really want to make… I
+            feel like WorkFlowy is this huge… Both something that I really love and want to have a vision for. I want to
+            make it realize that vision and also just a huge opportunity that's mostly unrealized because it has
+            relatively small… It's like reaching just a drop of potential people it could reach.</p>
+        <p class="episode-transcript__paragraph">
+            Just everything is so much smaller than I think it really could be. About a year ago, I had that realization
+            and started talking to Mike about it and so basically over this current year I have basically been… We just
+            started building team and hiring people and doing stuff. Now, I have three… It's me and I have two other
+            full-time employees who aren't Mike and several contractors who are doing a lot of work and we're just… It's
+            like we're ramping up and starting a startup.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2497">
+                <a href="#2497" id="2497">
+                    0h 41m 37s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's cool. It's pretty exciting. I think you guys are in such an
+            interesting position because 800K annual revenue is a ton. The vast majority of people I talk to aren't
+            making anything like that with such a small number of employees. You've got that going for you. You've got
+            the freedom to work on basically whatever features you guys want to, whenever you want to and obviously from
+            wherever you want to. You got a lot of diehard fans. I mean you're not Tom Cruise but people like WorkFlowy
+            and you guys have a following. I'm curious what is driving you? What do you want WorkFlowy to be? It sounds
+            like you really want to grow? What underlies that and why do you want WorkFlowy to be big?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2537">
+                <a href="#2537" id="2537">
+                    0h 42m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's not that I want it to be big, it's that… I think it’s the craft's
+            person's motivation which is A, there's this thing I made which I love but it feels like it's in a lot of
+            ways like 30% of what it could be. I just want it to be what it could be. Then there's this full other angle
+            which is there's this thing… That's a huge part of it. I just want this thing to be what it can be and
+            realize its potential. I know there's all this people who love it for whom it changes their lives and I want
+            that group to be a lot bigger. I know there's just a lot of people for whom it could be a very important
+            part of their lives and it's not right now. Not just because they haven't been exposed to it.</p>
+        <p class="episode-transcript__paragraph">
+            I know for a fact there's a ton of people that's super common that someone tries it for three times has no
+            idea and then someone shows them how to use it or they have some insight and they become a diehard fan. I
+            just know that we are… I just have overwhelming anecdotal evidence that the opportunity is so much bigger
+            than what we realized that it's quite motivating.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2604">
+                <a href="#2604" id="2604">
+                    0h 43m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">What are some of the things you want to work on and how do you plan to
+            get bigger and better?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2609">
+                <a href="#2609" id="2609">
+                    0h 43m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There's a lot of angles. Being very product-oriented like I would love
+            to continue to have a product that grows itself. My sense is that the product is holding is back in a lot of
+            ways but also the fact that you've never done any marketing or outreach or anything is also silly and that
+            we need to do that but my personal motivation like the area I'm focused on is how do we make the product
+            stickier for any users so that they have a higher percentage of the average new person who comes to
+            WorkFlowy. We have 20,000 new sign ups a month from word of mouth and then… Think about it. Only a few like
+            maybe a thousand of those people actually become real users like long-term users who use it for many, many
+            months or whatever.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2664">
+                <a href="#2664" id="2664">
+                    0h 44m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That's 5%. What do you consider a good percent for retention?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2669">
+                <a href="#2669" id="2669">
+                    0h 44m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">For long-term retention, I'm not sure but I just know that products
+            that do really well, do a lot better and I know that most people who sign up… Not most people but half the
+            people who sign up don't even create a single bullet on the first day so I just that we're failing in a
+            pretty profound way. Basically, that's part of just making the current product more obvious how to use it.
+            There's lots of obvious things that need to be done, lots of features people been asking for years like
+            mobile being better and mobile having all the features of desktop, mobile being actually designed for mobile
+            is a huge thing.</p>
+        <p class="episode-transcript__paragraph">
+            Improving how collaboration works so that you can actually have a team that really stays safe to keeping all
+            their information at WorkFlowy is a huge… That's probably the biggest strategic thing. There's basically
+            like make their product better so dates and reminders, mobile, all that stuff. All the stuff that everyone
+            wants and all our users want and they've been telling us they want for ages just like getting product and
+            making the product better is a huge part of what I want to work on or what I think will make it stickier as
+            well as having new user experiences that are customized for all the different ways to please WorkFlowy and
+            letting our users create those experiences for other people.</p>
+        <p class="episode-transcript__paragraph">
+            Then the collaboration thing is just massive. That's the biggest strategically important thing. It depends
+            on the product being great but making the product so that when I open WorkFlowy, if you have wanted my
+            attention on something it will draw my attention to that. If you have something nested like 30 levels down,
+            and you're saying I want Jesse's feedback and you should be able to tag me and then the product will show it
+            to me. Likewise, if I want to just keep track on some projects they care about that everyone is managing in
+            WorkFlowy, I should be able to do just open the app and see it or get notifications or whatever.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2786">
+                <a href="#2786" id="2786">
+                    0h 46m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It sounds like you guys have a ton of work cut out for you and it's
+            pretty exciting to listen to you list all these features because whenever I'm working on something I have
+            this gigantic to-do list and I've talked about this before that never get smaller. No matter how many things
+            I cross off that list and the amount of time I've added more things that I want to do and I'm sure the same
+            is true with you. How do you prioritize? How do you know what goes to the top of the list and how do you
+            figure out what which of your team members are going to work on which things?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2813">
+                <a href="#2813" id="2813">
+                    0h 46m 53s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Basically, there's a couple parts of it. One is reactive so what do
+            people… This is a prioritization about who's going to work on what but part of it is just like, "We get a
+            lot of feedback from people and we have a lot of really passionate users. They tell us what they care about.
+            Mobile being better is really obvious. One of the things that's wonderful about working on a consumer
+            product that is actually useful is that you end having a lot of friends who use it so you get a lot of
+            anecdotal feedback and you can see whether that mashes up with feedback you're getting through your official
+            channels but basically we get a lot of feedback and it's like this is obviously the stuff people care about
+            and the stuff people want.</p>
+        <p class="episode-transcript__paragraph">
+            That's one side of it and there's also the vision part of things which is I have a vision for WorkFlowy and
+            I have an aesthetic and I have all these things I want because I want them and because that's how I've
+            always imagined that I want WorkFlowy to be this shared… A lot of people… Probably a lot of our users don't
+            care about collaboration in WorkFlowy. They probably… A lot of them do it. I know that for a fact but I'm
+            sure a lot of them are like, "This is my private tool. I don't want to share it with anyone."</p>
+        <p class="episode-transcript__paragraph">
+            For me the fact is like I've always imagined it being the way you can have your brain and also share parts
+            of your brain with other people. Part of it is just like vision and inspiration. It's like being an artist,
+            here's this thing. Here's how I want it to work. Those mesh in terms of prioritization so if there are
+            things when I overlap, I'm like, "I've always wanted this." I just think it's cool or whatever it is and
+            people are asking for it then that's very… Sometimes it's like confirmation bias where I'm listening to the
+            feedback that people want, that I want to hear from people.</p>
+        <p class="episode-transcript__paragraph">
+            It's like those two things play against each other because I care a lot about what people think and what our
+            users want so one of my big things like if I was to give advice to someone, a new person is watch people
+            like literally watch people use your product. Either physically or either video chat like just watch people
+            use it. You just get so many insights from doing that and it gives you a very human view on your product and
+            all the ways in which either it sucks or is great or both of those.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2966">
+                <a href="#2966" id="2966">
+                    0h 49m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I just talked to David Darmanin, COO of Hotjar. I don't know if you've
+            seen that product but it literally takes a little recording as people use your products. You can say, "I
+            want to watch 2,000 people use my… Sign in and it'll take a bunch of recordings and you can watch it. It's
+            not quite as good as sitting down with somebody in real life where you can ask them about what they did
+            afterwards or they can talk you through what's going on but it's the same phenomena.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2991">
+                <a href="#2991" id="2991">
+                    0h 49m 51s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Those are great. That kind of product are wonderful and I would
+            definitely recommend people use them.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2997">
+                <a href="#2997" id="2997">
+                    0h 49m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think another thing that we haven't talked very much about is
+            marketing because WorkFlowy has grown so far, it that's entirely word of mouth which is amazing. One of the
+            things that I tell a lot of people who are just starting out is if they should consider picking a niche and
+            that way they can build something really valuable for a specific group of people and that group is more
+            likely to fall in love with the product because it's built just for them and whereas the competitors tools
+            aren't built more generally but for WorkFlowy, I feel like your product completely flies in the face of that
+            principal.</p>
+        <p class="episode-transcript__paragraph">
+            It's not built for teachers or programmers or sales people. It's just a general product for everyone. I'm
+            curious who are these hardcore WorkFlowy users. Is there a pattern that you've discerned among them? Are you
+            guys trying to discern that or is it right now just it could be anybody.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3042">
+                <a href="#3042" id="3042">
+                    0h 50m 42s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think it's a very interesting… It's a very interesting question and I
+            think… To some degree we have built a niche product except it's not niche for a segment, for a specific
+            purpose, it's niche for people who like to work in a specific way and people who are smart enough to figure
+            out how to use a general tool. They're not smart enough. I think it's very smart to market to specific used
+            cases. WorkFlowy is used by everyone from piano teachers to CEOs of public companies so it's a genuine… I'm
+            not surprised if someone says, "My mom just recommended WorkFlowy to me." That happens a lot. I think it
+            does skew techie a little bit but it's still a very broad product that does appeal to very wide array of
+            people who would be hard to… If you saw them together in a room, you'd be like, "What conference is this?
+            I'm very confused." I think that our… One of the biggest areas that I want to focus on in the future is
+            making it so that you can essentially. If you are a piano teacher or you are a COO of a big company who
+            needs to manage all of their one-on-one's or you are a customer… A client-facing… A business that has
+            clients that needs to move through your pipeline that you can come to WorkFlowy and come to essentially a
+            structure and something that feels like an app that is customized for you because I do think both for
+            marketing and for onboarding, it is super important to show people how to use the product for their own
+            purposes and in a way that fits into their own life.</p>
+        <p class="episode-transcript__paragraph">
+            I went to a conference last year, the biggest investigative journalism conference. I'd give a presentation
+            along with some of the other people on tools and then I had a breakout session where 20 people came the idea
+            was like how to create your hyper personalized organizational system in WorkFlowy. Of those 20 people, all
+            journalist, one person looked at WorkFlowy and checked out the site and tried the demo and had their eyes go
+            wide and say, "Oh, wow. I get this. I see how I can use this for everything. I can how I can use this for
+            this part of my work and this part of my work and this part of my… "</p>
+        <p class="episode-transcript__paragraph">
+            Everyone else really needed to be shown how to use it for journalism and needed specific… They all the same
+            needs and they all really needed to be shown. Right now, we don't do that and I think because of that we are
+            missing out in a massive way. I was talking to one guy who's an investor, who was like I used WorkFlowy as
+            an example. This is very none self-promotional here. An example of one of the biggest failures that I know
+            of whether they've just left so much on the table because they haven't done… They have this product which
+            has this kernel of something amazing but they haven't done anything with it.</p>
+        <p class="episode-transcript__paragraph">
+            They haven't promoted it and they haven't built it out to its potential. I tell that because I agree with it
+            and that's why I'm doing all this stuff now and that's why I'm building the team. I was just saying like I
+            think that that advice is good advice that you give people. I don't know. For me, I'm just… My
+            entrepreneurial story is doing lots of things that I think are bad ideas and not working out.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3256">
+                <a href="#3256" id="3256">
+                    0h 54m 16s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">You used the product a lot because you built something that works very
+            well for you and ultimately if that doesn't generalize to some well-defined niche or industry likes sales
+            people that's okay because there's lot of other people out there who think like you do. Apparently 5% of
+            people and you could figure out how to make it appeal to other people and other specific niches later on.
+        </p>
+        <p class="episode-transcript__paragraph">
+            Listening to you talk about the challenges that are happening, I feel super excited for WorkFlowy because
+            there's so much low hanging fruit. It's not like you guys had spent 10 years trying every single thing and
+            nothing has worked but you guys have done very little in some areas. Marketing and still things are looking
+            very promising.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3297">
+                <a href="#3297" id="3297">
+                    0h 54m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I mean what we have done is put a lot of… We care a lot about the
+            details of the products, I mean about the interactions, to be honest of one part of the product which is the
+            part you're interacting with lists. Lots of the product the setting, dialogue and stuff is pretty terrible
+            but that is the thing that we spent all the time on essentially. What is the core value that we are creating
+            like that's where we put all of our energy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3326">
+                <a href="#3326" id="3326">
+                    0h 55m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The things that WorkFlowy does, it does really, really well. I think
+            other people besides me have recognized that WorkFlowy is on to something and that you guys have a lot of
+            competition. I think it's one of the more interesting stories because I've never seen a product get cloned
+            so many times and so directly as WorkFlowy. A lot of the clones are crappy like usually when someone clones
+            a product it's pretty crappy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3347">
+                <a href="#3347" id="3347">
+                    0h 55m 47s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There's a couple of really good ones. Basically my thought on that… Do
+            you want to finish… Oh, you finish your question.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3353">
+                <a href="#3353" id="3353">
+                    0h 55m 53s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Go ahead.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3354">
+                <a href="#3354" id="3354">
+                    0h 55m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The thought on the clones is basically like we didn't do much for a
+            long time and that is why clones exists because there's a lot of stuff that the product needs and I think
+            some of the clones are nice but none of them get the details I think as right as we do. Most of them are
+            focused on adding more features. The biggest thing that I see with clones is that they don't have… I would
+            say they're not me. They don't have the vision that I have. I see them, I'm like, "Oh, here's a nice one
+            that did a nice job. That's interesting."</p>
+        <p class="episode-transcript__paragraph">
+            Then I look into it, I'm like, "Oh, okay. Once we start having product momentum, we're going in a different
+            direction. They're adding the obvious adjacent things that are needed which we will do but they're not
+            building into the future where WorkFlowy is a tool that actually makes you smarter and this is a tool that
+            helps you think through things in ways that you don't know how to think through and all these things that
+            just come out of who I am kind of I think. A lot of them are none obvious but I think there's a lot of
+            obvious stuff that could be added to WorkFlowy which is good and I'm glad that people are doing it but
+            they're also… When I look at them there's two things. One, I'm like, "That's not as polished as it needs to
+            be and it doesn't work quite as well as it needs to." Just the direction of the product is not as inspiring.
+            I don't see this product working out and being used by hundreds of millions of people.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3440">
+                <a href="#3440" id="3440">
+                    0h 57m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">They lack the vision that underlies all the decisions that you're
+            making.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3444">
+                <a href="#3444" id="3444">
+                    0h 57m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, that's how I feel about them. Honestly, it's both really
+            frustrating and really like imitation flattery, et cetera. It sounds flattering. It's frustrating and it is
+            gratifying to me that we've been able to move into a mode of growth and investing in the product and
+            investing in the company because otherwise their product would just eventually languish and the clones, the
+            wars… What is the sequel, the Star Wars like number two. Attack of the Clones.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="0">
+                <a href="#0" id="0">
+                    0h 0m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Attack of the Clones.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3477">
+                <a href="#3477" id="3477">
+                    0h 57m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The clones will win.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3480">
+                <a href="#3480" id="3480">
+                    0h 58m 0s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">You can't let the clones win and I think it's cool to hear your take on
+            it. I wonder like the clones inspire you in a way. Do they light a fire under your ass or do you just ignore
+            them to the most part?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3491">
+                <a href="#3491" id="3491">
+                    0h 58m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think they inspire… The new team members who joined, it inspires
+            them. I think they upset me but to be honest they don't motivate me because I have extremely strong
+            motivation without clones. If we had zero clones I would have the same level of motivation I have now of
+            just… I am just dying to make this thing that's in my head real in the world and just dying to realize what
+            feels like this very tangible opportunity in front of me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3523">
+                <a href="#3523" id="3523">
+                    0h 58m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think you're in a good position to do it and it's an interesting
+            situation because when you do something that's new, and you're the first mover, you have the advantage that
+            you get all the initial mind share. WorkFlowy is way bigger than all of these clones and probably will be
+            for a very long time if not forever, but at the same time when you're the first mover, other people are
+            going to clone you. It just happens. No one has invented anything that other people haven't tried to clone.
+        </p>
+        <p class="episode-transcript__paragraph">
+            The last thing, before I let you get out of here is I'm curious what your long-term goals are? I don’t just
+            mean with WorkFlowy, in terms of making it the product that it can be but I mean personally. If WorkFlowy
+            tomorrow was the tool that you wanted it to be and it was bringing in people from all over and you're doing
+            a great job educating them to having use the product and showing them examples and it was just fulfilling
+            all the goals that you asked for.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3572">
+                <a href="#3572" id="3572">
+                    0h 59m 32s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">We have a billion people using it and it's on every desk and it's
+            running every company, et cetera. My long-term goal is to be a mad scientist. Very simple. I want to solve
+            all the world's problems. This is just like completely impossible and completely crazy. I just want to be
+            making stuff that makes the world better and also just making stuff that I enjoy making. The dream if
+            everything was crazy successful would basically be to build more stuff and to focus on some pretty crazy
+            ideas as well around making people happier, structuring society in a better way.</p>
+        <p class="episode-transcript__paragraph">
+            It would be awesome by the time I died. I felt like I was part… Not necessarily started a movement but it
+            was just part of a movement or part of something that felt like, " This is addressing the flaws or how our
+            society works right now and is going to hopefully 100 years from now like people and animals and everything
+            will be happier because of this thing we're all doing. I feel like that's what… Honestly, that's what most
+            people want. Most people would love to feel part of something as well. For me it's like, I would like to be
+            in this position to be like a real mad scientist doing large scale crazy things, testing those kinds of
+            ideas.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3666">
+                <a href="#3666" id="3666">
+                    1h 1m 6s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I really hope you get there, and I would love to test out some of your
+            mad scientist creations when you do. Thanks a ton for coming on the podcast. Can you let people know where
+            they can go to find out more about what you're up to at WorkFlowy and about you personally?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3680">
+                <a href="#3680" id="3680">
+                    1h 1m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There's not a lot of information about me personally on the internet.
+            I'm afraid of the internet to some degree to be honest.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3686">
+                <a href="#3686" id="3686">
+                    1h 1m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's probably smart.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3687">
+                <a href="#3687" id="3687">
+                    1h 1m 27s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">WorkFlowy is <a href="http://workflowy.com" class="linkified"
+                target="_blank">workflowy.com</a>, and <a href="http://blog.workflowy.com" class="linkified"
+                target="_blank">blog.workflowy.com</a> is our blog, and Google WorkFlowy. That's what everyone does. Our
+            search terms are only WorkFlowy.\</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3704">
+                <a href="#3704" id="3704">
+                    1h 1m 44s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Nice.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3704">
+                <a href="#3704" id="3704">
+                    1h 1m 44s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It's ridiculous.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3706">
+                <a href="#3706" id="3706">
+                    1h 1m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Low hanging fruit man. Thanks a ton. It was great talking to you,
+            Jesse.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/037-jesse-patel-of-workflowy.jpg">
+            <span class="episode-transcript__speaker-name">
+                Jesse Patel
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3710">
+                <a href="#3710" id="3710">
+                    1h 1m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">All right. See you.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3712">
+                <a href="#3712" id="3712">
+                    1h 1m 52s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">If you enjoyed listening to this conversation and you want a really
+            easy way to support the podcast, why don't you head over to iTunes and leave us a quick rating or even a
+            review. If you're looking for an easy way to get there just go to <a href="http://indiehackers.com/review"
+                class="linkified" target="_blank">indiehackers.com/review</a> and that should open up iTunes on your
+            computer. I read pretty much all the reviews that you guys leave over there and they really help other
+            people to discover this show so thanks a ton for your support.</p>
+        <p class="episode-transcript__paragraph">
+            In addition, if you are running an internet business, or if it’s something that you'd like to do in the
+            future, you should join me and a whole bunch of other founders on the <a href="http://indiehackers.com"
+                class="linkified" target="_blank">indiehackers.com</a> forum. It's a great place to get help with pretty
+            much any problem that you might encounter while running your business like how to come up with an idea or
+            feedback on a product that you're working on. I try to spend a couple hours a day just answering questions
+            and giving people feedback and getting to know everyone, so I really hope to see you there. That's <a
+                href="http://indiehackers.com/forum" class="linkified" target="_blank">indiehackers.com/forum</a>.
+            Thanks for listening and I'll see you next time.</p>
+    </div>
+</div>

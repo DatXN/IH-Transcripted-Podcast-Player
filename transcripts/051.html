@@ -1,0 +1,1815 @@
+<div id="ember48" class="episode-transcript ember-view">
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="7">
+                <a href="#7" id="7">
+                    0h 0m 7s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">What’s up, everyone? This is Courtland Allen from <a
+                href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a> and you’re
+            listening to the Indie Hackers Podcast. On this show I talk to the founders behind profitable internet
+            businesses and I try to get a sense of what it’s like to be in their shoes, how do they get to where are
+            today, how do they make decisions both in their personal lives and at their companies, and what exactly what
+            makes their companies tick? And the goal here, as always, is so that the rest of us can learn from their
+            example and go on to build our own successful businesses.</p>
+        <p class="episode-transcript__paragraph">
+            Today I’m talking to Rand Fishkin. Rand is one of the world’s foremost SEO experts. And as such, he doesn’t
+            need much of an introduction, but I’m going to give him one anyway. </p>
+        <p class="episode-transcript__paragraph">
+            Rand is the founder of Moz, a marketing and SEO company, which he helped grow to $47 million in annual
+            revenue, and which has helped many people, myself included, find customers and drive traffic to our
+            websites. Rand is also the author of a new book called Lost and Founder. It’s a painfully honest field guide
+            to the startup world. I’ve read it and it’s like a very transparent, very detailed Indie Hackers interview.
+            So if you enjoy Indie Hackers, you’ll love the book, and it should be available by the time that you hear
+            this episode. And finally, Rand recently left Moz to start a brand-new company from scratch. It’s called
+            Sparktoro, and I’m sure we’ll get the chance to talk about that as well.</p>
+        <p class="episode-transcript__paragraph">
+            So Rand, welcome to the show and thank you so much for joining me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="79">
+                <a href="#79" id="79">
+                    0h 1m 19s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Thrilled to be here, Courtland.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="81">
+                <a href="#81" id="81">
+                    0h 1m 21s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">The problem with talking to people like you who’ve done so many things
+            is that there’s no way we’re going to fit all of it into an hour, and so people will be mad at me. So I just
+            want to start by saying, shame on you, Rand, for putting me in this awkward position.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="91">
+                <a href="#91" id="91">
+                    0h 1m 31s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">(Laughter.) Well, shame received.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="94">
+                <a href="#94" id="94">
+                    0h 1m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So probably everybody who has a website that they’ve tried to get to
+            the top of Google has heard of Moz, but very few of them are aware that you started the company with your
+            mom. In fact, I’ve never met another mother-son founding team. So can you tell us a little bit about what
+            those early days were like?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="111">
+                <a href="#111" id="111">
+                    0h 1m 51s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. It turns out mom-and-son software startup is the least likely
+            venture-funded company out there. I’ve also never met a mom-and-son venture-backed startup founding team.
+        </p>
+        <p class="episode-transcript__paragraph">
+            So I think, yeah, the early days were hard. I dropped out of college, I was working at my mom’s office out
+            on the east side of Seattle, and we were not good at building a client base, not great at getting paid, the
+            .com bubble had just burst, and a lot of clients were trying to get their websites done, but then not
+            paying. We were struggling to just make ends meet, and in fact, going into debt at the same time.</p>
+        <p class="episode-transcript__paragraph">
+            So by 2004, I think it was, maybe end of ’04, beginning of ’05, we had about half a million dollars in
+            credit card debt. That’s because we actually had more like $140,000 or $150,000 in credit card debt, but
+            then we couldn’t make the minimum payments. And so the interest rate spikes and the penalties jump up. Ad a
+            couple months into that, you’re lucky if it’s not 2x.</p>
+        <p class="episode-transcript__paragraph">
+            So as a result, we started trying to find anything to grab onto. And I had built this blog called SEOmoz
+            that was all about, basically, learning the SEO process by writing about it and sharing my experiences. We
+            had stopped being able to afford our SEO consultants and contractors, subcontractors for our clients in ’03,
+            and so I was learning the practice and trying to make a go of it.</p>
+        <p class="episode-transcript__paragraph">
+            And that is what led to, eventually, being able to dig out of that hole. We got consulting clients and some
+            speaking engagements and some traction with that blog. And then a few years later after we were just barely
+            out of debt, we launched this software product called the SEOmoz Pro Tools, and that took off like a rocket
+            because we already had the audience. We already had this strong group of thousands of people who were
+            reading Moz’s website every day to learn about SEO. </p>
+        <p class="episode-transcript__paragraph">
+            We knew that they needed the same tools we did. I wanted to share them for free. Matt, our developer, was
+            like, “No, we won’t be able to afford the server bandwidth, so we’re going to have to charge them
+            something.” I was like, “Okay, we’ll throw a little PayPal $39 a month thing up.” And within six months, we
+            saw that that was going to overtake our consulting revenue by the end of the year, and so suddenly realized
+            the power of having a SaaS product.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="273">
+                <a href="#273" id="273">
+                    0h 4m 33s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I think most people who are half a million dollars in debt would
+            decide to probably throw in the towel rather than start a blog. What was going through your mind at the
+            time, if you can remember back that far? And why did you think that building an audience and building a blog
+            could somehow get you out of debt?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="289">
+                <a href="#289" id="289">
+                    0h 4m 49s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, I want to say it was less that I thought that building the blog
+            could get us out of debt, and more that anything that looked like it could have any kind of traction looked
+            appealing at the time. Bankruptcy is actually the super-logical option, but my mom and I had never told my
+            dad that we had any debt, and we were pretty scared that if he found out, I don’t know, all sorts of bad
+            things might happen. Maybe he’d divorce my mom, and what would happen to their house, what would happen to
+            my grandmother’s house in Connecticut, which my parents owned.</p>
+        <p class="episode-transcript__paragraph">
+            So yeah, it was really stressful times, and it was one of those situations where you just grasp onto
+            anything you can. And this blog was getting traffic. A few people a month were contacting us asking for SEO
+            services. And so we just went where the money was.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="346">
+                <a href="#346" id="346">
+                    0h 5m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So a lot of other entrepreneurs listening in right now are in a similar
+            situation. Maybe they’re not in debt, but they’re pretty hungry for any sort of traction. How did you get so
+            much traffic to your blog, and what were you doing that maybe other bloggers aren’t doing?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="361">
+                <a href="#361" id="361">
+                    0h 6m 1s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, one big thing was that there were so few blogs or websites that
+            had open, transparent information about SEO at the time. It was kind of this secretive, dark world that was
+            perceived as very scammy and sketchy. It’s tough to remember now, but when I started in SEO, a podcast like
+            Indie Hackers – well, podcasts weren’t nearly as popular. But something like the Indie Hackers community or
+            the Hacker News community were virulently anti-SEO. They just hated the idea of search engine optimization.
+            They thought it was this totally scammy thing. I would say until about four or five years ago, web
+            developers as a whole just despised SEO as this practice.</p>
+        <p class="episode-transcript__paragraph">
+            And so at the time, I think Moz’s transparency, my willingness to be transparent and open about what was
+            going on with SEO and to be vulnerable and to sort of share what was working and what wasn’t, that was
+            refreshing and unique and hard to find. And because of those things, it was unique. It stood out in its
+            field. And there was also very few people writing about SEO; maybe a few dozen blogs at most. Today there’s
+            thousands if not tens of thousands. And so standing out in the field was definitely much easier.</p>
+        <p class="episode-transcript__paragraph">
+            And I’d also say this: 2003 I started the blog. It wasn’t really until ’05 that it got any traction, and it
+            really wasn’t until ’06, ’07 that it started to take off. So while it looked like to many people this
+            overnight success in the SEO world, Moz was years in the making. And those first few blogposts, those first
+            few years of blog posts, they rarely got 100 visits to them. They didn’t bring us any clients at all. It was
+            only a couple years in that that started trickling.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="475">
+                <a href="#475" id="475">
+                    0h 7m 55s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Psychologically, how do you decide to keep going if you don’t know that
+            it’s going to work and it’s not working out immediately? Because I think a lot of founders struggle with,
+            “I’ve given this six months. It’s not working. I need to pivot. I need to quit.” Why didn’t you?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="491">
+                <a href="#491" id="491">
+                    0h 8m 11s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I mean, because I had real interest in the topic. It was not an
+            overnight success, but it was clear to me that every month I was getting a little bit better at it. The
+            first few months, it was like a few dozen visits, then it got into the many dozens of visits, and then
+            there’d be days where I’d break 100 or 200 visits six months in, and then a year in, I could break 500
+            visits sometimes. And two years in, that was 1,000.</p>
+        <p class="episode-transcript__paragraph">
+            So I think it was the sense of progress that kept me going. It’s part of the addictive behavior that a lot
+            of games create, where you feel like you’re getting better at it and you’re getting rewarded a little bit.
+            And so even though the progress is very, very slight, that sense of, “Oh, every time is a little better than
+            the last time” I think is what kept me going.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="545">
+                <a href="#545" id="545">
+                    0h 9m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I can understand that. I spent many hours leveling up my
+            character in World of Warcraft, probably around the same time that you were leveling up your blog.
+            (Laughter.)</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="554">
+                <a href="#554" id="554">
+                    0h 9m 14s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I missed World of Warcraft because of SEOmoz. I’m kind of sad about
+            that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="558">
+                <a href="#558" id="558">
+                    0h 9m 18s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I think you probably made the right decision.</p>
+        <p class="episode-transcript__paragraph">
+            So you’re writing your blog, it’s going well, a lot of your readers are turning into leads for the SEO
+            services that you guys are providing. But eventually, you pivoted to become a product business. I’ve talked
+            to a lot of founders who’ve made that same switch, and I’m curious what it was like for you. How did you
+            decide to become a product business, how did you build a product, and how did you go about finding your
+            first customers to sell it to?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="583">
+                <a href="#583" id="583">
+                    0h 9m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. So we had a very unusual story in this respect in that we
+            basically built – I think we probably built six or seven tools that were just for me and two other
+            consultants who worked at SEOmoz. And Matt had built them sort of on the backend of our website, accessible
+            only to us. They were not high quality, not very usable, but they got the job done. They were automating
+            things that were a pain in the butt to do in SEO every time you had to audit a website or check its links or
+            compare it to another site or put together a little client report, whatever it was.</p>
+        <p class="episode-transcript__paragraph">
+            Given the fact that the SEO world had so few tools – there was a couple of downloadable pieces of software
+            that you could install. I think one of them was called Web Position Goal that would track your rankings. But
+            we hated that we had to download it, and the request all came from your IP address and so you’d get blocked
+            by Google sometimes. </p>
+        <p class="episode-transcript__paragraph">
+            And so we were like, “Well, if we could put it on a website and have it sort of live in the cloud, that
+            would be awesome.” And those tools, I showed them off at conferences and events. So I’d show them to my
+            friends and my buddies as we’d go out. I’m like, “Oh, check this out.” I’d pull out my laptop. “Look, I’ve
+            got this little tool that can scrape Page Rank.” Google’s toolbar Page Rank at the time was sort of an
+            important SEO metric. “And oh, it’ll do a site command and look for all the pages and make sure they’re all
+            indexed and then crawl all of them and fetch the title tags” and stuff like that.</p>
+        <p class="episode-transcript__paragraph">
+            And these cheap, little – today they’d be considered just junky tools. This little collection of tools was
+            what we started charging, I think, $39 a month for in 2007. </p>
+        <p class="episode-transcript__paragraph">
+            And finding our first customers was way too easy. Basically, I wrote a blogpost saying, “This thing is now
+            available” and that was it. That was all the marketing we did. But because that blogpost went through RSS
+            and email at the time – this is sort of pre heavy social media days – it was read by thousands of people, a
+            few thousand people, maybe 2,000 or 3,000 people who needed tools just like we did. And so essentially, by
+            solving our own pain point and being in that world, we had built this community and they turned out to be
+            right customers for us. </p>
+        <p class="episode-transcript__paragraph">
+            And to be honest, Courtland, I’m kind of doing that again. My hope with Sparktoro with this new business is
+            to, over the next six to 12 months as my cofounder and I build out the product and the technology underlying
+            it and do a lot of validation, I hope to build a community of thousands of folks who come to Sparktoro,
+            mostly for content and to learn about marketing and those kinds of things, and then see, “Oh, they have this
+            product. This is the problem they’re trying to solve. If I’m interested in that, I can sign up to get
+            notified when it comes out.”</p>
+        <p class="episode-transcript__paragraph">
+            And by building that sort of audience-first, product-second approach, which I think is actually pretty
+            unusual, unfortunately, in the classic startup world; I think probably more common in the Indie Hackers
+            world.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="777">
+                <a href="#777" id="777">
+                    0h 12m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Oh, definitely.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="778">
+                <a href="#778" id="778">
+                    0h 12m 58s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I think that can be a great path to quick traction.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="784">
+                <a href="#784" id="784">
+                    0h 13m 4s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">One of the problems that a lot of Indie Hackers in particular face is
+            that they have pretty limited resources. They don’t have funding, they don’t have a consulting business that
+            they can rely on, and they’re sort of building their products on the side while they’re at their full-time
+            jobs. What’s your advice for somebody in that position?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="800">
+                <a href="#800" id="800">
+                    0h 13m 20s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, so I do think that a lot of folks who are trying to build a
+            business while they’re at their full-time job should consider that, rather than product building, you might
+            want to do audience building first.</p>
+        <p class="episode-transcript__paragraph">
+            So you only have a few hours a night or on the weekends or whatever it is. And I might consider: Hey, should
+            every week or every month you put our something or do something that builds an audience, whether that’s,
+            hey, I’m going to participate in these Q&amp;A forums or I’m going to build this profile on social media
+            channels that gets me the right kind of following, or I’m going to engage in blogging, or I’m going to put
+            together a podcast, or whatever if it is, a YouTube channel, an Instagram following, et cetera, et cetera.
+        </p>
+        <p class="episode-transcript__paragraph">
+            And I might consider whether building that audience first, rather than building the product first and then
+            sort of launching and going, “Okay, now how do I get traction, how do I get an audience” can be a real path
+            to validation, market validation, building the right thing, and then having that audience out there early,
+            which can make such a difference when you do launch.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="867">
+                <a href="#867" id="867">
+                    0h 14m 27s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">It’s fascinating how much of entrepreneurship is sort of taking this
+            windy, curvy path instead of going directly where you want. So you want this big, hairy product but maybe it
+            doesn’t make sense to just start building all the features; or you want to build this successful company,
+            but maybe it makes sense to, rather than build your company directly, build an audience first.</p>
+        <p class="episode-transcript__paragraph">
+            What are some of the ways that you and Moz leveraged your early advantages to go into a complete new arena?
+        </p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="894">
+                <a href="#894" id="894">
+                    0h 14m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. One of the clear, big wins for us was having this giant email
+            list. So we had foolishly – I say this because I think today we absolutely would be on WordPress or another
+            CMS system that’s much more flexible and doesn’t require a ton of in-house work. But we had built our own
+            CMS, and as a result, we had our own system for registering and commenting on the blog or trying out some of
+            the free tools or whatever it was.</p>
+        <p class="episode-transcript__paragraph">
+            And so we assembled this giant email list over the first few years, and we were able to use that to do,
+            yeah, lots of really powerful marketing. I think between email and organic search, that probably accounted
+            for 90-plus percent of all the signups that we earned. </p>
+        <p class="episode-transcript__paragraph">
+            And so certainly to the extent that folks can build things that capture emails – I still think emails are
+            far more powerful than OAuth or Facebook fans or Twitter followers or anything like that. I would do that.
+            Email also lets you do things like upload that list to a Facebook or a LinkedIn or a Google and run ads
+            against them and lets you do clever retargeting, lets you put it into a system like FullContact and get out
+            a bunch of data about your audience.</p>
+        <p class="episode-transcript__paragraph">
+            So I would absolutely encourage anyone who’s building an audience to go email first.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="985">
+                <a href="#985" id="985">
+                    0h 16m 25s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I’m doing the same thing at Indie Hackers; trying to build my
+            email list, trying to use it as sort of the primary distribution channel rather than being completely
+            reliant on these other channels like Twitter, Facebook, Hacker News, et cetera.</p>
+        <p class="episode-transcript__paragraph">
+            And it’s a long slog. It takes a while to build up your email list. It’s not as instantly viral as some of
+            these other channels, but like you said, it’s so valuable. It’s one of the most talked about things that I
+            think is still underrated.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1009">
+                <a href="#1009" id="1009">
+                    0h 16m 49s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. I mean, I would take 10 email addresses over 5,000 Twitter
+            followers any day.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1019">
+                <a href="#1019" id="1019">
+                    0h 16m 59s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. So in your book, you talk a lot about how marketing was always
+            part of Moz’s DNA, and that they’d be building the product and dealing with technology was difficult, but
+            getting millions of visitors to your website was the easy part for you.</p>
+        <p class="episode-transcript__paragraph">
+            But for a lot of Indie Hackers listening in, it’s the exact opposite. They have no idea how to get millions
+            of users to their websites. What do you know that they don’t? Was this just lessons that you picked up from
+            your blog or is it some part of who you are naturally?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1046">
+                <a href="#1046" id="1046">
+                    0h 17m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">No. I don’t think that I had any particular special skill when I
+            dropped out of school and started doing this stuff. I think that it really was years and years of trial and
+            error. And if you were to say, “Well, what does Rand know or what do professional web marketers know that
+            software engineers and product builders and designers and developers often don’t,” I think it comes down to
+            this sort of uncanny, hard-to-describe ability to recognize things that will resonate with an audience and
+            draw them in versus be perceived as either bullshit that no one’s interested in or just boring.</p>
+        <p class="episode-transcript__paragraph">
+            What I think many startups try and engage in is sort like content marketing. They try and build content,
+            whether that’s across social channels or podcasts or videos or blog content or articles or a news section,
+            or whatever it is. And they don’t have a great answer to this fundamental question when they produce that
+            content: Who will help amplify this and why?</p>
+        <p class="episode-transcript__paragraph">
+            And that’s something that marketers are really good at. They’re not just good at saying, “Oh, well, I think
+            that people who need accounting software will help me amplify this.” People who need accounting software
+            need accounting software. They don’t want to amplify things. They’re not there to help you market. They just
+            want accounting software. </p>
+        <p class="episode-transcript__paragraph">
+            And marketers recognize that there’s customers and then there’s sort of like channels and sources and
+            publications and people who influence potential audiences. And those are the people who desperately need
+            things to amplify. Every day they’re scrolling through tons of different content channels and trying to find
+            things that are worthy of sharing with their audiences through whatever means they’ve got, whether that’s
+            journalists trying to figure out what to write about or people trying to figure out what to submit to Hacker
+            News, or people trying to figure out what they’re going to tweet or share on Facebook or put on LinkedIn.
+        </p>
+        <p class="episode-transcript__paragraph">
+            They’re influences, but they have this desperate need every day of stuff that they have to share. And so by
+            serving them, and then attracting the audiences that they help you build, you get this powerful marketing
+            effect. But if you just try and target your customers, you often miss out.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1193">
+                <a href="#1193" id="1193">
+                    0h 19m 53s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think from far enough away, if you’re a programmer and you have no
+            marketing experience, it’s easy to squint at it and just think that it’s luck. “Oh, some things take off,
+            some things don’t, who really knows why. Hopefully, my customers will help me amplify it.”</p>
+        <p class="episode-transcript__paragraph">
+            But from your position, you’re aware of all the sort of levers that can be pulled, you can break down things
+            and explain exactly why people share things via word of mouth and exactly why people will amplify things in
+            front of their audience, and it’s not a mystery. </p>
+        <p class="episode-transcript__paragraph">
+            One of the things that you guys did that I think is super cool, and I love talking about it whenever anybody
+            does this, is you sort of modeled your growth like a flywheel. Can you talk a little bit about what that
+            meant and why you did that?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1231">
+                <a href="#1231" id="1231">
+                    0h 20m 31s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. So I wrote this chapter about my frustration with growth hack
+            chasing, which we did plenty of at Moz. We were trying to find that one silver bullet, that one weird trick
+            to lose 10 pounds tomorrow. And of course, as you know, there’s no one weird trick; or if there is, it’s a
+            pill that makes you sit on the toilet all day, so don’t do that.</p>
+        <p class="episode-transcript__paragraph">
+            We experienced a lot of the pain of chasing those growth hacks. Even when we had a successful growth hack
+            every once in a while, (a) we’d get addicted to that practice and (b) it often would produce lower-quality
+            customers, lower lifetime value, higher-churn customers. </p>
+        <p class="episode-transcript__paragraph">
+            And so the alternative is to build this sort of marketing flywheel. And the reason I use the flywheel
+            analogy is because a flywheel is something that scales with decreasing friction. But it takes a tremendous
+            amount of energy to get started. The first few revolutions of a flywheel are very energy intensive. But then
+            inertia and a lack of friction lets it go faster and faster and revolve and revolve with less energy input.
+        </p>
+        <p class="episode-transcript__paragraph">
+            And that’s exactly what we found with our marketing practices. So Moz is a sort of classic content-marketing
+            machine. But let me use an example. It’s 2007 and I want at blogpost (distortion) 10,000 visors. I’m trying
+            to get 10,000 people to read this blogpost that we put out. </p>
+        <p class="episode-transcript__paragraph">
+            Well, you know what? For probably two to three months, I’m going to pounding every channel I possibly can:
+            my early Facebook and Twitter, my LinkedIn back in those days, other people’s blogs, going to forums and
+            writing answers to questions that mention the post, and emailing folks and talking about it at conferences.
+        </p>
+        <p class="episode-transcript__paragraph">
+            And I’m unlikely to ever get to that 10,000 because it’s just such a big number compared the audience that
+            we generally reach, which I think in those days was maybe 1,500 people per blogpost if we were lucky, if it
+            was a good one, maybe 2,000.</p>
+        <p class="episode-transcript__paragraph">
+            Fast forward to 2018, and I want 10,000 people to watch a Whiteboard Friday video that I produced yesterday.
+            How do I do it? I hit “publish.” That’s all I have to do. Why is that? Because over those 10 years, every
+            time we had a piece of content that went out there, a few more people subscribed via email and a few more
+            people subscribed via RSS and a few more people followed the Moz account on Twitter and on Facebook and on
+            LinkedIn and even on Google+ for the few years that that was an active channel.</p>
+        <p class="episode-transcript__paragraph">
+            And more and more people who amplify things saw that when they shared Moz’s content, they got more retweets
+            and more amplification. So they sort of got trained like, “Hey, this is a good thing to share. I should
+            share this when it comes out. If there’s a good one, I should share it.” And a result, Moz’s audience just
+            kept growing and growing.</p>
+        <p class="episode-transcript__paragraph">
+            Search worked this way too. In 2007 Moz was a mildly powerful website. It had tens of thousands of links to
+            it, it ranked reasonably well. But today a Whiteboard Friday post a few hours after it goes up, it’ll
+            probably be ranking number one or two for even pretty competitive keyword phrases that it targets in its
+            title. And that’s just because Google has been trained that Moz does a great job of answering searchers’
+            queries and that we’ve got a tremendous amount of link equity and domain authority and all these ranking
+            signals that factor into Google’s results.</p>
+        <p class="episode-transcript__paragraph">
+            And so yeah, you want 10,000 visits? You hit “publish.” It’s become a flywheel. It’s turning so fast at this
+            point that inertia and the frictionless generation of energy keeps it going.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1468">
+                <a href="#1468" id="1468">
+                    0h 24m 28s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And I think a lot of people trying to grow a company who are obsessed
+            with growth hacks will do growth hacking without having that flywheel. And so they’re sort of growth hacking
+            these one-off things that won’t feed into some sort of long-term mechanism that will improve their company
+            and make it easier to grow in the future. But that doesn’t necessarily mean all growth hacks are bad,
+            because you can use growth hacks once you have your flywheel to sort of accelerate individual components of
+            it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1491">
+                <a href="#1491" id="1491">
+                    0h 24m 51s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Absolutely.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1491">
+                <a href="#1491" id="1491">
+                    0h 24m 51s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">How did your flywheel change over time, and what are some of the things
+            that you guys did to get it spinning faster?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1497">
+                <a href="#1497" id="1497">
+                    0h 24m 57s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, yeah. So I wrote about one of the early ones of these, and I
+            think it serves as a great example of this. So basically, you’ve got this flywheel that you’re trying to
+            turn, but you find a point of extreme friction. So for me in the early days of the blog, it was:</p>
+        <p class="episode-transcript__paragraph">
+            “I just can’t get anyone to link to my stuff. No one in the SEO world is sort of – no one who owns their own
+            blog or website in the SEO world is reading my stuff. There’s a bunch of people who came over from other
+            forums and they’re checking it, and some people who maybe heard about us through other sources. So I’ve got
+            a couple hundred regular readers, but they’re not the people who might link to and share my stuff. And I
+            really need those links. Those links are what are going to power my rankings in Google and get me in front
+            of a broader audience and bring in customers, all that kind of stuff. So I need these rankings; to get them
+            I need these links.”</p>
+        <p class="episode-transcript__paragraph">
+            And so I had this idea of, “Hey there’s a document on the web called the Google Ranking Factors.” It was 101
+            Google Ranking Factors. And it was from this guy who does these one-page documents. I don’t think the
+            website still exists, but it wasn’t very good. It was kind of a mediocre attempt at trying to explain what
+            was in Google’s algorithm.</p>
+        <p class="episode-transcript__paragraph">
+            And so I did this thing where I emailed 150 people that I admired most in the SEO world, almost all of whom
+            had their own blog and websites. And I said, “Hey, on my website, Moz, I’m doing this survey and I’m going
+            to put together sort of a collection of aggregated opinions from experts in the field about what’s in
+            Google’s ranking factors. And if you would do me this favor and take this survey – it’s pretty intense,
+            it’ll probably take you 25, 30 minutes to complete this survey – I’m going to include you in there and link
+            back to your site and cite you as one of the contributors.”</p>
+        <p class="episode-transcript__paragraph">
+            And like 90 people out of this 150 said yes. They spent the half an hour to take this survey. And then I
+            aggregated all the results and created a bunch of different visuals, but one of them that really resonated
+            was this pie chart. It was the percentage of each major ranking element of Google’s algorithm. And it’s an
+            aggregated set of opinions. It’s not perfect by any means, but if you believe in sort of wisdom of the
+            crowds or wisdom of the expert crowds, it’s a reasonable thing that you could refer to. And tons of people
+            did.</p>
+        <p class="episode-transcript__paragraph">
+            Of those 150, over the next year probably 100 of them ended up linking to Moz and that document, and more of
+            them started reading our blog. And so this one growth hack, this single piece of content, which was an
+            intensive amount of work, ended up accelerating our flywheel dramatically. And within six months, a year, we
+            started ranking way better in Google and sort of got out of that rut we were in with getting rankings for
+            our blogposts.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1678">
+                <a href="#1678" id="1678">
+                    0h 27m 58s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That’s such a brilliant idea and really good execution too, and it’s so
+            important. What you were doing was optimizing for something that was part of your flywheel. You were
+            optimizing for building links, because you knew how that would pay off in the long term, rather than
+            optimizing for a growth hack that would simply result in a quick burst of traffic. And a lot of people don’t
+            know the difference.</p>
+        <p class="episode-transcript__paragraph">
+            Let’s get a little bit nebulous here for a second. I think a lot of people have trouble coming up with
+            ideas. How do you come up with good ideas like this one? Are you brainstorming constantly? Are you talking
+            to people? Are you just waiting for lightning to strike?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1709">
+                <a href="#1709" id="1709">
+                    0h 28m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I’m always on the lookout for things that I think are not good
+            enough or terrible. To be honest, that is my fundamental secret. I think I’m contrarian and I’m highly
+            critical, and that’s what gives me my good ideas. I look out there.</p>
+        <p class="episode-transcript__paragraph">
+            I wrote a blogpost, I think, yesterday that was a good example of this. There’s this study that was flying
+            around the web and it pissed me off, Courtland. Really in my soul, it just made me so angry. So it was data
+            from a company called Shareaholic, which is a social media sharing widget that you can put on your website.
+            And the data was basically saying that on the 5,000 websites that have Shareaholic installed on them, in
+            2017 search Google search traffic overtook social media referrals for the first time. </p>
+        <p class="episode-transcript__paragraph">
+            That is honest. That the true story. But all these other media outlets picked up the story and said, “Oh,
+            for the first time, search is bigger than social.” That’s not what the story said. The story said, “On these
+            5,000 websites,” which are obviously heavily social-sharing and social-media based because they installed
+            the Shareaholic widget, “their particular referral traffic saw this change.” But 5,000 websites out of, we
+            think, about 350-, 400 million websites that get pretty decent traffic across the entire web is a drop in
+            the bucket, not even a drop in the bucket.</p>
+        <p class="episode-transcript__paragraph">
+            So it just infuriated me. And so I talked to some friends at Jumpshot who collect clickstream data, and I
+            wrote this blogpost on Sparktoro using some of this data. So I think the blogpost is, yeah, “New Jumpshot
+            2018 Data: Where Searches Happen on the Web (Google, Amazon, Facebook &amp; Beyond).” And then looked at,
+            “Okay, where do people actually search?”</p>
+        <p class="episode-transcript__paragraph">
+            And actually, I hope on Monday I’m going to be publishing a study on the referral traffic side that will
+            sort of show that the, yes, search is even bigger than it was a year ago or two years ago in comparison to
+            social, mostly because Facebook and Twitter and LinkedIn have built algorithms that make content on those
+            networks easier to resonate if it doesn’t contain a link than if it does, but fact being search has been the
+            major traffic driver by 5, 10x for years and years.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1856">
+                <a href="#1856" id="1856">
+                    0h 30m 56s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I think this trait you have of being contrarian and being critical
+            towards the things that you see is so – I see it in a lot of entrepreneurs. And it’s so underrated because
+            it’s how you produce things that are unique, it’s how you produce things that stand out.</p>
+        <p class="episode-transcript__paragraph">
+            What are some other times where you being a contrarian has helped you grow your company?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1875">
+                <a href="#1875" id="1875">
+                    0h 31m 15s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Are you sure you don’t want to hear all the times it’s hurt?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1877">
+                <a href="#1877" id="1877">
+                    0h 31m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">We’re going to get into those for sure.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="1881">
+                <a href="#1881" id="1881">
+                    0h 31m 21s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I think that one of the things I was very contrarian about that
+            actually really, really helped Moz to take off, especially profitably – because I’m an extremely unusual
+            venture-backed entrepreneur in that I’m sort of obsessed with running a profitable company. You’ll remember
+            for years that I had that ridiculous mustache that I grew out until Moz was profitable again and it got to
+            be just insane.</p>
+        <p class="episode-transcript__paragraph">
+            But the early days of our SaaS business after we’d raised sort of our first venture round, one of the things
+            that Michelle Goldberg, our first investor from Ignition who’s super smart and has been just an incredible
+            mentor for me. But one of the things that she said was, “Hey, you’re a SaaS business. You should think about
+            building a sales team and sort of raising prices and selling into organizations,” which I think for many,
+            many venture-backed SaaS companies, that model is tried and true. </p>
+        <p class="episode-transcript__paragraph">
+            And especially back then, it was kind of the only way. This idea of being totally self-service – anyone can
+            go to the website, try the tools for free, sign up, and then pay – the only people who were really doing
+            that in our world at all were some of the early email marketing providers like – I think not even MailChimp
+            was around quite yet or maybe they’d just come out. But some of the other ones out there whose names I can’t
+            recall now, but SurveyMonkey was the other big one. You went to SurveyMonkey, you wanted a survey, you just
+            put in your credit card, pay them $15 a month, and you could get access to 20 surveys instead of 10.</p>
+        <p class="episode-transcript__paragraph">
+            And so because we had gone the self-service route where anyone could sign up, and the freemium route where
+            people could try out some of our tools or some functionality first, it meant that we very, very profitably
+            acquired customers. Our cost of customer acquisition when we finally got these metrics down – I think that
+            was a few years later. But I remember our cost of customer acquisition to lifetime value ratio was between
+            10 and 15x in 2009, 2010, 2011. We hadn’t even launched a paid media campaign. We had never spent a dollar
+            to acquire customers, which, okay, let’s be honest, that was probably dumb. We should have done some
+            AdWords, some advertising.</p>
+        <p class="episode-transcript__paragraph">
+            But regardless, it meant that we could acquire customers just incredibly cheaply and every dollar of
+            lifetime value was margin for us. And that ended up being great because we raised 1.1 million in ’07 and
+            basically built the business to 29 million of revenue before we ever started using any other capital or
+            money that we’d raised.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2053">
+                <a href="#2053" id="2053">
+                    0h 34m 13s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Oh, that’s perfect that you bring up fundraising right when I want to
+            get into my questions about things that went wrong. One of the big themes of your book is that a lot of the
+            so-called wisdom coming out of Silicon Valley misleads founders into doing some very dumb things. What are
+            some of the dumb things that you did while you were at Moz?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2071">
+                <a href="#2071" id="2071">
+                    0h 34m 31s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Sure, yeah. One of them was spending inordinate amounts of time trying
+            to raise more money. So 2009, 2010, 2011, even into 2012, I probably spent 30% to 50% of my time doing
+            things that I thought would help me raise my next round of funding. And if you pay attention to the blogs
+            and media and echo chamber of Silicon Valley startup culture, that’s what a founder and CEO is supposed to
+            do. You’re supposed to keep the company funded and build all these relationships.</p>
+        <p class="episode-transcript__paragraph">
+            And so I was flying down to the Valley regularly and having all these dinners with folks. I saw this crazy
+            thing. One of the guys who used to be really, really friendly to me and would take me out to dinner and
+            introduce me to other entrepreneurs was a guy named Trevor Traina. And I just saw yesterday he was appointed
+            the ambassador to Austria by Donald Trump, and I had this, “What, really, that guy? Crazy.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2138">
+                <a href="#2138" id="2138">
+                    0h 35m 38s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That guy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2139">
+                <a href="#2139" id="2139">
+                    0h 35m 39s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Insane. Apparently, he’s become a legendary entertainer since then, so
+            okay, great. But yeah, it was those kinds of things. It was networking and network building and then going
+            to tons of events and getting introductions to VCs and going through meetings and trying to build up that
+            relationship nine months or a year in advance, so that when or if we wanted funding we could say, “Hey, our
+            business is here now, our business is here now.”</p>
+        <p class="episode-transcript__paragraph">
+            And that was, I think, a total waste of time. If I had spent those months and years with customers flying to
+            go visit agencies and go sit in house with marketers and talk to them about what they were doing and help
+            them with their work, which I did some of as well. But if I had poured that effort and energy there, I think
+            the return would have been 10x.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2194">
+                <a href="#2194" id="2194">
+                    0h 36m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">What are some of the mistakes that you made as a result of not
+            understanding your customers and how they were using SEO tools and growing their companies?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2202">
+                <a href="#2202" id="2202">
+                    0h 36m 42s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, sure. So the big one came in sort of the 2011 to 2013 period,
+            when I had this idea that SEO and content marketing and social marketing and PR and brand marketing were all
+            going to merge into one practice. You wouldn’t have these siloed individuals and agencies. You would have
+            overlapping teams of folks with these skills.</p>
+        <p class="episode-transcript__paragraph">
+            That obviously never happened. That is not reality. But because I believed that it would happen, I had Moz
+            go on this sort of death march of building two two-and-a-half-year-long dev and design cycle to build this
+            giant product. And when it finally did come out at the end of 2013 was just a complete failure. Nobody
+            wanted it. It was bad at most of the things that it did, or at least it wasn’t as good at any of the things
+            that it did as individual point solutions.</p>
+        <p class="episode-transcript__paragraph">
+            And when I actually started spending time with customers and marketers again, I could see that, in fact,
+            they loved point solutions. They were happy to switch context, pay more for another tool, learn a whole new
+            UI and UX in exchange for even slightly better data, because marketing is very competitive, especially SEO.
+            There’s only one position one. If you can get any sort of advantage to get to that ranking position one, you
+            will take it even if it’s another tool subscription that costs you another $150 or $200 a month.</p>
+        <p class="episode-transcript__paragraph">
+            And so that was a big wakeup call to, “Oh, all in one is not at all what this market is looking for. All in
+            one is kind of a waste. These people just want best of breed in everything, and they’re willing to switch
+            tools and contexts.” </p>
+        <p class="episode-transcript__paragraph">
+            And also SEO people are not doing social media marketing unless it’s things that directly serve SEO. They’re
+            not doing what a lot of content marketers do in content marketing even though they do some content. They’re
+            not doing what email marketers do, they’re not doing what brand marketers do, they’re not doing what public
+            relations folks do. They’re SEOs. And likewise, each of those individual disciplines is doing their own
+            thing.</p>
+        <p class="episode-transcript__paragraph">
+            So I think if I could have been a little less arrogant and more humble and recognized – not just spent time
+            with customers but internalized the lessons, I would have made a lot better decisions.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2359">
+                <a href="#2359" id="2359">
+                    0h 39m 19s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">That’s interesting, because you’re at this point in time pretty much an
+            expert in this space. You’re eating it and living it and breathing it, and even then, your intuitions can
+            still be off in terms of what customers actually want.</p>
+        <p class="episode-transcript__paragraph">
+            And I think for a lot of early stage entrepreneurs, that’s even more the case. Chances are you’re not an
+            expert and you just randomly guessing or intuiting or what everybody’s going to want. It’s not going to work
+            out most of the time.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2382">
+                <a href="#2382" id="2382">
+                    0h 39m 42s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. One piece of advice I would have for folks who are doing that is
+            try doing some of the work yourself. So I think a lot of advice in the startup world is, “Spend time with
+            your customers.” But there’s not enough advice that is, “Go be your customer.” If you’re, “Oh, I’m going to
+            go serve truck drivers.” Hey, see if you can find someone in that world and go on a few long-haul drives. Be
+            the driver to whatever extent you can. Go through training. What’s that like? So I think that living the
+            lives of your customers is definitely a cheat code for this stuff.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2424">
+                <a href="#2424" id="2424">
+                    0h 40m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. And I think what so hard about it is even hearing you say that,
+            I’m like, “That’s a great idea. And the number of insights that can come out of doing that could be
+            unlimited. You have no idea what you’re going to learn that could change your business for the better.” But
+            at the same time, part of my brain is thinking, “That’s a lot of work. That’s not guaranteed to pay off.
+            It’s not directly what’s going to help my business. How do I know that’s what I want to spend my time on? I
+            think just guessing what people want is good enough.”</p>
+        <p class="episode-transcript__paragraph">
+            How do founders get past these feelings?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2450">
+                <a href="#2450" id="2450">
+                    0h 40m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, it can be. I think the challenge is if you get that wrong, all of
+            the energy and effort that you’ve put into building your product and designing your company and branding
+            your company as the place where people can get this thing will have been for naught. So if you’re looking
+            for a way to lower your risk profile and increase your odds of success, that’s a great way to do it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2477">
+                <a href="#2477" id="2477">
+                    0h 41m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So one of the things that strikes me about you and about Moz is that
+            you have this value of transparency among other several strong values. Moz is a private company and a pretty
+            big one at that, and you guys were crazy transparent about your revenue numbers and your internal
+            decision-making.</p>
+        <p class="episode-transcript__paragraph">
+            And I’ve also noticed that you’re the same way in your personal life. I started reading your book and only a
+            few pages in I was thinking, “Whoa, he’s really sharing everything here.” There’s a lot of stuff in it that
+            most people just wouldn’t share. Do you think that Moz --</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2505">
+                <a href="#2505" id="2505">
+                    0h 41m 45s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">You’re like, “Oh, I know how much Rand makes. That’s weird.”</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2507">
+                <a href="#2507" id="2507">
+                    0h 41m 47s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. “I know how much money he makes, I know his emotional state, I
+            know the state of his relationship.” Do you think that Moz’s value of transparency came from the way that
+            you live your life, or do you think that it’s the other way around, that you are influenced to become more
+            transparent because of the values that you had at Moz?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2524">
+                <a href="#2524" id="2524">
+                    0h 42m 4s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Oh, no, no, definitely the first way. The best thing that you can do
+            for your startup as you’re creating values, which when you’re one person and you’re sort of hacking stuff
+            together on the side is less important, but as you get to even two or three people, starts to become
+            important. Having those values reflect your personal values is very, very powerful.</p>
+        <p class="episode-transcript__paragraph">
+            And they can be aspirational personal values. You can say, “The best part of me wants to always be kind to
+            other people.” And so I’m going to make that a value. Even though I know I don’t always live up to it, I’m
+            not perfect at it, but it’s something that I value in others and it’s something where if I find people who
+            are not kind to others, even if they’re extraordinary performers, even if they help my business quite a bit,
+            I don’t want them part of this organization, and I’m willing to take that sacrifice.” Okay, great. Now
+            you’ve identified that value in yourself. Now put that in your company. </p>
+        <p class="episode-transcript__paragraph">
+            I think it works much less well the other way around, where you try and say, “Hey, I think this would be a
+            good value for the company to have. Now let me see if I can go live up to it and make it part of my life.”
+            That’s kind of a recipe for disaaster. </p>
+        <p class="episode-transcript__paragraph">
+            And unfortunately, a lot of startups do choose values because they think they’re good for recruiting or
+            marketing. If you don’t fundamentally at your core believe in transparency, don’t make it a value. If you
+            want to use transparency as a marketing tactic now and then, great, fine, go for it. Don’t call it a value
+            because that’s a different thing. Values are things you would be willing to sacrifice even if they hurt your
+            business and cost you money. And I think that identifying those things is where the real value comes in.</p>
+        <p class="episode-transcript__paragraph">
+            So yeah, definitely a personal value and bias that then became part of the company rather than the other way
+            around.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2641">
+                <a href="#2641" id="2641">
+                    0h 44m 1s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So I think your value of transparency really resonates with me. Indie
+            Hackers itself is a community that’s built on transparency. I’ve done hundreds of interviews on the website.
+            Everybody has to share their revenue, everybody has to share good times as well as the bad times. But I
+            think a lot of people have not even considered making this one of their values. It’s kind of the status quo
+            is that you don’t talk about what’s going on at your company, you don’t talk about what’s hard in your life.
+        </p>
+        <p class="episode-transcript__paragraph">
+            What do you think are some of the costs and the benefits of being transparent? Why consider it?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2669">
+                <a href="#2669" id="2669">
+                    0h 44m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So that’s the fundamental difference between a value and a strategy or
+            a tactic. When you come up with a value, you don’t say to yourself, “What is the cost of doing this, what is
+            the benefit, what am I getting, is it going to help with customer traction?” Those are not the questions in
+            consideration.</p>
+        <p class="episode-transcript__paragraph">
+            It’s a lot more like why people have ethical and moral and even some political beliefs. They believe those
+            things because they fit their worldview because that’s how they want the world to be. I want the world to be
+            a more diverse place where it’s not just white dudes running the show. There’s room for people of all kinds
+            represented at all levels of power. And this is the personal value.</p>
+        <p class="episode-transcript__paragraph">
+            But because of that, I’m willing to make sacrifices to do it. If that means that short term there need to be
+            sacrifices made or investments made to see that through to the long term, I’m willing to make those; as
+            opposed to a tactic, which is, “Well, hey, we already have a bunch of money and power and influence in this
+            group, so let’s just keep giving them money and power and influence because that’s the easiest sort of thing
+            to do.”</p>
+        <p class="episode-transcript__paragraph">
+            And values work that same way. I think, going to the point you made about transparency, there is a culture
+            that I have absolutely not just noticed but felt really strongly; most strongly in the Bay Area startup
+            culture. But that ethos has extended elsewhere, and that is that you always have to be showing or pretending
+            to show strength. How is anyone ever doing in San Francisco? They are either crushing or killing it. I don’t
+            actually like crushing or things. I have never been that. </p>
+        <p class="episode-transcript__paragraph">
+            But I think that hides a mask of turmoil and sadness and stress and emotional strife and psychological
+            problems. And when you actually spend time with your close friends and you find out how they’re really
+            doing, they are not crushing or killing it. They’re just saying that because they feel like they’re supposed
+            to, because they feel like they have to because this culture has created in us a sense that we need to be
+            dominant, that vulnerability and weakness are going to harm us, and perceptions of those things will harm
+            us.</p>
+        <p class="episode-transcript__paragraph">
+            And so we put on these masks. I think that’s bullshit. I think that hurts a lot more people and companies
+            than it helps. And there’s a lot of wonderful elements of Silicon Valley startup culture: this idea that
+            anyone can come there and build something amazing, that you can disrupt industries that maybe were
+            extracting instead of creating value, that you can have an extraordinary impact on the lives of millions of
+            people that’s hopefully very positive.</p>
+        <p class="episode-transcript__paragraph">
+            And granted, some of the narrative the last few years has been a lot of the downsides of that. But I think a
+            lot of that downside comes from this bullshit facade that we’re supposed to put on. </p>
+        <p class="episode-transcript__paragraph">
+            So Courland, I love what Indie Hackers does because it takes that mask off. You go to Indie Hackers any day,
+            and it’s a bunch of people saying, “I suck at this, I don’t know how to do this, I need help with this, my
+            business isn’t doing so good, how’d you get over this hump.” And that is the absolute opposite of everything
+            you see on TechCrunch, which is so refreshing.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2910">
+                <a href="#2910" id="2910">
+                    0h 48m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, the number of stories I could I tell about people who I know
+            their business is not doing well but who won’t open up and who will only say that they’re crushing it is
+            staggering.</p>
+        <p class="episode-transcript__paragraph">
+            But one of the chapters in your book is called “Should you sell your startup early? Yes, probably.” What’s
+            the story there? (Laughter.)</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="2930">
+                <a href="#2930" id="2930">
+                    0h 48m 50s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Well, so what I’m trying to do there is I’m trying to illustrate,
+            especially for first-time founders or folks who don’t already come from a lot of money or have a lot of
+            money, the value of thinking about an early exit not as giving up or selling out, but as giving yourself a
+            long-term second and third and fourth shot at doing this, and in the process potentially improving your life
+            and your family’s life and the lives of people around you too.”</p>
+        <p class="episode-transcript__paragraph">
+            And I’m trying to also illustrate that a lot of those early sales that feel like they – I think in my case
+            it was like, “Well, you could have made these few millions of dollars” and – “few millions of dollars,”
+            Jesus Christ. Millions of dollars is an incredible thing. Let’s not kid ourselves into thinking that it’s
+            not. But you can definitely look at Moz today and say, “Well, wait a minute. It’s doing almost 50 million in
+            revenue. If they were to sell today, maybe you would make multiples of that.”</p>
+        <p class="episode-transcript__paragraph">
+            But the mechanics and realities of delusion and liquidity preferences and scale and the risks that come with
+            trying to grow a company much bigger mean that most of the time, those early offers are actually the right
+            thing to do sort of financially speaking for founders even if they’re not the right ones for investors. </p>
+        <p class="episode-transcript__paragraph">
+            There’s a bit of a disconnect there, and I would definitely encourage folks to have those hard conversations
+            and honest conversations with their investors if you’re in that situation, where you talk about, “Hey, this
+            is probably the right thing for me. I recognize it’s not the right thing for your fund. How can we make this
+            right? Is that me taking some money off the table now and being willing to take this risk, or is it us
+            saying, “Hey, yeah, this is a great deal for founders and employees even if it’s not for the investor. And
+            so let’s take it and then in the future there’ll be plenty of other companies for the investor to pursue”?
+            So a little tough.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3065">
+                <a href="#3065" id="3065">
+                    0h 51m 5s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, not an easy decision to make.</p>
+        <p class="episode-transcript__paragraph">
+            But you’re working a new company now, Sparktoro. How have you thought about these issues with your new
+            company? What are your ambitions, how do you think about fundraising, what are your goals?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3077">
+                <a href="#3077" id="3077">
+                    0h 51m 17s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, I’m excited to write about this. I hope in the next couple of
+            months to actually have sort of a financing done. I’m not raising any institutional money this time. It’s
+            sort of all angel funded. But I’m doing a very unusual style of fundraising, and I hope to sort of open
+            source that and write about it and make it something that’s maybe an alternative that other people can
+            pursue. Because I think that there’s a lot of room for companies that can get profitable quickly and that
+            then can choose to invest in growth at a higher rate or long-term sort of profitable operation.</p>
+        <p class="episode-transcript__paragraph">
+            And the problem is that the second one, long-term profitable operation, does not generally reward investors
+            in the structure that most Silicon Valley deals are done. And so I want to try and change that. Yeah, so
+            I’ve created a structure that basically says, “Hey, if Sparktoro is a few million dollars a year but it has
+            20 or 30% margins, investors can make quite a good return over five to 10 years, similar to or better than
+            they might get with classic venture-style deals.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3154">
+                <a href="#3154" id="3154">
+                    0h 52m 34s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">And what about your personal goals with Sparktoro? Why start another
+            company and where do you hope to be in five or 10 years?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3161">
+                <a href="#3161" id="3161">
+                    0h 52m 41s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Wait, do you want the real answer or the PC answer?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3163">
+                <a href="#3163" id="3163">
+                    0h 52m 43s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I want the real answer.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3166">
+                <a href="#3166" id="3166">
+                    0h 52m 46s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">There’s no small part of it that’s the chip on my shoulder.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3172">
+                <a href="#3172" id="3172">
+                    0h 52m 52s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Of course.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3174">
+                <a href="#3174" id="3174">
+                    0h 52m 54s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">So the departure from Moz was a little contentious, more than a little
+            contentious. And that’s not to say that there aren’t 100-and-some people there that I absolutely love and
+            want to do well, and obviously, I’m cheering for the company so we’re (inaudible) them. But I also feel like
+            I have a lot to prove.</p>
+        <p class="episode-transcript__paragraph">
+            And so Sparktoro is me, yeah, hoping to prove that I can do a great job of building a product and a company
+            that can get to an exciting place even if it’s no necessarily venture-backed. And maybe it won’t be quite
+            the scale of Moz, but I think there’s a possibility that it could be. So yeah, I don’t want to say – it’s
+            not quite a revenge startup, but maybe a little bit.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3220">
+                <a href="#3220" id="3220">
+                    0h 53m 40s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, revenge story or not, it’s certainly a good story and I’m rooting
+            for you. And on that note, what is Sparktoro, exactly? It’s not launched yet, but on your website you’ve got
+            some descriptions of sort of what you hope to accomplish.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3232">
+                <a href="#3232" id="3232">
+                    0h 53m 52s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, yeah. So we’re in the process of sort of early stages of R&amp;D
+            on the tech and validating that we can do what we think we want to do and that that is something that
+            customers actually need, which so far as gone well on both fronts. And that is essentially this fundamental
+            problem of – let’s say, obviously, a ton of people in the Indie Hackers world are building products for an
+            audience. And then they have to go through this hard process to do marketing well of figuring out where
+            those audiences engage and with whom.</p>
+        <p class="episode-transcript__paragraph">
+            So what are the publications and people, the podcasts, the events, the YouTube channels, the Twitter
+            accounts, the blogs, the media, the forums that your audience participates in? And if you can identify those
+            and get some good metrics around them, you can say, “Aha, I do think spending time,” whatever it is,
+            “answering questions on Quora or building some relationships with these folks on Twitter or going to these
+            events and conferences or getting our founder onto this podcast or this YouTube channel – those things will
+            have, we think, will resonate with the audience that we’re trying to reach because that audience already
+            engages in those places with those publications and people.”</p>
+        <p class="episode-transcript__paragraph">
+            And discovering those, uncovering what those publications and people are, is a pain in the butt right now.
+            And we think we’ve got a solution to being able to uncover that through collecting large amounts of public
+            web and social data, and then anonymizing and building profile information and a little bit of NLP and
+            machine learning on top of that. But I’m excited to try and solve that problem, because right now I know
+            tons of marketers who spend weeks or months surveying their audience or paying a PR company tens of
+            thousands of dollars to do it or biasing to just, “Well, whatever comes up on the first page of Google. I
+            guess I’ll go spend my time there.” And that’s probably not the best use of their time or energy.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3362">
+                <a href="#3362" id="3362">
+                    0h 56m 2s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. And there’s a ton of early stage founders who would also love to
+            use it. And I think what’s cool about it is that if you can actually solve that problem, then more people
+            will start more successful companies, I think, because you kind of are making this very difficult challenge
+            a lot easier.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3378">
+                <a href="#3378" id="3378">
+                    0h 56m 18s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, absolutely. And hopefully, it’s a positive thing for these
+            publications and people who are influencing audiences too in that they will have better, more relevant folks
+            pitching them and talking to them about stuff that’s actually relevant to their audiences instead of getting
+            these just random PR emails that are often pretty poor.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3400">
+                <a href="#3400" id="3400">
+                    0h 56m 40s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. So it’s been a while since you were at the helm of a tiny
+            business, and now you’re sort of like an Indie Hacker all over again.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3408">
+                <a href="#3408" id="3408">
+                    0h 56m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3408">
+                <a href="#3408" id="3408">
+                    0h 56m 48s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">I took some questions on the forum to see what people wanted me to ask
+            you. And Amin on the forum wants to know how your experiences running Moz will play into Sparktoro, and what
+            are some of the mistakes that you’ve learned from and also the good things that happened at Moz that will
+            most affect how you make decisions at Sparktoro?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3424">
+                <a href="#3424" id="3424">
+                    0h 57m 4s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah. So a few we’ve talked about. Those include the funding and how
+            I’m biasing away from venture, because I just don’t love the binary-outcome model. On the hiring front, I
+            think that’s another thing. Almost every entrepreneur I talk to actually says this, which is in their second
+            or third business, they really think much harder about who they hire and how much they hire.</p>
+        <p class="episode-transcript__paragraph">
+            And so my cofounder and I are sort of like, “Hey, how about just the two of us build the v1 of this product,
+            launch it, get it out to market before we hire anybody else?” I’m not sure if we’ll make it all the way, but
+            I think we’re going to keep the team very, very small. Another thing that I definitely plan on doing is, on
+            the good side, replicating what we did with Moz on the marketing front, trying to build that flywheel, and
+            then find the points of friction and apply some growth hacks to get it over those humps, which I’m sure we
+            will encounter.</p>
+        <p class="episode-transcript__paragraph">
+            I also think that the self-service model is one that I really love. And even though it has its challenges as
+            well, I definitely prefer that to the sales team sort of classic SaaS approach and plan to pursue that. So
+            yeah, those are all things on both sides.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3502">
+                <a href="#3502" id="3502">
+                    0h 58m 22s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Awesome, sounds exciting. Well, I wish you the best of luck with
+            Sparktoro. I’ll be following it. Hopefully, I can use it for some future projects.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3509">
+                <a href="#3509" id="3509">
+                    0h 58m 29s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3510">
+                <a href="#3510" id="3510">
+                    0h 58m 30s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Is there anything else that you’d like Indie Hackers to listen to hear
+            or to hear? Can you tell them also where they can go to find your new book, which should be out by the time
+            this episode is out?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3518">
+                <a href="#3518" id="3518">
+                    0h 58m 38s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Oh, yeah, very exciting. Yeah, so Lost and Founder should be available
+            all over the place. I think if you go to bookstores you’ll find it there, Amazon, and IndieBound and
+            Powell’s. All those places will have it, Barnes &amp; Noble, et cetera. And I also recorded the audiobook
+            personally. So if you want to hear that, including a few audio-only Easter eggs, you can pick that up on
+            Audible and there’s a Kindle version as well.</p>
+        <p class="episode-transcript__paragraph">
+            Yeah, and if anyone from the Indie Hackers community – you know I love you guys, so I visit the site once
+            every day or two at least. But if there’s any questions that you have in particular for me, feel free to
+            tweet me <a href="https://twitter.com/RandFish" target="_blank">@RandFish</a>.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3564">
+                <a href="#3564" id="3564">
+                    0h 59m 24s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">All right, well, thank you so much for coming on the show, Rand.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar"
+                src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/051-rand-fishkin-of-moz-and-sparktoro.jpg">
+            <span class="episode-transcript__speaker-name">
+                Rand Fishkin
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3566">
+                <a href="#3566" id="3566">
+                    0h 59m 26s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">Yeah, thrilled to be here. Thanks, Courtland.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+        <header class="episode-transcript__turn-header">
+            <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+            <span class="episode-transcript__speaker-name">
+                Courtland Allen
+            </span>
+            <span class="episode-transcript__timestamp bt-listen" data-bt-time="3568">
+                <a href="#3568" id="3568">
+                    0h 59m 28s
+                </a>
+            </span>
+        </header>
+        <p class="episode-transcript__paragraph">If you enjoyed listening to this conversation and you want a really
+            easy way to support the podcast, why don’t you head over to iTunes and leave us a quick rating or even a
+            review? If you’re looking for an easy way to get there, just go to <a href="http://indiehackers.com/review"
+                class="linkified" target="_blank">IndieHackers.com/review</a> and that should open up iTunes on your
+            computer. I read pretty much all the reviews that you guys leave over there, and it really helps other
+            people to discover the show, so your support is very much appreciated.</p>
+        <p class="episode-transcript__paragraph">
+            In addition, if you are running your own internet business or if that’s something you hope to do someday,
+            you should join me and a whole bunch of other founders on the <a href="http://indiehackers.com"
+                class="linkified" target="_blank">IndieHackers.com</a> website. It’s a great place to get feedback on
+            pretty much any problem or question that you might have while running your business.</p>
+        <p class="episode-transcript__paragraph">
+            If you listen to the show, you know that I am a huge proponent of getting help from other founders rather
+            than trying to build your business all by yourself. So you’ll see me on the forum for sure as well as more
+            than a handful of some of the guests that I’ve had on the podcast.</p>
+        <p class="episode-transcript__paragraph">
+            If you’re looking for inspiration, we’ve also got a huge directory full of hundreds of products built by
+            other Indie Hackers, every one of which includes revenue numbers and some of the behind-the-scenes
+            strategies for how they grew their products from nothing.</p>
+        <p class="episode-transcript__paragraph">
+            As always, thanks so much for listening and I’ll see you next time.</p>
+    </div>
+</div>

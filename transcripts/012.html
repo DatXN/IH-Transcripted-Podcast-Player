@@ -1,0 +1,827 @@
+<div id="ember48" class="episode-transcript ember-view">    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="7.789">
+          <a href="#7.789" id="7.789">
+            0h 0m 7s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What's up everyone? This is Courtland from <a href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a>. And today, I'm excited to be sitting down with my buddy Tyler Tringas of Storemapper. How's it going, Tyler?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="16.329">
+          <a href="#16.329" id="16.329">
+            0h 0m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Hey, Courtland, doing well. Thanks for having me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="19.043">
+          <a href="#19.043" id="19.043">
+            0h 0m 19s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No problem. So, we already did a text interview back in August. You're one of the first people to come on Indie Hackers after the launch, and then we met at MicroConf a couple of weeks ago in person. And I told you I think then that your Storemapper interview was probably the one that I referenced the most often when telling people about educational interviews and then how to get started as an Indie Hacker so to speak. And the reason for that is because your story is full of lessons that are important for anyone wanting to start an internet business or a project that makes money online. So for example, and I think this is a good place to start, a lot of people starting a business struggle for months with getting their product out the door, but you sat down and built Storemapper and had paying customers in something like 36 hours. So, what's the story behind that?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="63.768">
+          <a href="#63.768" id="63.768">
+            0h 1m 3s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Well, first of all, I think it's very high praised that you're often citing Storemapper considering the caliber of other entrepreneurs that you've interviewed on Indie Hackers, so that's awesome to hear again. In terms of building Storemapper really quickly, there's two components to that. The first part is that it wasn't that quick in a sense of you're not counting the many other products and almost products that I built and launched that just totally failed before Storemapper. So, the process from starting that to launching your product was actually a little bit longer, but Storemapper itself, yeah, it was basically conceived and built and launched in about 36 hours. Essentially, Storemapper is a store locator as a service, so you've probably seen this kind of a product all over the internet. You wanna find out where to buy your favorite brand or your favorite new juice, or whatever, putting your zip code, and Google Maps comes up and tells you what locations you could buy it at. So technically, that's basically a Ruby on Rails app that can handle the uploading of all that information, where are the stores, what's their addresses, what's their latitude, longitude, all that kind of stuff. And then an embeddable JavaScript widget that you could put on your website and that renders the store locator. At that point in time, I had a lot of things going on in my life, but one of the things I was doing was freelance web development for Shopify store owners and a couple of them asked me to build them a store locator. And I did the math on what it would take for me to build that myself at my hourly rate and I was like, "Guys, this is gonna cost you a few thousand dollars." And they were like, "Oh, sure, no problem. We need it," so obviously, there was a pretty good willingness to pay there. So, I just put it down in my little idea notebook like, "Hey, maybe I can productize that kind of a product." And I did a little research, didn't really see a good option, put it in the back pocket. And then a couple weeks later, yeah, I was booking a long flight from San Francisco to Buenos Aires, Argentina and it was a first-class flight. So, I booked it with Miles, did a little travel hacking, so I had basically this really long period of time in a cushy first-class seat, and I just sat down and built and launched it. Basically, soup to nuts, new Rails project at the start of the flight, landed, launched it, sent an email to my existing freelance clients, like everyone I'd ever worked for and we had paying customers that day basically.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="233.918">
+          <a href="#233.918" id="233.918">
+            0h 3m 53s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That's awesome. I think, by comparison, one of the biggest mistakes that people make is to work on something for three months or six months or even a year, just heads down coding, not show it to anybody, not run their ideas by anybody, and ultimately release a product that nobody wants to pay for because it's a chockfull of features that don't matter to them. And as depressing as that sounds, that's really the optimistic case because the pessimistic case, and what happens probably more often, is that somebody works on something for six months, never releases it, and then just gets demotivated and shuts it down. So, the case for building something quickly is not only that will you avoid adding a bunch of features that nobody wants and wasting time building things that people won't pay for, but you also are way less susceptible to getting burnt out and demotivated. Was the fact that you could build Storemapper in 36 hours a crucial factor in you choosing to work on that idea over the other ideas in your idea notebook?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="289.112">
+          <a href="#289.112" id="289.112">
+            0h 4m 49s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, well, so at the time, I was in a fairly unique overall life situation. I was actually working on what ultimately would be a angel-funded, more traditional startup. So, I was already working 60, 70, 80 hours a week trying to get that off the ground. And I was freelancing on the side to make some money. And what I really wanted to do was to get some kind of recurring revenue into that mix so that I could start to dial down the freelance hours and allocate more time to the startup. So, just in that life situation, it was mandatory that I find products that could be launched really quickly, but I do think that that is something that even if you had more time, if your aim was to build a product or become an Indie Hacker, maybe transitioning from freelance work or full-time job, trying to find ideas that can be built really quickly like that is a really good component of success for a lot of reasons. One reason is that a lot of them will fail, so it's just very good to get the product out there and start getting feedback immediately. I guess, I would say that's the main reason is that you just have no idea if it's gonna work, but it also just tends to be the germ or the seed of a good bootstrapical idea is if you can very quickly get to a thing that is creating value, even if you do what I did which is you strip away everything the people think is important about having a SaaS, we didn't have a logo, I didn't have an email address, the landing page was hilarious. You had no way to cancel or change your password. There were just so many things that were not in there, but it did what it said on the label, right? You could upload a spreadsheet of stores and it could make a store locator. And if you find something that you can generate that value that quickly, it's probably the good seed of an idea, something that you could bootstrap it to a full business.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="424.052">
+          <a href="#424.052" id="424.052">
+            0h 7m 4s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">And just for context, how much revenue is Storemapper doing today?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="428.436">
+          <a href="#428.436" id="428.436">
+            0h 7m 8s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">We were doing, last month, we crossed $25,000 a month.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="435.389">
+          <a href="#435.389" id="435.389">
+            0h 7m 15s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Cool. So, I wanna go back to this ideas thing because you mentioned that you have an idea notebook, and I too have an idea notebook. How many ideas do you have in there?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="446.212">
+          <a href="#446.212" id="446.212">
+            0h 7m 26s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">At this point, I don't even know. I've stopped keeping a proper notebook now that I have operating businesses, but one thing that that process of keeping that notebook did was it allowed me to really refine the process of coming up with an idea and then figuring out how to dismiss it really fast. I think that one of the biggest problems that a lot of entrepreneurs face when they're in that phase of coming up with ideas and try to figure out which is the one is getting hung up on a single idea that's a little bit fatally flawed in some way, either they don't know how to market it or it's just too big of an idea that it's gonna take too much overall development time, you don't have time to allocate to it, or maybe they're not technical or they're technical but it's got some machine learning aspect of it that they don't know how to do, right? It's like one little flaw that prevents them from being able to just sit down and do it, and they just hang on to that and they talk to their friends about it, and it just sits around there. And one of the important parts about the idea notebook is being able to write something down as a potential idea, and then run through this really fast list of like, "Could it scale?" "Could I find the customers for it? Can I build it myself?" All that kind of stuff, and then quickly dismiss it actually, which I think is a really important part about finding a good idea.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="541.956">
+          <a href="#541.956" id="541.956">
+            0h 9m 1s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, I totally agree. And from a lot of the people that I've talked to, it can be hard just knowing what it is that makes any particular idea bad or good. So, if you're an experienced entrepreneur, you might say, "Okay, I need to be able to market it. I need to be able to actually build it. I need to have a distribution strategy for it. It needs to be something that I can launch quickly." Did you have some sort of formal checklist for evaluating the ideas in your idea notebook? Or let's say you were to quit Storemapper today and quit everything else that you're working on, how would you go about evaluating ideas and determining if one idea is better than another?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="572.288">
+          <a href="#572.288" id="572.288">
+            0h 9m 32s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">At this point, there are such just tremendous resources online of different entrepreneurs sharing these kinds of things like Indie Hackers. I would probably read through Indie Hackers and just refresh my knowledge on what kind of mistakes people have made, what things they didn't think were gonna be a problem when they clenched headlong into an idea that turned out to be a big deal. Something that is a big negative for example for Storemapper, even though it wasn't a deal breaker, is that my target customer doesn't really congregate anywhere. They're not listed like ecommerce store owners or VP of marketing at random small to medium size brands don't hang out anywhere. So, if I hadn't found one or two inbound lead channels, there would really not be any way for me to systemically go out and do outbound sales, right? I can't just find a bunch of ecommerce store owners and pick their brain and pitch them my product, like you might be able to do with bloggers, right, 'cause they're super visible and they hang out on a lot of very popular blogging forums and things like that. So, I guess, I sort of picked up a couple of those things from things like The Lean Startup and stuff like that. But nowadays, that's what drives me to blog about my experience is to help people see down and around those corners a little bit at things that might be a fatal flaw for an idea, and which is something that I think for example you could use Indie Hackers for and all kinds of like other transparent startups that are really blogging about what's actually going on in their business. You see a lot, for example, this is going a little bit far down the road, but you've seen actually a lot of transparent bootstrap-ish startups dealing with cash flow crunches, right, like hiring too many people and even though their revenue was going strong, they hire too fast and Buffer blogs about it and Baremetrics blogs about it and ConvertKit blogs about it, like how they hired super-fast and they were like, "Oh crap, our top line is doing well, "but I might have to lay people off," that kind of stuff. Paying attention to that and then being able to see around that corner from where you are I think is really valuable.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="718.027">
+          <a href="#718.027" id="718.027">
+            0h 11m 58s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">That's cool that you mentioned Indie Hackers as being a source of inspiration and learning. That's exactly why I built the website so that ideally if we have a collection of stories of people doing this, it's easy to find and easy to browse through, that you could just go through a piecemeal and learn from other people's mistakes. I wrote a blog post earlier about how I came up with the idea for Indie Hackers, and I had this like rudimentary checklist for how I evaluated different ideas and compared them to each other. I came down to Indie Hackers which just three other ideas. And one of the biggest ones and I think it implies to you, one of the biggest things I had on there was retention. I wanted to make something where customers wouldn't churn very often. And it was a direct reaction to my previous product Taskforce where I had built something and people would come in the door and then they would churn. And they might like the products, they just didn't wanna create tasks and they would just forget about it. And with Storemapper, you have almost the opposite problem, or not even a problem really. You just don't have to worry that much about it because here's a store locator, right? People put it on their website. It just stays there and they're a customer probably until they shut their business down which is awesome. Are there any other things that make Storemapper particularly good as a business?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="794.388">
+          <a href="#794.388" id="794.388">
+            0h 13m 14s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Well, I think you definitely hit on one of the main ones, right, which is that there's really high retention. And this is where stuff like Indie Hackers I think is so useful now to really put things into context to see like, "Okay, once you reach some degree of scale, what things matter across a bunch of different businesses?" And you can see one of the problems that we don't have at Storemapper is dealing with super high churn, and we also don't have to deal with an incredibly high support load, right? So because our product is more or less set it and forget it, that means that for every... We went from let's say 500 active paying customers to like nearly 2,000, and basically our number of support tickets per day did not change. It's not at all a function of our existing customers. It's a function of just growth, just new customers coming in because pretty much like we have some sort of on boarding stuff with them. We help them get their data formatted. We help the embedded product look good on their website, and they're pretty much good to go for more or less in perpetuity, as opposed to something like a bugtracking SaaS for Agile dev teams where people are using it all the time and as they grow. And if you three exed your active customer base, you would at least 3X your support requirements, right? So, that's something you might not necessarily think about, even if you're just being really sensible and lean, and you're talking to customers, and you're figuring out what's your pain point and all that kind of stuff, if you don't think about how are they gonna use this and what's retention gonna look like, and what's the support requirements gonna look like, you can end up in a place where you solved the pain point, but you haven't necessarily built the kind of business that you wanted to build. That's something then I think it's really useful to go through all these businesses and look around those corners basically.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="921.571">
+          <a href="#921.571" id="921.571">
+            0h 15m 21s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, I totally agree. I think there's something to be said for especially if you're newer, taking some time to read about people who've come before you so you don't end up repeating their mistakes because a lot of these things are predictable if you have some experience or if you've read about them. But if you're just starting out, you don't necessarily think that far ahead. When I built Taskforce, I really didn't think that much about retention or customer support, and I had the same problems that you mentioned. Even when I was building Indie Hackers, I really didn't think that much about how mind-numbing it would be to eventually end up selling ads, and that's something that I would have put more thought into if I'd research content businesses a little bit more, but yeah, there's definitely two ways to learn. One is from your own experience and one is from other people's experiences and I think they're both crucial. One of the things that people struggle with a lot whenever they're starting a new business is growth, especially going from zero to one, kind of getting your first customer in the door, additionally going from your first customer on to hundreds of customers like you've done with Storemapper. And one of the cool things that I've seen from business to business is that the things that get you your first few customers aren't necessarily what get you to a hundred. And the things that get you a hundred customers aren't necessarily what get you to a thousand customers. There usually ends up being different phases where your customers come in through different channels. Can you talk a little bit about how you got your very first customers?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="997.076">
+          <a href="#997.076" id="997.076">
+            0h 16m 37s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, totally, I think you're right. I think I wanna say that Rob Walling was the first person that I saw characterize this like this, but as a stair-stepping approach to growth where you will find one or two channels that work really well to a point and there's just diminishing returns and you have to switch gears to hop on to a new track and that's what you end up doing is leap frogging from acquisition channel to acquisition channel as you grow. For me, early on, I would say the most integral part to me getting my first customers was the previous year that I spent freelancing for ecommerce brands, mostly on Shopify. That was where I got a very strong sense of the willingness to pay and the original product idea came from those clients, and then the very first paying-customers came from that customer base. And that's one of the things that I sometimes find myself repeating and saying to people all the time who ask the question about finding your first customers or finding a good idea is sometimes there's a little bit of path dependency. There are things that you can't necessarily shortcut or side step around and one of those may be if you want to build some amazing new accounting software, you need to go spend a year freelancing and consulting for accountants, and that's just the main way that you get in there, make some contacts and find your first customers. And so that's how I found the very first ones. Of course, that's not a channel really. That was just a couple dozen existing clients. After that, I started to get really manual. So, one of the things is, "Where do your customers congregate?" I mentioned earlier that in general, my customer base doesn't congregate places, but there was at least one small area where they were congregating, which are the forums for the individual ecommerce platforms so for example, Shopify, BigCommerce, those kinds of things. Those all have forums and I would just go on to the forums, and some people would be explicitly saying like, "Hello, I would like to build a store locator," and I will just say, "Hey, try this app." But other places, I would just go and be helpful with people who seem like they were in similar... They might be potential customers, and I had a little signature, like a forum signature, that just had the pitch for Storemapper, and I wouldn't really try to be spamy about it. I would just help people out with their customization problems. And that got, I would say, the next few dozen customers. And then another tactic that works very earlier on is to look for people who are actively seeking this kind of general solution, right, so who are putting their pain point out there, and that usually comes in the form of jobs boards, right? So, I would go on Upwork or I guess back then it was oDesk and Elance and those things and look for people who were looking to hire freelancers to build them a store locator, and I would just pitch them and say, "Look, just use my app instead. "It's a lot cheaper." But that's pretty broadly applicable. Hopefully, if your business idea is good, people should be somewhere looking for it. And those things can be fairly reciprocal, right? If people are really fundamentally not looking for your product idea, then you might not have a very good business idea, right? If your customer doesn't know that they need this and they're just under no circumstances Googling for it or searching for it or anything, it's gonna be very hard to actually find customers. So, sometimes, you need to iterate back and forth between the methods of finding your first customers and whether or not that actually is a good business idea. And sometimes it goes the other direction. Sometimes you just look for people spelling out those pain points and that's where you get your idea for a business.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1255.694">
+          <a href="#1255.694" id="1255.694">
+            0h 20m 55s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, Trevor McKendrick came on Indie hackers last week, I believe. He did an interview and he had something to say that's very related to this which is that people overlook how much of an advantage it is to be small, because what it takes to move the needle at a small scale is usually just a little bit of manual effort. If you're trying to get your business off the ground and you only have one customer or no customers, then getting to five or 10 customers is huge. And to get to five or 10 customers, you don't have to be amazingly clever. You don't have to come up with some sort of Dropbox referral strategy thing that blows the socks off of anything anyone's every done before. You can just get on the phone or you can do what you did and browse Upwork, or you can find out where people are searching for their problem and contact them on an individual basis and just do one-on-one sales and this has numerous benefits. Not only does it land you your first customers, but you end up actually having these engaged one-on-one conversations with people who tell you why or why they won't buy your product and then you can fix your product based on their feedback. It's something that Nathan Barry also really talked about. He basically said that direct sales, for him, were the answer to pretty much every problem in determining how to market ConvertKit and what kind of copy resonated with people, and what kind of features resonated with people, what kind of features people wanted to buy and pay for. So, I think the part of your interview that I talk to people the most about is how you went on Upwork and you found these people who were searching for the problem that you were solving and engaged them one-on-one 'cause it's just so smart and it's so overlooked. And people trying to figure out how to get their first customers and yet never really connecting the dots on the possibility that they could just get them one at a time is really I think one of the things that stops a lot of businesses that might otherwise be successful from even getting off the ground.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1351.64">
+          <a href="#1351.64" id="1351.64">
+            0h 22m 31s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I totally agree. And it's really good that you're highlighting that because fundamentally, it's a pretty boring answer to the question of like, "How do I get my customers?" Just go find them and talk to them? And the things that become viral posts on Medium about how to grow your customers are things that are much cleverer, right, and often involve some elaborate partnership or some bit of coding, growth hack kind of thing, and that's the stuff that is out there in the zeitgeist and really makes an impression on people. And so they think that they need to do something like that at the very beginning, but the answer is pretty much just like the very boring like, "Just go find these customers and pitch them one by one," is often the very best way to get your first customers I think. It's really important there though, also just to bring it back to what we were talking about before like how important having high retention, recurring revenue businesses can be for this, right, because if you have a one-time sale or info product kind of thing, this might not work for you. It just might not be worth your time. You might still need to do it to learn how it works. But if you genuinely are selling your one-off, $39 product, it's really not worth your time to go and one-by-one acquire customers. Whereas it is, even if they're going to pay you 10 or 20 bucks a month, if you're building that cumulative recurring revenue. But if you've got customers that are churning out really fast or you just have a one-time sale, you need to do this phase for the learning, but it may not really be as economically viable as it is for SaaS specifically.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1466.307">
+          <a href="#1466.307" id="1466.307">
+            0h 24m 26s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, you have to do the math on your business and find out exactly what kind of customer acquisition strategy actually works for you. And again, like we were saying earlier, it doesn't necessarily have to be the thing that's going to make you a millionaire, if that's what your goal is. What works for you in the beginning probably won't be the same strategy you use in the end, but yeah, if you're doing one-time sales and you have a low price point, then it's not all that's scalable to engage customers one-on-one, but the other half of the equation, and you nodded to this, is the learning aspect. Talking to Josh Pigford at Barametrics, to David Hauser, who grew Grasshopper to $30 million a year in revenue. They both said the same thing which is that the most valuable feedback they ever got was doing sales and doing one-on-one calls with individual customers who when you're actually talking to them face-to-face or over the phone will give you the valuable feedback that you're not just gonna hear over email. And you're gonna learn exactly why they won't buy your product and what you need to do to fix it. And I think often times, even if you're selling a one-off info product or you're selling a SaaS product, and you're in the very early stages where you're trying to figure out, "Okay, what is my product? What does it do, what features do I add? Who is going to buy it and why?" Having those conversations is crucial because it will influence the direction that you're going. And another thing that is very related to this, I think Clifford Oravec said this, is that sales is the precursor to marketing, right? Marketing is sales at scale. Marketing is what you do once you understand your message and you know what resonates with people and you wanna blast it out there and personally to many thousands of people, but sales is where you learn how to craft your message, right? It's when you're talking to people and you figure out what resonates. And if you can't sell your product to somebody one-on-one, then you're probably not going to be able to sell it to a thousand strangers who visit your landing page, for example.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1569.618">
+          <a href="#1569.618" id="1569.618">
+            0h 26m 9s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, completely agree with that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1572.039">
+          <a href="#1572.039" id="1572.039">
+            0h 26m 12s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">The other thing that you said that really resonated with me was that if people aren't searching for your business online or whatever problem you're solving, then you've got a problem. It's funny because if you go online and you search for startup advice and you end up at a blog post written by a venture capitalist, they're gonna tell you, "Solve an unsolved the problem. Solve something that no one's ever solved before."</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1594.067">
+          <a href="#1594.067" id="1594.067">
+            0h 26m 34s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Go zero to one, and Steve Jobs, you don't know what they want until they see it, yeah, yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1599.041">
+          <a href="#1599.041" id="1599.041">
+            0h 26m 39s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Exactly, yeah, exactly. People get sucked into that. They're like, "Okay, I wanna make $10,000 a month "so what I need to do is solve an unsolved problem." It's like, "No, what you need to do is pick a problem that you know people want a solution for, right, and then make your own solution that's better." Exactly, it's just way harder. And it's not worth pursuing that unless your goal is to become a billion-dollar company in some sort of winner-take-all market. And the only way that you can do that is by being the first to market which if you're listening to this is probably not your goal. And bringing this back around to Storemapper, one of the issues that you had was that your customers, as you said, don't congregate in any area online where it's easy for you to market to them. So, how did you move beyond this initial phase of reaching out to customers one-on-one and start finding your first channels that could bring in customers in a scalable, more impactful way?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1679.974">
+          <a href="#1679.974" id="1679.974">
+            0h 27m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">You know, one thing that was really helpful was the fact that many, if not all, of the ecommerce platforms would have app stores and app directories and things like that, so we just made sure that we were getting listed in all of those one by one and did whatever was necessary to integrate with those. And I think that those app stores, particularly B2B app stores, right, where the people searching are gonna be businesses, can be a really good starting point for a first-time entrepreneur or first-time Indie Hacker because you do have a built-in discovery mechanism there. If can find something that that whole customer type or big subset of it will need, you can do zero marketing customer acquisition there. So, I think that's a really good channel for a lot of opportunities. And even though if the Shopify app store and stuff like that are starting to get a little bit of saturation, I think there's still a ton of opportunity there, there's probably a lot of opportunity in the Slack app directory and stuff like that, particularly if you can get to be the first mover in one of those marketplaces, you can really find that you can get a lot of new customers that way. So, I think probably the next big thing was the Shopify app store 'cause Shopify was exploding, it may still be. But at that time, it was pretty IPO. It was growing super fast. And we got a lot of customers through that and just then expanding to a bunch of different app stores. We were fortunate to be in a niche so we had pretty good just organic SEO in a sense that if you actually searched for store locator app, we'd be the first one that came up, and that was pretty helpful. So, I'm contradicting the idea that you should have no competitors. There were one or two products that were old and crappy and were like, "Download this PHP file and host it on your own server," and stuff. There were some things in that market, but it was still niche enough that we were able to dominate the organic search space as well. And so that was really helpful once we got some traction.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1822.995">
+          <a href="#1822.995" id="1822.995">
+            0h 30m 22s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Did you dedicate a lot of effort to your search engine optimization and stuff?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1826.811">
+          <a href="#1826.811" id="1826.811">
+            0h 30m 26s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No, zero.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1827.644">
+          <a href="#1827.644" id="1827.644">
+            0h 30m 27s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Did it just actually happen?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1828.861">
+          <a href="#1828.861" id="1828.861">
+            0h 30m 28s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No, that stuff was all too dark arts for me. There are too many unknown unknowns for me that I just don't really know what the ROI on my time is going to be, or even the ROI on hiring SEO experts. It just doesn't feel like a space where I can have a competitive advantage, so I tend to just stay away from it. But, we basically won the SEO game just by being the only viable result. People would search store locator app and then they would stay on our site and they would put in their credit card, then I guess Google would just assume that that was solving their problem and put us number one.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1874.399">
+          <a href="#1874.399" id="1874.399">
+            0h 31m 14s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Was there anything that you did in terms of trying to grow Storemapper? Any strategies that you tried or channels you investigated that didn't work out?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1882.945">
+          <a href="#1882.945" id="1882.945">
+            0h 31m 22s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, I would say that one thing that I tried that didn't work out and it's not because necessarily it wouldn't work, it's just that I had to realize what I was actually good at and enjoyed doing versus things that might work but I was not good at or didn't enjoy doing, and so half assed it was outbound cold calling, right? I would occasionally come across an ideal customer, right, which is in our case it's very well defined, it's like you see this brand. They say "brand dot com slash where to buy us" or whatever, and it's just like a giant page of text, right? It's just hundreds and hundreds of names of stores with addresses like, "Oh, wonderful. This is a perfect potential customer for us." And I tried to hire a VA (virtual assistant) to scan the top 10,000 ecommerce websites and find them and cold pitch them and stuff like that. And I just realized that I didn't really have the passion to design a cold outreach email sequence and hire people and set commission structures and all that kind of stuff. So, I just had to acknowledge that like, "If this was gonna work, I wasn't gonna enjoy it." So, I may as well just not do it because at the end of the day, the whole point of being an entrepreneur or running your own business and stuff is that you actually do with your time stuff that you enjoy. So, it doesn't work out.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1982.825">
+          <a href="#1982.825" id="1982.825">
+            0h 33m 2s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So, another aspect of your entire story is that at least when you started the business, you were a digital nomad of sorts. You were on a plane basically flying across the world when you built it, and you kept traveling for I think the first year that you ran the business.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="1996.12">
+          <a href="#1996.12" id="1996.12">
+            0h 33m 16s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, I would say, a good portion of the first four years. So, Storemapper is about five years old, and for nearly the last year I've been stationary, but most of the previous four years, with the exception of about nine months in New York, I was on the road quite a bit.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2015.737">
+          <a href="#2015.737" id="2015.737">
+            0h 33m 35s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, you were one of the few people I've interviewed for Indie Hackers who has been like that because I've got a location field where every person I interview, I have a country for where they started their business in. And I think yours it says remote or something. Was there ever a time where you thought, "Okay, traveling while running this business is not gonna work out?" And also, even before that, how did you make it work out?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2036.174">
+          <a href="#2036.174" id="2036.174">
+            0h 33m 56s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No, traveling and running a product business is amazing. I tried doing it while I was doing freelance work and that is extremely challenging because you have to get on the phone with people and schedule stuff and time zones are a big pain in the butt. But, the one thing that I couldn't do that a lot of entrepreneurs recommend is having phone support and calling your customers just from the get go. I had to do everything asynchronously. But other than that, there was just no downside. It can be very cheap, so you can keep your costs low. You can keep your runway long and so you can think in a long-term way. It's really motivating. You can stay super productive. You work for 10 days straight every single day and you're like, "Oh, I really need a vacation," and you just walk outside and you're on vacation, right? You don't have to go on vacation. You're like, "Oh, well, I'm in Barcelona now. I'll just go for a run and enjoy it. I'll go scuba diving in Thailand because I'm already here." Yeah, it's really good. There's just so many advantages to it, particularly if you're going to places that are relatively cheap. You can live the on-demand lifestyle of never cooking, never doing your own laundry, you're never doing any of that stuff, but it's just super affordable because whatever, you're in Indonesia or you're in Thailand or you're in India or something like that. Yeah, it's really focusing. It has affected the way that I've grown the business. I think the main thing is that even now that I have a team, I have three employees that work for Storemapper, they're distributed all over the world. We are necessarily incredibly asynchronous. We use Slack a little bit, but for the most part, we're using stuff like Asana. We're trading things off in a way that we are able to just hop on the phone or reach over and talk to someone to solve a problem. And it's the same thing with all of our customers, right? Customer support tends to happen very asynchronously and stuff like that. So, we've had to build systems and build opinions around how we do stuff that reflects the fact that we've really no idea where anyone on the team is at any one given time, but it's been great. Yeah, absolutely recommend it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2185.043">
+          <a href="#2185.043" id="2185.043">
+            0h 36m 25s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">How did you go from being by yourself to being a team of what, say, three people?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2191.072">
+          <a href="#2191.072" id="2191.072">
+            0h 36m 31s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, three people now. Three other people including myself. Well, I got the money for it, I guess. I think the real beauty of having recurring revenue with a low churn rate is that your month-to-month revenue ends up being very, very predictable. So, you can really confidently bring your first employee on because you know almost certainly you'll be able to pay them indefinitely. And so yeah, I think pretty quickly after I hit what was, for me, a full-time salary after I was over $80,000 a year, I decided that I wanted to start adding some people to the team. So, I pretty quickly added someone doing support and a Rails developer and that was in part just because I think I always had the idea, a zillion different business books have advocated this, that ultimately you wanna extricate yourself from your business so you can work on the business and not in the business and all that kind of stuff. And that's a really good kind of framework through which to build a company is to try to eliminate your own necessity so that requires people. And the other thing was I was traveling and I wanted to do... I was doing the digital nomad thing, which means you're limited to these cities that have fast internet and stuff like that, but I wanted to do some more interesting stuff. And I wanted to go hike Kilimanjaro and do things that require being offline for a week at a time and so I needed a team. So, I went in and started hiring, and I learned quite a bit hiring for those two positions because I iterated through several people in both positions before getting to the current team, which I'm super happy with. And I learned a lot there about how to do that.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2314.412">
+          <a href="#2314.412" id="2314.412">
+            0h 38m 34s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">What'd you learn specifically? What are your best hiring tips?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2319.575">
+          <a href="#2319.575" id="2319.575">
+            0h 38m 39s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So, a couple of things, most of them I just stole from other people, but they're pretty good when you put them together. One of them is to, which is taking from a memo, like a WordPress. He talks about like use the same communication tools that you'll use in the work. Use those same tools to hire. One of the classic problems is that people, for whatever reason, when you're hiring someone, you have this bias towards a face-to-face conversation like, "Let's have a video chat and let's speak to each other." And then you do the work and 99% of your communication is one sentence git commits and random GIFs on Slack and stuff like that and you're like, "Well, I didn't really actually test whether or not you were a good communicator in the medium that we're actually gonna use." So I switched to using Slack and Asana as the tools by which I actually hire and interview people. It feels a little weird at the beginning when someone's like, "Hey, okay, when do I interview you?" "Let's hop on Skype." And you're like, "No, actually let's stick to text for the interview and we'll just sit there and chat." It seems strange but actually, it turns out to be a much better predictor of who you're gonna be able to collaborate well with. And then another thing I learned was to really massively document things like how the work is to be done at a scale that seems like ludicrous when you're just a tiny team. It's like, "This is crazy." "Why did I just make a 2,000-word FAQ for the first customer support person?" Surely, they can just ask you questions. But starting that process really early on of just documenting things is really important. It starts to give them a lot greater sense of autonomy when you put down rules and just say, "Look, the rules and the structure are there. Make decisions within that framework," as opposed to constantly asking you questions and things for permission and stuff like that. It's amazing how that helps grow a team's autonomy over time. So, documenting and using the tools, the same tools for all its purposes, I think, were really helpful lessons that I just learned by doing it early.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2459.601">
+          <a href="#2459.601" id="2459.601">
+            0h 40m 59s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I've never heard of the advice conduct interviews using the same channels that you do work over. How exactly does a Slack interview go if you're interviewing let's say your Rails Developer?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2471.233">
+          <a href="#2471.233" id="2471.233">
+            0h 41m 11s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Just the same as you would if you were coworkers. You set a time and you just sit there and have a chat. When you actually do it, there's nothing hard about it. It just feels a little weird and it goes slower, right? Obviously, you need to allocate more time because it's a little bit slower, but that's actually good, right? You learn like do they get bored? Do they end up typing this super long incredibly verbose things that you don't wanna read? Seriously, people are very good communicators and then they send you emails that are 12 paragraphs long and you're like, "Oh, this is a fundamental flaw in our ability to collaborate that I didn't discover until I hired you." It seems weird for a half second, but then it is so obvious that it's the right thing to do.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2527.182">
+          <a href="#2527.182" id="2527.182">
+            0h 42m 7s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">While we're talking about Rails Developers, can you talk a little bit about how you built Storemapper and the technology behind it?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2535.493">
+          <a href="#2535.493" id="2535.493">
+            0h 42m 15s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, Storemmapper fundamentally, it's a Rails app and then it has bolted onto it a third-party JavaScript widget, right? So, it's like an embeddable widget like what Wufoo or the Disqus Commenting Engine and stuff like that have. There's nothing super fancy about it. I wrote a post. It's old now on Medium about bootstrapping SaaS with these services. I bolted together just a ton of services. We still use Heroku. We still use all kinds of add-ons and stuff like that. I'm really opposed to reinventing the wheel in general. I think that you get so much value from products that it's, in my opinion, very worth it to just pay for existing services rather than try to build your own custom version of it. I know other people have strong opinions in both directions, but that's the approach we've taken and it's worked pretty well.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2602.313">
+          <a href="#2602.313" id="2602.313">
+            0h 43m 22s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Were you learning a lot on the job? Or did you come into this knowing exactly how to code everything that you needed to build?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2608.071">
+          <a href="#2608.071" id="2608.071">
+            0h 43m 28s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No, I learned everything on the fly. A year prior to launching Storemapper, I'd never written a line of code in my entire life. I basically didn't even know what HTML and CSS were. As a kid, I didn't write code. I didn't have a GeoCities website that I was learning how to make blink tags on. I did none of that stuff. I started teaching myself to code because I had a previous startup that I just basically spent forever failing to find a technical cofounder who would come and work for me for free, which is not that surprising really. I still don't understand how other people do it, but I decided to teach myself to code. And then I was teaching myself to code and I was like, "Well, I may as well just get paid to learn." So I would go on things like Upwork and Elance and just bid on jobs that I didn't really know how to do at all, and then I would somehow win some of these jobs, and then I would go learn how to do it and that would be how I would continue learning to code, and that was how I started to get freelance clients that ultimately were the ones that asked me to build Storemapper. So, it all flowed from me just trying to learn how to code, but that was making everything up on the fly. I think maybe I did a very rough technical sketch when I first had the idea, thought it through for maybe 20 minutes like, "Okay, do I know the technologies that could make this happen?" And I was pretty confident that I could and that was about it really.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2710.895">
+          <a href="#2710.895" id="2710.895">
+            0h 45m 10s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I don't know whether to label that as an inspiring story of how anybody could learn the code or as a cautionary tale of why you should never find dev work in Upwork.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2722.401">
+          <a href="#2722.401" id="2722.401">
+            0h 45m 22s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Hey, I had happy customers every time. I had extremely high rating on Upwork back when I had one, but yes, I agree.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2737.686">
+          <a href="#2737.686" id="2737.686">
+            0h 45m 37s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So, another cool thing about Storemapper is that obviously you're pretty transparent about what you're doing. You've written about the behind the scenes, you came on Indie Hackers. You share your revenue without flinching. Is there an underlying philosophy behind that?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2752.568">
+          <a href="#2752.568" id="2752.568">
+            0h 45m 52s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">There is, but it's not an underlying business philosophy. I think some people have tried to argue that transparency is a competitive advantage. I think that is the case if your customer base and your target audience overlap really nicely, right? So, if you build a product for software entrepreneurs and then you are blogging about what it's like to be a software entrepreneur, then there's a really strong business case there. In my case it's less so because the audience for how I'm building this business is not so much the type of people that actually would sign up for Storemapper, so there's been very little overlap there, but the underlying case for me has just been like I learned an absolute ton from a lot of people that are on Indie Hackers or should be, right, like Patrick McKenzie and Rob Walling and the guys at Buffer and the guys at, I don't know, the whole Keen IO, a lot of these companies that were doing this transparency stuff, just I learned so much from that that I felt like, I don't know, I needed to also contribute to that body of knowledge and that keeping all that stuff private just wasn't good karma. And the last component of that was I started blogging with more of an advice aspect to it, right? It was less of just descriptive like, "Here's what I did," and more like, "Let me try and generalize this into what works and what doesn't." When you boil that down, you're telling people how to make money on the internet. And it's just so easy to come across and to just veer into scam spamy territory and there's just so much garbage in that universe that I feel like being transparent about your business gives you just the right amount of credibility. Not necessarily people know you're not completely full of crap, which there are many people out there who are just like, "Learn how I grew my business to $1 million in recurring revenue," and there's just no evidence that they did that all. At the same time, some people get outsized credit as well. It's like look, you're not a guru. You built one business and it's doing okay and you're not a billionaire so take this advice. If I'm going to call it advice with the appropriate grain of salt. I cleansed myself of those concerns by just saying, "Look, take this for what it is. Here's what I'm doing with my actual business," right?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2926.09">
+          <a href="#2926.09" id="2926.09">
+            0h 48m 46s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Personally, when I was sharing Indie Hackers' revenue stats, when I actually had revenue stats, I just found it fun to share. Enough people don't share that kind of stuff that if you do, you will inevitably get people who comment on it and give you tips or feedback, or ask you questions. I think one of the hardest things about being a founder is just the motivational aspect like how do you keep going with something that's potentially a lot of work, that's not always the most rewarding, and having that community, being able to go on Twitter and talk to people about what you're doing and get feedback or a community forum or blogging and getting comments. I found it's just a really fun and social and engaging thing that has kept me motivated. And in the past when I would just go heads down and code and not talk about what I was doing, it was the loneliest, most depressing thing.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="2970.642">
+          <a href="#2970.642" id="2970.642">
+            0h 49m 30s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">No, I think that's probably a shorter and more accurate answer for me as well is that I just found it fun. I think I might ex post facto rationalizing those decisions, but at the time it was like other people are doing it. I enjoy engaging it with them. I'm doing this. Oh, this is fun. I'll keep doing it. I probably honestly did it because I wrote one blog post inspired by some of those other guys and it was on the front page of Hacker News for a day and I was like, "Oh, that was fun." And then I did it again. Honestly, that's probably the whole story.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3003.538">
+          <a href="#3003.538" id="3003.538">
+            0h 50m 3s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, and then MicroConf a couple of weeks ago. It was also really cool because it was... Was that your first MicroConf? Have you been before?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3009.309">
+          <a href="#3009.309" id="3009.309">
+            0h 50m 9s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">It was my first MicroConf, yeah.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3011.43">
+          <a href="#3011.43" id="3011.43">
+            0h 50m 11s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">It was my first too and I'd never been in a place where there were hundreds of people you could talk to about coming up with an idea or finding your first customers or dealing with churn. And everybody understood what you were talking about and listened intently and not have their eyes glaze over and get bored instantly. And I think everybody, you need something like that. At least it helps to have some community of people who understand what you're talking about because I know I bored my girlfriend to death when I would go home and just talk about the numbers for Indie Hackers and the numbers for Taskforce and it's demotivating. I think probably the number one reason that most people who get started here die, not the reason that they die, but the reason that their businesses die is because they give up. They stop. Yeah. And that's not to say their business is on a great check before they stopped. It probably wasn't doing very well if you end up quitting, but if you stick with it, you learn overtime. The same way that you learned how to code, the same way that you learned how to find where the next set of customers was gonna come from after you exhausted your first channel. Sticking with it over a long period of time is crucial to learning what works and what doesn't. And if you wanna stick with it, it helps to have some community of people to lean on, to motivate you and to give you advice, instead of doing it all alone.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3081.799">
+          <a href="#3081.799" id="3081.799">
+            0h 51m 21s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">I completely agree, yeah. And it's such an interesting contrast from when I was living in places like Ubod, Bali or Barcelona or Budapest, and you go into a co-working space and it's just a bunch of people working on businesses like that. Now, I'm living in DC and I'm hanging out with normal humans. And when I go to parties and stuff like that, it's not their fault. They just do not care at all about any of the details of my business. It was nice and really refreshing to get back into an environment like that. It's even more so because MicroConf is self-selecting to just immediately dive in to these discussions with folks that you know you don't have to go through any awkward discussion. It's like this person is probably running a business and has a similar concern with this person. You can just immediately dive into those discussions super intensely for several days. Yeah, it was super useful.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3146.774">
+          <a href="#3146.774" id="3146.774">
+            0h 52m 26s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Speaking of normal humans, I was just downstairs talking to Patrick McKenzie and I asked him, "Oh, are you familiar with Tyler Tringas?" And he's like, "Oh, describe his business to me because I often recognize people by their business more than by the actual name." That's it. It's people that speak your language and then you can really talk to about things. So where can people go to find out more about Storemapper and about what you're up to nowadays?</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3174.153">
+          <a href="#3174.153" id="3174.153">
+            0h 52m 54s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">So, Storemapper is <a href="http://storemapper.co" class="linkified" target="_blank">storemapper.co</a>. Hopefully, it's <a href="http://storemapper.com" class="linkified" target="_blank">storemapper.com</a> very soon, fingers crossed maybe by the time this is published, but stick with 'co' just in case. And I blog about Storemapper and about what I'm calling microSaaS, bootstrap SaaS issues in general on my website which is just <a href="http://tylertringas.com" class="linkified" target="_blank">tylertringas.com</a>, and that's it.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3207.356">
+          <a href="#3207.356" id="3207.356">
+            0h 53m 27s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Cool, thanks for coming on the show Tyler.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="https://storage.googleapis.com/indie-hackers.appspot.com/podcast-thumbnails/012-tyler-tringas-of-storemapper.jpg">
+        <span class="episode-transcript__speaker-name">
+          Tyler Tringas
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3209.408">
+          <a href="#3209.408" id="3209.408">
+            0h 53m 29s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">Yeah, thanks for having me.</p>
+    </div>
+    <div class="episode-transcript__speaking-turn">
+      <header class="episode-transcript__turn-header">
+        <img class="episode-transcript__avatar" src="/images/courtland.jpg">
+        <span class="episode-transcript__speaker-name">
+          Courtland Allen
+        </span>
+        <span class="episode-transcript__timestamp bt-listen" data-bt-time="3212.187">
+          <a href="#3212.187" id="3212.187">
+            0h 53m 32s
+          </a>
+        </span>
+      </header>
+        <p class="episode-transcript__paragraph">If you enjoyed listening to this conversation, you should join me and a whole bunch of other Indie Hackers and entrepreneurs on the <a href="http://indiehackers.com" class="linkified" target="_blank">IndieHackers.com</a> forum. We talk about things like how to come up with a good idea and how to find your first-paying customers. Also, if you're working on a business or a product of your own, it's a great place to come and get feedback from the community on what you're working on. Again, that's <a href="http://www.indiehackers.com/forum" class="linkified" target="_blank">www.indiehackers.com/forum</a>. Thanks, and I'll see you guys next time.</p>
+    </div>
+</div>
