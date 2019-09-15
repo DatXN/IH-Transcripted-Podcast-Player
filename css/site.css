@@ -206,6 +206,7 @@ mark {
 }
 
 mark.animate {
+  padding: 0;
   background-position: left bottom;
   color: white;
 }
