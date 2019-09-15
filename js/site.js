@@ -188,7 +188,6 @@
     var currentClosestTimestamp = null;
     var currentClosestTimestampDisplay = null;
     var currentClosestTimestampDisplayParagraph = null;
-    var myInterval = null;
     var currentWordIndex = 0;
 
     $("div.episode-transcript__speaking-turn").addClass("noDisplayTranscript");
@@ -207,11 +206,12 @@
       var currentPlaybackOffset = currentPlaybackTime - closestTimestamp;
       var currentTimespan = result.next - result.current;
       // display transcript
-      if (currentClosestTimestamp - closestTimestamp != 0) {
+      if (
+        closestTimestamp != 0 &&
+        (!currentClosestTimestamp === null ||
+          currentClosestTimestamp - closestTimestamp != 0)
+      ) {
         currentWordIndex = 0;
-        if (!!myInterval) {
-          clearInterval(myInterval);
-        }
         //
         currentClosestTimestamp = closestTimestamp;
         //
@@ -221,8 +221,8 @@
           currentClosestTimestampDisplayParagraph.unmark(options);
         }
         currentClosestTimestampDisplay = $(
-          "a[href$='" + currentClosestTimestamp + "']"
-        ).parents(".episode-transcript__speaking-turn");
+          "a[href$='#" + currentClosestTimestamp + "']"
+        ).closest(".episode-transcript__speaking-turn");
         currentClosestTimestampDisplay.removeClass("noDisplayTranscript");
         currentClosestTimestampDisplayParagraph = $(
           currentClosestTimestampDisplay.find("p.episode-transcript__paragraph")
